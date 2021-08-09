@@ -1,0 +1,8 @@
+:: Start
+<<silently>>
+/* This handles the redirection, by putting the search query into varDestination */
+<<script>> 
+//for debugging grabQuery: window.alert(grabQuery("location"));
+State.variables.varDestination = grabQuery("location");
+<</script>><</silently>>
+For debugging: <<print $varDestination>> 

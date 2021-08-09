@@ -1,0 +1,42 @@
+:: CSS [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+
+body { 
+font-family: 'Montserrat', sans-serif;
+background-color: white; 
+color: black; 
+}
+
+/*link styling*/
+a { 
+     text-decoration: underline;
+     font-weight: 900;
+     color: #D2318B;
+}
+
+button {
+background-color: #D2318B;
+color: black:
+font-weight: bold;
+
+}
+
+#ui-bar {
+	background-color: white;
+}
+
+#menu li a {
+color: black;
+
+}
+#menu-item-saves{
+	display: none;
+}
+
+#StorySubtitle {
+font-size: small;
+}
+
+
+
+
