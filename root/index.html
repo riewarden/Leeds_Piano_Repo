@@ -127,6 +127,7 @@ font-weight: bold;
 
 img {
   border: 4px solid #000;
+  
 }
 
 #ui-bar {
@@ -176,7 +177,6 @@ font-size: small;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff !important;
-	font-family:Verdana;
 	font-size:28px;
 	font-weight:bold;
 	padding:35px 5vw;
@@ -187,84 +187,86 @@ font-size: small;
 
 .spButton a {
 	box-shadow: 0px 22px 14px -7px #b3b3b3;
-
+margin-top: 5vw;
 	background:linear-gradient(to bottom, #000000 5%, #d2328d 100%);
 	background-color:#000000;
 	border-radius:3px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:20px;
+	font-size:3vw;
 	font-weight:bold;
-	padding:26px 5vw;
-	width: 72vw;
+	padding:5vw 5vw;
+	width: 60vw;
 	text-decoration:none;
 	text-align: center;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">//this grabs the search query from the browser window
  //i.e, the ?location=x encoded in the QR code at each location  
 Config.ui.stowBarInitially = true;
-Config.saves.autoload = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">/* This handles the redirection, by putting the search query into varDestination */
-&lt;&lt;script&gt;&gt; 
+Config.saves.autoload = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to the Leeds Piano Trail!
+&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
     };
 //for debugging grabQuery: window.alert(grabQuery(&quot;location&quot;));
-State.variables.varDestination = grabQuery(&quot;location&quot;);
-&lt;&lt;/script&gt;&gt;
-For debugging: &lt;&lt;print $varDestination&gt;&gt;
-!Welcome to the Leeds Piano Trail!
-
+State.variables.varDestination = grabQuery(&quot;location&quot;);&lt;&lt;/script&gt;&gt;
 @@.bigturqButton; [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]@@
 &lt;&lt;if $varDestination is &quot;&quot;&gt;&gt;
 @@.bigturqButton; [[Tap here to play the piano|$varDestination]]@@
 &lt;&lt;else&gt;&gt;
 @@.bigturqButton; [[Tap here to play the piano|Contents]]@@
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">Welcome to the Merrion Rest Gardens. Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. If the piano is not working,
- 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!!Welcome to the Merrion Rest Gardens.
+Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
+
+&lt;img src=&quot;img/d-minor.png&quot; width=&quot;500vw&quot;&gt;
+
+If the piano is not working: 
 @@.spButton;[[Tap here to email a member of staff|sam.berrill@leedspiano.com]]@@
 
-=Image of piano keys, with three or four clearly shaded, preferably in similar tones to the Deep Listening Sculpture.=
 
-[[Next|MerrionDeep2]]</tw-passagedata><tw-passagedata pid="3" name="MerrionDeep2" tags="" position="350,100" size="100,100">A useful skill for music-making is being able to listen to the other sounds around you, to help you make a decision about what sounds you’d like to add to them.
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+If all is well, tap the &#39;Next&#39; button below.
+@@.spButton;[[Next|MerrionDeep2]]@@</tw-passagedata><tw-passagedata pid="3" name="MerrionDeep2" tags="" position="350,100" size="100,100">A useful skill for music-making is being able to listen to the other sounds around you, to help you make a decision about what sounds you’d like to add to them.
+@@.spButton;&lt;&lt;linkreplace &quot;Tap to continue.@@&quot; t8n&gt;&gt;
 Nearby, there is a sculpture, by Pianodrome, called Deep Listening, which has a cast-iron frame, that you can strike with a beater. Go over and play it, or wait for someone else to. Then, just listen to the sounds it can make. 
-&lt;&lt;linkreplace &quot;Listen deeply.&quot; t8n&gt;&gt;
+@@.spButton;&lt;&lt;linkreplace &quot;Listen deeply.@@&quot; t8n&gt;&gt;
 When a sound starts to fade away, try to pinpoint the moment it turns from vibrations in the air, to stillness. How do these sounds blend with the other sounds, in and around the Rest Gardens? 
-&lt;&lt;linkreplace &quot;Take your time.&quot; t8n&gt;&gt;
+@@.spButton;&lt;&lt;linkreplace &quot;Take your time.@@&quot; t8n&gt;&gt;
 Go nice and slowly, and take at least three minutes to do this. When you’re ready to move on, click ‘Next’.
 
 =Image of sound waves hitting things around them=
 
-[[Next|MerrionDeep3]]
+@@.spButton;[[Next|MerrionDeep3]]@@
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="MerrionDeep3" tags="" position="475,100" size="100,100">How does this sound exist in the world? Ask yourself questions, to create your understanding of the sound. There are no right answers. All you need to pursue is what feels right to you.
 
+@@.spButton;
 &lt;&lt;linkreplace &quot;How do we describe the sound?&quot; t8n&gt;&gt;&lt;&lt;linkreplace &quot;Duration&quot; t8n&gt;&gt;&#39;&#39;Duration:&#39;&#39;
 How long can the sound last? How short? How quickly can it make another sound? Does it need time to rest?&lt;&lt;/linkreplace&gt;&gt;
+
 &lt;&lt;linkreplace &quot;Timbre&quot; t8n&gt;&gt;&#39;&#39;Timbre:&#39;&#39;
 If this sound was a colour, or a shape, what would it look like? Does this sound have emotions? What makes this sound’s shape different to the piano’s shape?&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;linkreplace &quot;Pitch&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
+
+&lt;&lt;linkreplace &quot;Pitch@@&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
 Is this a high, or a low sound? If you hum the sound, is it easy for you to reach, or is it a strain?
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-What other questions could you ask about the sound? Are there any questions you can’t find the answer to? Is it because no answer exists, or would you find it by asking someone else?
+
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;What other questions could you ask about the sound? Are there any questions you can’t find the answer to? Is it because no answer exists, or would you find it by asking someone else?
 
 When you’ve had enough listening for one day, click ‘Next’.
-[[Next|MerrionDeep4]]
+[[Next|MerrionDeep4]]@@
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="MerrionDeep4" tags="" position="600,100" size="100,100">Now go back to the piano. If you were playing the sculpture yourself, give the iron one last hit, and make a note that’s going to last a little while. If you were letting other people play, wait for someone to play another note.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="MerrionDeep4" tags="" position="600,100" size="100,100">@@.spButton;Now go back to the piano. If you were playing the sculpture yourself, give the iron one last hit, and make a note that’s going to last a little while. If you were letting other people play, wait for someone to play another note.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 When you’re back at the piano, listen to the iron note, and try and find a note on it that you think works well with the iron note. Search for the note very slowly. It could be the same note, it could be a contrasting note, or something else entirely. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 If you play some notes that don’t sound like what you wanted, that’s great. The journey to finding the note you want is now going to be part of this composition that’s emerging, as you go along.
 
 When you find a note you like, click ‘Next’.
-
-[[Next|MerrionDeep5]]
+[[Next|MerrionDeep5]]@@
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="MerrionDeep5" tags="" position="725,100" size="100,100">Now that you’ve found one note that works, look for another, and a third. Try playing some at the same time. Try playing them in sequences. If people come up to the sculpture to strike it, respond to the notes they create.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="MerrionDeep5" tags="" position="725,100" size="100,100">@@.spButton;Now that you’ve found one note that works, look for another, and a third. Try playing some at the same time. Try playing them in sequences. If people come up to the sculpture to strike it, respond to the notes they create.
 
 Find a time to come gently to a stop.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
@@ -275,8 +277,10 @@ Or, come to some of our other events:
 [[Learn To Play In A Day]]
 [[Come Along And Chat]]
 [[Growing Stronger Together]]
-[[Come Along And Make]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="mgGrave" tags="" position="850,100" size="100,100">Welcome to the Merrion Centre Rest Gardens. Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
+[[Come Along And Make]]@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="mgGrave" tags="" position="850,100" size="100,100">@@.spButton;
+!!Welcome to the Merrion Centre Rest Gardens.
+Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;500vw&quot;&gt;
 
@@ -284,96 +288,93 @@ If the piano is not working:
 [[Tap here to tell a member of staff|sam.berrill@leedspiano.com]]
 
 If all is well, tap the &#39;Next&#39; button below.
-[[Next|MerrionSil2]]</tw-passagedata><tw-passagedata pid="8" name="MerrionSil2" tags="" position="975,100" size="100,100">In music, we can choose to pay a lot of attention to the notes, but not the space in between the notes. I mean, the silences, or ‘rests’, as they’re often called in music. Pretty apt that we’re in the ‘Rest Gardens’ to think about ‘rests’!
+[[Next|MerrionSil2]]@@</tw-passagedata><tw-passagedata pid="8" name="MerrionSil2" tags="" position="975,100" size="100,100">@@.spButton;In music, we can choose to pay a lot of attention to the notes, but not the space in between the notes. I mean, the silences, or ‘rests’, as they’re often called in music. Pretty apt that we’re in the ‘Rest Gardens’ to think about ‘rests’!
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 The parts of an artwork where there is no ink, or sculpture, or paint, is sometimes called ‘negative space’ in English. In Japanese art, it’s known as ‘ma’, and tends to be seen as just as important, if not more important, as the rest of an artwork. 
 
 =Example of Japanese art using ‘ma’.=
 
-[[Next|MerrionSil3]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="MerrionSil3" tags="" position="1100,100" size="100,100">Think about a song you know. It can be anything, doesn’t have to be piano. Imagine that you broke it into pieces, and then changed how the silence, or pauses, appeared in it. 
+[[Next|MerrionSil3]]@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="MerrionSil3" tags="" position="1100,100" size="100,100">@@.spButton;Think about a song you know. It can be anything, doesn’t have to be piano. Imagine that you broke it into pieces, and then changed how the silence, or pauses, appeared in it. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 How would it change with no silences at all? Or, if there was more silence than notes? How about a patchwork of both of those? How much can you mess with the gaps between notes, and still be able to recognise the song?
 
 When you’ve had enough of that, click next.
-[[Next|MerrionSil4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="MerrionSil4" tags="" position="1225,100" size="100,100">Go back to these keys that you used to test the piano, pictured below. 
+[[Next|MerrionSil4]]@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="MerrionSil4" tags="" position="1225,100" size="100,100">@@.spButton;Go back to these keys that you used to test the piano, pictured below. 
 Arrange your hands so that every key highlighted in the picture has one finger on top of it. 
 
 &lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;500vw&quot;&gt;
-&lt;&lt;linkappend &quot;Optional: I need help with this.&quot; t8n&gt;&gt; 
+&lt;&lt;linkreplace &quot;Optional: I need help with this.&quot; t8n&gt;&gt;&#39;&#39;Optional: I need help with this.&#39;&#39;
 Find two black keys on their own, and put your left-hand little finger on the white key just to the left of them. Then, put the rest of your fingers on the following keys.
 
-Then, find another key like this, to the left of two black keys, put your right-hand thumb on it, and put the rest of your fingers on the following keys. &lt;&lt;/linkappend&gt;&gt;
+Then, find another key like this, to the left of two black keys, put your right-hand thumb on it, and put the rest of your fingers on the following keys. &lt;&lt;/linkreplace&gt;&gt;
 
 Got it? Tap ‘Next’.
-
-[[Next|MerrionSil5]]</tw-passagedata><tw-passagedata pid="11" name="MerrionSil5" tags="" position="100,225" size="100,100">Using the keys under your fingers, find a pattern of three notes that you like. If you take a while to find one, don’t worry. That journey is a part of the process of improvising. No-one’s going to know that it’s just you figuring things out.
+[[Next|MerrionSil5]]@@</tw-passagedata><tw-passagedata pid="11" name="MerrionSil5" tags="" position="100,225" size="100,100">@@.spButton;Using the keys under your fingers, find a pattern of three notes that you like. If you take a while to find one, don’t worry. That journey is a part of the process of improvising. No-one’s going to know that it’s just you figuring things out.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Play the pattern of three a few times, until it’s familiar. Now, play it three times, but on the third time, don’t play the final note. Let the absence of the note be an intentional part of the piece, and not a mistake. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 =image: a picture with a missing piece? Perhaps a person holding a mirror pointing at the sky.=
-
-* What effect does this create? 
 * What do you feel ‘should be there’? 
 * Why does it matter, when it isn’t there?
-If you feel like this is just ‘bad music’, what exactly about it is ‘bad’? 
+* If you feel like this is just ‘bad music’, what exactly about it is ‘bad’? 
 There’s no right answer, just try to explain to yourself why it is that you feel the way you do about the missing note.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 If you’re not sure, repeat the exercise, or perhaps try different sequences. 
 
-
-When you’ve had enough. Click ‘Next’.
-[[Next|MerrionSil6]]
+When you’ve had enough. Tap ‘Next’.
+[[Next|MerrionSil6]]@@
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="MerrionSil6" tags="" position="225,225" size="100,100">Last part. 
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="MerrionSil6" tags="" position="225,225" size="100,100">@@.spButton;Last part. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Take a moment to listen to the silence around you. 
 * Is it really silence? 
 * What noises are in the distance? 
-* Are there sounds that don’t sound like sounds because they’re constant?
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-Now, using the same keys, and some of the techniques from the previous exercise, experiment with playing notes, and creating sequences, while focusing almost completely on the space created between the notes.
+* Are there sounds which don’t sound like sounds because they’re constant?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; Now, using the same keys, and some of the techniques from the previous exercise, experiment with playing notes, and creating sequences, while focusing almost completely on the space created between the notes.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Go nice and slowly. Try and imagine the silences existing as a physical force, like a light that comes on, or a drop of water falling into a pond. How can you fit the notes around the noise that already exists here? 
 
 Take as long as you need with this.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 When you feel satisfied, bring the piece to a close, listening for the moment the last note stops being vibrations in the air, and silence returns.
-
-[[If you enjoyed this, why not try…|MerrionSilEnd]]
+[[If you enjoyed this, why not try…|MerrionSilEnd]]@@
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="MerrionSilEnd" tags="" position="350,225" size="100,100">Heydays
-A Musical Night Walk
-Learn To Play In A Day
-Come Along And Chat
-Growing Stronger Together</tw-passagedata><tw-passagedata pid="14" name="uniLeeds" tags="" position="475,225" size="100,100">Hello, and welcome to The University Of Leeds. To start with, please play the following test keys, in any order, to ensure the piano is working. 
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="MerrionSilEnd" tags="" position="350,225" size="100,100">@@.spButton;[[Heydays]]
+[[A Musical Night Walk]]
+[[Learn To Play In A Day]]
+[[Come Along And Chat]]
+[[Growing Stronger Together]]@@</tw-passagedata><tw-passagedata pid="14" name="uniLeeds" tags="" position="475,225" size="100,100">@@.spButton;
+!!Welcome to The University Of Leeds. 
+To start with, please play the following test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/GBD.png&quot; width=&quot;400vw&quot;&gt;
+
 If the piano is not working:
 [[Please tap here to contact a member of staff.|sam.berrill@leedspiano.com]]
 
+
 If all is good, tap the &#39;Next&#39; button below.
-[[Next|Uni2]]</tw-passagedata><tw-passagedata pid="15" name="Uni2" tags="" position="600,225" size="100,100">You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
+[[Next|Uni2]]@@</tw-passagedata><tw-passagedata pid="15" name="Uni2" tags="" position="600,225" size="100,100">@@.spButton;You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-Right now, our world values products over people, and so we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. And I think you’re going to do great.
+Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. And I think you’re going to do great.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
-[[Next|Uni3]]
+[[Next|Uni3]]@@
 
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Uni3" tags="" position="725,225" size="100,100">Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Uni3" tags="" position="725,225" size="100,100">@@.spButton;Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
 
 &lt;img src=&quot;img/GBD.png&quot; width=&quot;400vw&quot;&gt;
 
 When you have found the keys...
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Play the following sequence of notes, pausing where there is a &#39;...&#39;. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
-
-&#39;&#39;G G B D D ... D D ... G G&#39;&#39;
+!!G G B D D ... D D ... B B
 
 If you’d like to hear it played, use the audio player below, and copy it. 
  &lt;audio controls&gt;
@@ -383,21 +384,20 @@ If you’d like to hear it played, use the audio player below, and copy it.
 &lt;/audio&gt; 
 
 Once you’re comfortable with playing this pattern, click ‘Next’.
-[[Next|Uni4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Uni4" tags="" position="850,225" size="100,100">Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
+[[Next|Uni4]]@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Uni4" tags="" position="850,225" size="100,100">@@.spButton;Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-Try playing the Blue Danube pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
+Try playing the &#39;Blue Danube&#39; pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Can you do a version that uses keys that are as far apart as possible? Can you do a version that almost sounds like a joke, with a set-up and punchline? How about using your elbow, or the back of your hand to play?
 
 =img: person playing the piano with arms stretched wide=
 
 Once you’ve found as many versions as you have the patience for, click next.
-[[Next|Uni5]]
+[[Next|Uni5]]@@
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Uni5" tags="" position="975,225" size="100,100">Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the Blue Danube pattern. Perhaps, even go back to the original version that you copied…
-
-&#39;&#39;GGBDD ... DD ... GG&#39;&#39;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Uni5" tags="" position="975,225" size="100,100">@@.spButton;Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the Blue Danube pattern. Perhaps, even go back to the original version that you copied…
+!!G G B D D ... D D ... B B
 
 &lt;img src=&quot;img/GBD.png&quot; width=&quot;400vw&quot;&gt;
 
@@ -407,50 +407,81 @@ Once you’ve found as many versions as you have the patience for, click next.
   Oh dear. Your browser does not support audio.
 &lt;/audio&gt; 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-…Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the why, just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
+…Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the &#39;why&#39;, just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 Find a way to bring the piece to a close. Take a moment to think about what you created. 
 
 Is there a way to apply this process to a different creative pursuit?
-
-[[If you enjoyed this, why not try...| UniEnd]]
+[[If you enjoyed this, why not try some of our other events?| UniEnd]]@@
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="UniEnd" tags="" position="1100,225" size="100,100">Learn to play in a day
- Pub Piano Competition</tw-passagedata><tw-passagedata pid="20" name="vicGard" tags="" position="1225,225" size="100,100">Hello. Welcome to Trinity Gardens! Before we begin, we need to ensure the piano is working. If it is not working, [tap here to contact a member of staff.|sam.berrill@leedspiano.com] please play the following test keys, in any order, to ensure the piano is working.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="UniEnd" tags="" position="1100,225" size="100,100">@@.spButton;[[Learn to play in a day]]
+ [[Pub Piano Competition]]@@</tw-passagedata><tw-passagedata pid="20" name="vicGard" tags="" position="1225,225" size="100,100">@@.spButton;Hello. Welcome to Trinity Gardens! Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
 
-=Image of a keyboard with all of the black keys shaded (I.e Pentatonic, G-flat Major).=
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;400vw&quot;&gt;
+//(They&#39;re orange in the picture, but black, in the real world.)//
 
-[[Next|VicGard2]]</tw-passagedata><tw-passagedata pid="21" name="VicGard2" tags="" position="100,350" size="100,100">For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. A lot of people (the author of this digital content included) have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
+If the piano is not working,
+[[Tap here to contact a member of staff.|sam.berrill@leedspiano.com]] 
 
+If all is well, tap the &#39;Next&#39; button below.
+[[Next|VicGard2]]@@</tw-passagedata><tw-passagedata pid="21" name="VicGard2" tags="" position="100,350" size="100,100">@@.spButton;For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
+
+A lot of people have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
 =img: section of John Stump’s Death Waltz=
 
-The reality is, sheet music is just a popular way of noting music. That’s all. It’s familiar to lot of people, and it’s an old tradition. I’m sure you can think of many aspects of life that also fit that criteria, and actually don’t work for a lot of people. Like Christmas, for example. Christmas isn’t immoral to participate in, by any means, but when it’s given special privileges over non-Christian celebrations, or if people are made to feel guilty for not wanting to celebrate it, Christmas becomes harmful. 
+The reality is, sheet music is just a //common// way of recording music. 
 
-How many musicians have we lost, who were told off by the teacher, because they didn’t read sheet music?
+That’s all. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+It’s familiar to lot of people, and it’s an old tradition. But, I’m sure you can think of many aspects of life that also fit that criteria, but which you know aren&#39;t &#39;the only&#39; way of doing things. Like, for example, Christmas. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+Christmas isn’t immoral to participate in, by any means. However, when a society gives lots of space to Christmas, and no space for non-Christian celebrations, or, if people are made to feel guilty for not celebrating Christmas... This makes Christmas harmful. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+Christmas can eclipse other ways of celebrating. How does sheet music do the same thing for music? How many musicians have we lost, who were told off by the teacher, because they didn’t read sheet music?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+With that said, let’s take a look at how music can be recorded in a completely different way to European sheet music.
+[[Next|VicGard3]]@@
 
-With that said, let’s take a look at how music has been recorded in a completely different way than European sheet music.
-
-[[Next|VicGard3]]</tw-passagedata><tw-passagedata pid="22" name="VicGard3" tags="" position="225,350" size="100,100">‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall&#39;s &#39;The Spark Catchers&#39;.
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="VicGard3" tags="" position="225,350" size="100,100">@@.spButton;‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall&#39;s &#39;The Spark Catchers&#39;.
 
 =img of her score=
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+It could be anything, right? Well, that’s true, unless you make some decisions about //how// to look at it.
 
-It could be anything, right? Well, that’s true, unless you make some decisions.
-Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. Then, look back at the picture. Try to come up with a few of your own rules for how these symbols relate to each other, and can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
-
+Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. 
+Then, look back at the picture. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
+&lt;&lt;linkreplace &quot;Not sure where to start?&quot; t8n&gt;&gt; 
 If you’re not sure where to start, how about deciding:
-- option 1
-- option 2
-
+* How do the shapes tell you the length of each note?
+* Then, how do the colours change the notes again?
 When you’ve had enough of this, take a look at the full version…
+[[Next|VicGard4]]@@
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="VicGard4" tags="" position="350,350" size="100,100">@@.spButton;Here’s another section of Hannah Kendall&#39;s score. 
 
-[[Next|VicGard4]]</tw-passagedata><tw-passagedata pid="23" name="VicGard4" tags="" position="350,350" size="100,100">Here’s another section of Hannah Kendall&#39;s score. Keeping in mind a few of the rules you came up with for yourself, are there any other ways to play these notes that might be hard to describe, without pictures? 
+=img: Kendall&#39;s score=
 
-Try to play through all of this section. Which parts are the same? Which parts are different? Which parts are the most difficult to interpret? How would you change it?
+Keeping in mind a few of the rules you came up with for yourself, are there any other ways to play these notes that might be hard to describe, without pictures? 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
+*Which parts are the same? 
+*Which parts are different? 
+*Which parts are the most difficult to interpret? 
+*How would you change it?
 
-[[When you’ve had enough of this, why not try…|VicGardEnd]]</tw-passagedata><tw-passagedata pid="24" name="VicGardEnd" tags="" position="475,350" size="100,100">Learn to play in a day.</tw-passagedata><tw-passagedata pid="25" name="manGard" tags="" position="600,350" size="100,100">Welcome to The Mandela Gardens. These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
+Try to play through all of this section. 
+[[When you’ve had enough of this, why not try…|VicGardEnd]]@@
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="VicGardEnd" tags="" position="475,350" size="100,100">@@.spButton;[[Learn to play in a day.]]@@</tw-passagedata><tw-passagedata pid="25" name="manGard" tags="" position="600,350" size="100,100">Welcome to The Mandela Gardens. These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
 
 There are three pianos in the area. If you came here by yourself, go to the piano on the plinth, which overlooks the other two. 
 If you’re here with a friend, get them to scan the code on their device, (or, just shout the instructions to them, across the square), set yourselves up on the pianos that are facing each other, and follow the instructions together.
@@ -679,7 +710,8 @@ Choice 3</tw-passagedata><tw-passagedata pid="58" name="Credits" tags="" positio
 [[Working Lives In Black British Jazz|https://hummedia.manchester.ac.uk/institutes/cresc/sites/default/files/WLIBBJ%20NEW%20FINAL.pdf]]
 [[Black Scholars Confront White Supremacy in Classical Music|https://www.newyorker.com/magazine/2020/09/21/black-scholars-confront-white-supremacy-in-classical-music]]
 [[Music Theory and The White Racial Frame|https://mtosmt.org/issues/mto.20.26.2/mto.20.26.2.ewell.html]]
-[[Piano Learning In The Context of Schooling During China’s Piano Craze and Beyond|https://www.tandfonline.com/doi/abs/10.1080/14613808.2021.1929139?needAccess=true&amp;journalCode=cmue20]]</tw-passagedata><tw-passagedata pid="59" name="Contents" tags="" position="1100,725" size="100,100">Scroll through the list and tap the location you are currently at, to view the tutorial for that area.
+[[Piano Learning In The Context of Schooling During China’s Piano Craze and Beyond|https://www.tandfonline.com/doi/abs/10.1080/14613808.2021.1929139?needAccess=true&amp;journalCode=cmue20]]</tw-passagedata><tw-passagedata pid="59" name="Contents" tags="" position="1100,725" size="100,100">!Contents
+Scroll through the list and tap the location you are currently at, to view the tutorial for that area.
 
 [[Merrion Rest Gardens (In front of the church)|mgChurch]]
 
@@ -689,6 +721,7 @@ Choice 3</tw-passagedata><tw-passagedata pid="58" name="Credits" tags="" positio
 
 [[Victoria Gardens (Next to Leeds Art Gallery)|vicGard]]
 
+!!!UNDER CONSTRUCTION
 [[The Mandela Gardens (Next to Millenium Square)|manGard]]
 
 [[Leeds Playhouse|pHouse]]
