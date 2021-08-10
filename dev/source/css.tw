@@ -7,28 +7,58 @@ background-color: white;
 color: black; 
 }
 
-/*link styling*/
+/*link styling
 a { 
-     text-decoration: underline;
+	text-decoration: none;
      font-weight: 900;
-     color: #D2318B;
+}*/
+
+
+a {
+
 }
 
 button {
-background-color: #D2318B;
-color: black:
+background-color: #FFF;
+color: black;
 font-weight: bold;
+}
 
+img {
+  border: 4px solid #000;
 }
 
 #ui-bar {
 	background-color: white;
 }
 
+#ui-dialog-titlebar {
+ background-color:#FFF;
+ min-height:24px
+}
+#menu li a:hover {
+ background-color:#FFB400;
+ border-color:#eee
+}
+
+#ui-dialog-body {
+ background-color:#FFF;
+ border:1px solid #444;
+ text-align:left;
+ line-height:1.5;
+ padding:1em
+}
+
+
+#ui-dialog-close:hover {
+ background-color:#FFF;
+ border-color:#FFF;
+}
+
 #menu li a {
 color: black;
-
 }
+
 #menu-item-saves{
 	display: none;
 }
@@ -37,6 +67,34 @@ color: black;
 font-size: small;
 }
 
+.bigturqButton a {
+	box-shadow: 0px 22px 14px -7px #b3b3b3;
+	background:linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
+	background-color:#00b4b4;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff !important;
+	font-family:Verdana;
+	font-size:28px;
+	font-weight:bold;
+	padding:32px 76px;
+	text-decoration:none;
+}
 
+.spButton a {
+	box-shadow: 0px 22px 14px -7px #b3b3b3;
 
+	background:linear-gradient(to bottom, #000000 5%, #d2328d 100%);
+	background-color:#000000;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:26px 5vw;
+	width: 72vw;
+	text-decoration:none;
 
+}

@@ -1,11 +1,8 @@
 :: JS [script]
- 
- //this grabs the search query from the browser window
- //i.e, the ?location=x encoded in the QR code at each location
- window.grabQuery = function getParameter(parameterName){
-    let parameters = new URLSearchParams(window.location.search);
-    return parameters.get(parameterName);
-};
-
+//this grabs the search query from the browser window
+ //i.e, the ?location=x encoded in the QR code at each location  
 Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
+
+
+

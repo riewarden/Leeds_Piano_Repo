@@ -1,8 +1,21 @@
+
 :: Start
-<<silently>>
+
 /* This handles the redirection, by putting the search query into varDestination */
 <<script>> 
+ window.grabQuery = function getParameter(parameterName){
+    let parameters = new URLSearchParams(window.location.search);
+    return parameters.get(parameterName);
+    };
 //for debugging grabQuery: window.alert(grabQuery("location"));
 State.variables.varDestination = grabQuery("location");
-<</script>><</silently>>
-For debugging: <<print $varDestination>> 
+<</script>>
+For debugging: <<print $varDestination>>
+!Welcome to the Leeds Piano Trail!
+
+@@.bigturqButton; [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]@@
+<<if $varDestination is "">>
+@@.bigturqButton; [[Tap here to play the piano|$varDestination]]@@
+<<else>>
+@@.bigturqButton; [[Tap here to play the piano|Contents]]@@
+<</if>>
