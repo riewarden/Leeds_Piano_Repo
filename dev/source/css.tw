@@ -78,8 +78,10 @@ font-size: small;
 	font-family:Verdana;
 	font-size:28px;
 	font-weight:bold;
-	padding:32px 76px;
+	padding:35px 5vw;
+	width: 72vw;
 	text-decoration:none;
+	text-align: center;
 }
 
 .spButton a {
@@ -96,5 +98,5 @@ font-size: small;
 	padding:26px 5vw;
 	width: 72vw;
 	text-decoration:none;
-
+	text-align: center;
 }

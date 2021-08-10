@@ -10,55 +10,77 @@ If all is good, tap the 'Next' button below.
 
 :: Uni2
 You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
-
+<<linkreplace "Tap to continue." t8n>> 
 Right now, our world values products over people, and so we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. And I think you’re going to do great.
-
+<<linkreplace "Tap to continue." t8n>> 
 But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
-
 [[Next|Uni3]]
 
+<</linkreplace>>
+<</linkreplace>>
+
 :: Uni3
-Let’s start with something simple. Please play the following keys, pausing at the end of each line. The picture below shows you where the keys are. (They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there.) 
+Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
 
-If you’d like to hear it played, use the audio player below, or click here to watch a Youtube video. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
-GGBDD
-DD
-GG
-=Audio player with the first few notes of ‘Blue Danube=
-=Image of piano keys, with GBD highlighted.=
+<img src="img/GBD.png" width="400vw">
+
+When you have found the keys...
+<<linkreplace "Tap to continue." t8n>> 
+Play the following sequence of notes, pausing where there is a '...'. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
+
+''G G B D D ... D D ... G G''
+
+If you’d like to hear it played, use the audio player below, and copy it. 
+ <audio controls>
+  <source src="blue.ogg" type="audio/ogg">
+  <source src="blue.mp3" type="audio/mpeg">
+  Oh dear. Your browser does not support audio.
+</audio> 
+
 Once you’re comfortable with playing this pattern, click ‘Next’.
-
 [[Next|Uni4]]
+<</linkreplace>>
+
 
 :: Uni4
-Now, it’s time to make this lovely little pattern sound terrible. If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play a little more freely, then go for it.
-
+Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
+<<linkreplace "Tap to continue." t8n>> 
 Try playing the Blue Danube pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
-
+<<linkreplace "Tap to continue." t8n>> 
 Can you do a version that uses keys that are as far apart as possible? Can you do a version that almost sounds like a joke, with a set-up and punchline? How about using your elbow, or the back of your hand to play?
 
 =img: person playing the piano with arms stretched wide=
 
 Once you’ve found as many versions as you have the patience for, click next.
 [[Next|Uni5]]
+<</linkreplace>>
+<</linkreplace>>
 
 :: Uni5
 Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the Blue Danube pattern. Perhaps, even go back to the original version that you copied…
 
-GGBDD
-DD
-GG
-=Audio player with the first few notes of ‘Blue Danube=
-=Youtube link=
-=Image of piano keys, with GBD highlighted.=
+''GGBDD ... DD ... GG''
 
+<img src="img/GBD.png" width="400vw">
+
+<audio controls>
+  <source src="blue.ogg" type="audio/ogg">
+  <source src="blue.mp3" type="audio/mpeg">
+  Oh dear. Your browser does not support audio.
+</audio> 
+<<linkreplace "Tap to continue." t8n>> 
 …Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the why, just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
-
+<<linkreplace "Tap to continue." t8n>> 
 Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
+<<linkreplace "Tap to continue." t8n>> 
+Find a way to bring the piece to a close. Take a moment to think about what you created. 
 
-Find a way to bring the piece to a close. Take a moment to think about what you created. Is there a way to apply this process to a different creative pursuit?
+Is there a way to apply this process to a different creative pursuit?
 
-[[When you’re done with this, how about you take a look at our other activities?| UniEnd]]
+[[If you enjoyed this, why not try...| UniEnd]]
+<</linkreplace>>
+<</linkreplace>>
+<</linkreplace>>
 
 :: UniEnd
  Learn to play in a day
