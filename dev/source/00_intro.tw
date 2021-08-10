@@ -10,7 +10,7 @@
 State.variables.varDestination = grabQuery("location");<</script>>
 @@.bigturqButton; [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]@@
 <<if $varDestination is "">>
-@@.bigturqButton; [[Tap here to play the piano|$varDestination]]@@
-<<else>>
 @@.bigturqButton; [[Tap here to play the piano|Contents]]@@
+<<else>>
+@@.bigturqButton; [[Tap here to play the piano|$varDestination]]@@
 <</if>>
