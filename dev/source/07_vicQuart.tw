@@ -1,48 +1,78 @@
 :: vicQuart
-Hello. Welcome to the Victoria Quarter. Did you know that there used to be a music hall here, where Harvey Nichols is? It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
+!Welcome to the Victoria Quarter. 
+Did you know that there used to be a music hall here, where Harvey Nichols now stands? 
 
-Before we start with the exercises, please make sure the piano is working. If it isn’t working, please [[tap here to contact a member of staff|dave.cartwright@leedspiano.com]]. To test the piano, please play the three test keys shown, in any order:
+It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
+<<linkreplace "Tap to continue." t8n>>
+Before we start with the exercises, please make sure the piano is working. To test the piano, please play the three test keys shown, in any order:
 
-==Image: Piano keys, with CEG labelled.=
+<img src="img/CEG_Highlighted.png" width="400vw">
+
+If the piano isn’t working, please [[tap here to contact a member of staff|mailto:dave.cartwright@leedspiano.com]]. 
+
 Once you’re sure the piano is working, tap ‘Next’.
-
 [[Next|VicQ2]]
+<</linkreplace>>
 
 :: VicQ2
-A big secret about making something sound like a tune is: just repeat things! 
-Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn on…
-[[Click to continue|->]]
-So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art. You may have no plan for what kind of art you’re going to make. But, if you decide on something you’re going to repeat, or keep coming back to, people will be able to find patterns fairly easily. 
-The way the audience creates their own patterns, from your music, and how you respond to them doing this… That is one of the joys of improvised music.
+How can we sit at the piano, and make something sound like a tune? 
+
+Well, one of the secrets is to just //repeat things!// 
+
+Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. 
+<<linkreplace "Tap to continue." t8n>>
+Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn against…
+
+So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art.
+<<linkreplace "Tap to continue." t8n>>
+ You may have no plan for what kind of art you’re going to make. But, if you decide on something you’re going to repeat, or keep coming back to, people will be able to find patterns fairly easily. 
+<<linkreplace "Tap to continue." t8n>>
+The way the audience responds to your patterns, and the way you respond to their responses, and so on… That is one of the joys of improvised music.
+
 Great. Let’s put that into practice, shall we?
 [[Next|VicQ3]]
+<</linkreplace>>
+<</linkreplace>>
+<</linkreplace>>
 
 :: VicQ3
 Go back to the test keys, from earlier.
 
-=Image: Piano keys, with CEG labelled.=
+<img src="img/CEG_Highlighted.png" width="400vw">
 
 Play the three keys from left to right. Notice that they’re all white keys, and they all have a gap of one white key between them, (for this set of exercises, ignore the black keys.)
 
-When you’re happy with playing these keys, go back to the middle. Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
-Keep going until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
+When you’re happy with playing these keys, go back to the middle. 
+<<linkreplace "Tap to continue." t8n>>
+Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
+
+Keep playing the pattern, and moving up, until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
 
 When you’re finished with this, tap ‘Next’.
 [[Next|VicQ4]]
+<</linkreplace>>
 
 :: VicQ4
-Sticking with the same pattern, go down to the lowest notes, and see how it sounds there. Or, play it backwards.
+Try and push this simple pattern to its limits.
 
-Can you make it sound happy? Can you make it sad? Or angry? Maybe you need to try a different speed for that. Are there any emotions, or ideas that this pattern is particularly good at? What is it not so good at? There are no right answers. Just try to explain to yourself why you feel the way you do about certain combinations of notes.
-[[Click to continue|->]]
-Using this pattern of three notes, find ways to create other patterns. Why not try patterns of speed, or loudness, or pitch? Perhaps every third time you play the three notes, it’s always the highest possible pitch? Then, try and find ways to subvert those patterns, to surprise your audience. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
+* Can you make it sound happy? 
+* How does speed affect the way it sounds? 
+* Are there any emotions, or ideas that this pattern is particularly good at? 
+* What is it not so good at? 
+
+There are no right answers. 
+
+Try to explain to yourself why you feel the way you do about certain combinations of notes.
+<<linkreplace "Tap to continue." t8n>>
+Try and find ways to use this pattern in a surprising way. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
 
 When you’ve finished exploring the patterns, and breaking them apart, bring the piece to a close. 
 
-If you enjoyed this, [[tap here to see some of the other activities on the trail…|VicQ5]]
+If you enjoyed this...
+[[Tap here to see some of the other activities on the trail…|VicQ5]]
+<</linkreplace>>
 
 :: VicQ5
-Why not try some of our other events?
 Learn to play in a day
 Moonlight Walk
 Option 3

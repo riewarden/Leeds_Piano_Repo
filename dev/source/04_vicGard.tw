@@ -1,11 +1,13 @@
 :: vicGard
-@@.spButton;Hello. Welcome to Trinity Gardens! Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
+@@.spButton;
+!Welcome to Trinity Gardens! 
+Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
 
 <img src="img/All_Black_Keys.png" width="400vw">
 //(They're orange in the picture, but black, in the real world.)//
 
 If the piano is not working,
-[[Tap here to contact a member of staff.|sam.berrill@leedspiano.com]] 
+[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
 
 If all is well, tap the 'Next' button below.
 [[Next|VicGard2]]@@

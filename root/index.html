@@ -203,26 +203,34 @@ margin-top: 5vw;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">//this grabs the search query from the browser window
  //i.e, the ?location=x encoded in the QR code at each location  
 Config.ui.stowBarInitially = true;
-Config.saves.autoload = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to the Leeds Piano Trail!
-&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
+Config.saves.autoload = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to the Leeds Piano Trail!&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
     };
-//for debugging grabQuery: window.alert(grabQuery(&quot;location&quot;));
-State.variables.varDestination = grabQuery(&quot;location&quot;);&lt;&lt;/script&gt;&gt;
+//for debugging grabQuery: 
+//window.alert(grabQuery(&quot;location&quot;));
+
+State.variables.varDestination = grabQuery(&quot;location&quot;);
+
+//if (State.variables.varDestination == null) {
+//State.variables.varDestination = &quot;&quot;}
+&lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/
 @@.bigturqButton; [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]@@
-&lt;&lt;if $varDestination is &quot;&quot;&gt;&gt;
-@@.bigturqButton; [[Tap here to play the piano|Contents]]@@
+
+&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
+@@.bigturqButton; [[Tap here to play piano!|$varDestination]]@@
+
 &lt;&lt;else&gt;&gt;
-@@.bigturqButton; [[Tap here to play the piano|$varDestination]]@@
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!!Welcome to the Merrion Rest Gardens.
+@@.bigturqButton; [[Tap here to play the piano!|Contents]]@@
+&lt;&lt;/if&gt;&gt;
+(Tap the arrow in the top left corner to access options for this app. From there, you can restart, see credits, and report technical issues.)</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Rest Gardens.
 Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/d-minor.png&quot; width=&quot;500vw&quot;&gt;
 
 If the piano is not working: 
-@@.spButton;[[Tap here to email a member of staff|sam.berrill@leedspiano.com]]@@
+@@.spButton;[[Tap here to email a member of staff|mailto:sam.berrill@leedspiano.com]]@@
 
 
 If all is well, tap the &#39;Next&#39; button below.
@@ -279,13 +287,13 @@ Or, come to some of our other events:
 [[Growing Stronger Together]]
 [[Come Along And Make]]@@
 &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="mgGrave" tags="" position="850,100" size="100,100">@@.spButton;
-!!Welcome to the Merrion Centre Rest Gardens.
+!Welcome to the Merrion Centre Rest Gardens.
 Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;500vw&quot;&gt;
 
 If the piano is not working:
-[[Tap here to tell a member of staff|sam.berrill@leedspiano.com]]
+[[Tap here to tell a member of staff|mailto:sam.berrill@leedspiano.com]]
 
 If all is well, tap the &#39;Next&#39; button below.
 [[Next|MerrionSil2]]@@</tw-passagedata><tw-passagedata pid="8" name="MerrionSil2" tags="" position="975,100" size="100,100">@@.spButton;In music, we can choose to pay a lot of attention to the notes, but not the space in between the notes. I mean, the silences, or ‘rests’, as they’re often called in music. Pretty apt that we’re in the ‘Rest Gardens’ to think about ‘rests’!
@@ -349,13 +357,13 @@ When you feel satisfied, bring the piece to a close, listening for the moment th
 [[Learn To Play In A Day]]
 [[Come Along And Chat]]
 [[Growing Stronger Together]]@@</tw-passagedata><tw-passagedata pid="14" name="uniLeeds" tags="" position="475,225" size="100,100">@@.spButton;
-!!Welcome to The University Of Leeds. 
+!Welcome to The University Of Leeds. 
 To start with, please play the following test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/GBD.png&quot; width=&quot;400vw&quot;&gt;
 
 If the piano is not working:
-[[Please tap here to contact a member of staff.|sam.berrill@leedspiano.com]]
+[[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
 
 
 If all is good, tap the &#39;Next&#39; button below.
@@ -418,13 +426,15 @@ Is there a way to apply this process to a different creative pursuit?
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="UniEnd" tags="" position="1100,225" size="100,100">@@.spButton;[[Learn to play in a day]]
- [[Pub Piano Competition]]@@</tw-passagedata><tw-passagedata pid="20" name="vicGard" tags="" position="1225,225" size="100,100">@@.spButton;Hello. Welcome to Trinity Gardens! Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
+ [[Pub Piano Competition]]@@</tw-passagedata><tw-passagedata pid="20" name="vicGard" tags="" position="1225,225" size="100,100">@@.spButton;
+!Welcome to Trinity Gardens! 
+Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
 
 &lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;400vw&quot;&gt;
 //(They&#39;re orange in the picture, but black, in the real world.)//
 
 If the piano is not working,
-[[Tap here to contact a member of staff.|sam.berrill@leedspiano.com]] 
+[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
 
 If all is well, tap the &#39;Next&#39; button below.
 [[Next|VicGard2]]@@</tw-passagedata><tw-passagedata pid="21" name="VicGard2" tags="" position="100,350" size="100,100">@@.spButton;For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
@@ -481,236 +491,457 @@ Keeping in mind a few of the rules you came up with for yourself, are there any 
 
 Try to play through all of this section. 
 [[When you’ve had enough of this, why not try…|VicGardEnd]]@@
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="VicGardEnd" tags="" position="475,350" size="100,100">@@.spButton;[[Learn to play in a day.]]@@</tw-passagedata><tw-passagedata pid="25" name="manGard" tags="" position="600,350" size="100,100">Welcome to The Mandela Gardens. These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="VicGardEnd" tags="" position="475,350" size="100,100">@@.spButton;[[Learn to play in a day.]]@@</tw-passagedata><tw-passagedata pid="25" name="manGard" tags="" position="600,350" size="100,100">!Welcome to The Mandela Gardens. 
+These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+There are three pianos in the area. Are you here by yourself, or do you have company?
 
-There are three pianos in the area. If you came here by yourself, go to the piano on the plinth, which overlooks the other two. 
-If you’re here with a friend, get them to scan the code on their device, (or, just shout the instructions to them, across the square), set yourselves up on the pianos that are facing each other, and follow the instructions together.
+&lt;&lt;linkreplace &quot;I came here by myself.&quot;&gt;&gt; If you came here by yourself, go to the piano on the plinth, which overlooks the other two.
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;linkreplace &quot;Actually, I came here with a friend.&quot;&gt;&gt;If you’re here with a friend, get them to scan the QR code on their device, (or, just shout the instructions to them, across the square).
 
-Before we do anything, however, we need to ensure the piano is working. Please play the following test keys, in any order, a few times over. If you find the piano is not working, please [tap here to contact a member of staff.| sam.berrill@leedspiano.com]
+Then, set yourselves up on the pianos that are facing each other, and follow the instructions together.&lt;&lt;/linkreplace&gt;&gt;
+[[Next|MandIntro]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="MandIntro" tags="" position="725,350" size="100,100">Before we do anything, however, we need to ensure the piano is working. Please play the following test keys, in any order, a few times over. 
 
-=Image of piano keys with a C Major chord highlighted: CEG=
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;400vw&quot;&gt;
+
+If you find the piano is not working,
+[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
 
 Once you’ve played the test keys a few times, click ‘Next’.
-[[Next|Mand2]]</tw-passagedata><tw-passagedata pid="26" name="Mand2" tags="" position="725,350" size="100,100">Jazz music has a rich and complex history, rooted in African Diaspora communities, and its musicians often apply principles of African music to Western instruments and traditions. One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation.
+[[Next|Mand2]]</tw-passagedata><tw-passagedata pid="27" name="Mand2" tags="" position="850,350" size="100,100">Jazz music has a rich and complex history, rooted in African Diaspora communities, who were captured and brought to the West during the Transatlantic Slave Trade. Jazz fuses African musical traditions with Western musical traditions. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation.
 
-First of all, look back at the test keys. Play the three test keys at the same time. Whenever you play more than one note at the same time, it’s called playing a ‘chord’. Try that, and see how it sounds, in comparison to just playing a note by itself.
+First of all, look back at the test keys. 
 
-=Image of piano keys with a C Major chord highlighted: CEG=
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;400vw&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Play the three test keys at the same time. Whenever you play more than one note at the same time, it’s called playing a ‘chord’. Try that, and see how it sounds, in comparison to just playing a note by itself.
 
-Once you’re happy with playing that chord, keep your left hand on it, and click ‘Next’.
-[[Next|Mand3]]</tw-passagedata><tw-passagedata pid="27" name="Mand3" tags="" position="850,350" size="100,100">When we talk to another person, there can often be unspoken rules or conventions that indicate, for example, when one person is finished talking, and another person can begin. There’s no right or wrong way to converse. It will always vary according to culture, family, how much practice we’ve had, etc.
-
+Once you’re happy with playing that chord, keep your left hand on it, and tap ‘Next’.
+[[Next|Mand3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Mand3" tags="" position="975,350" size="100,100">When we talk to another person, there can often be unspoken rules or conventions that indicate, for example, when one person is finished talking, and another person can begin. There’s no right or wrong way to converse. It will always vary according to culture, family, how much practice we’ve had, etc.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Keep your left hand on the chord, the three notes.
 Then, put your right hand on the notes highlighted below. Arrange your right hand so that every key highlighted in the picture has one finger on top of it. 
-(note: this link, and its text, is optional to view)
-[[I need help with this. -&gt;]]
-Find two black keys on their own, and put your left-hand thumb on the white key just to the left of them. Then, put the rest of your fingers on the keys that follow it.
 
-=Picture of piano keys, CDEFG highlighted.=
+&lt;&lt;linkreplace &quot;Optional: I need help with this.&quot;&gt;&gt;&#39;&#39;Optional: I need help with this.&#39;&#39;
+Find two black keys on their own, and put your left-hand thumb on the white key just to the left of them. Then, put the rest of your fingers on the keys that follow it.&lt;&lt;/linkreplace&gt;&gt;
 
+&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;400vw&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Don’t worry, you won’t be asked to play both hands together. Get used to your hands being in this position. Try playing the keys a little to see how this position feels and sounds.
 
-When you’re ready to move on, click ‘Next’.
+When you’re ready to move on, tap ‘Next’.
+[[Next-&gt;Mand5]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Mand5" tags="" position="1100,350" size="100,100">Think again about comparing music with a conversation. In some conversations, people will indicate to their partner that they’ve finished speaking. They might do this by lowering the pitch at the end of a sentence, or asking the other person a question. 
 
-[[Next-&gt;Mand5]]</tw-passagedata><tw-passagedata pid="28" name="Mand5" tags="" position="975,350" size="100,100">Think again about comparing music with a conversation. In some conversations, people will indicate to their partner that they’ve finished speaking. They might do this by lowering the pitch at the end of a sentence, or asking the other person a question. You can apply similar rules like this to music, and this is even known as ‘conversation’, in Jazz music.
-
+You can apply similar rules like this to music, and this is even known as ‘conversation’, in Jazz music.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Look back at the piano. Make sure your hands are set up like this.
-=Picture of piano keys, CEG2 CDEFG3 highlighted.=
+
+&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;400vw&quot;&gt;
 
 Try playing a few of the notes under your right fingers, just going up and down, and then use the three-note chord, in your left hand, to show when you’ve finished that section. Then, do it again.
 
 Once you’re happy with this as a pattern, click ‘Next’.
-[[Next-&gt;Mand6]]</tw-passagedata><tw-passagedata pid="29" name="Mand6" tags="" position="1100,350" size="100,100">If you’ve been following these exercises with another person, you’ll probably have started to see how you can turn this shared set of rules into a duet, without having to read sheet music at all. 
+[[Next-&gt;Mand6]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Mand6" tags="" position="1225,350" size="100,100">If you’ve been following these exercises with another person, you’ll probably have started to see how you can turn this shared set of rules into a duet, without having to read sheet music at all. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+This style of playing is sometimes called ‘Conversational Jazz’, or ‘Cutting Contests’. Cutting contests involve Jazz musicians testing each other&#39;s musical skills, and were common in the Harlem Jazz community in New York, during the 1930s. 
 
-This style of playing is sometimes called ‘Conversational Jazz’, or ‘Cutting Contests’. It comes from Harlem, New York, when, during the 1930s, Black jazz musicians would hold improvised musical competitions in their homes, to raise money for rent. Black communities came together, both to enjoy music, to test each others’ skills, and to provide mutual financial aid.
+In Black neighbourhoods, people often held &#39;Rent Parties&#39;, where the community came together, to enjoy music and dancing, stage cutting contests, and provide mutual financial aid.
 
 =Img: Cutting contest=
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts. How are these two characters interacting? If you’re with a friend, try to have a conversation, or a competition, through your pianos, using no words.
 
-If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts. How are these two characters interacting? If you’re with a friend, try to have a conversation through your pianos, using no words.
+&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;400vw&quot;&gt;
 
 Once you’ve got the hang of that, click ‘Next’
-[[Next|Mand7]]</tw-passagedata><tw-passagedata pid="30" name="Mand7" tags="" position="1225,350" size="100,100">After a while, start to break the rules. What are you not supposed to do in a conversation? Or, how far can you push the rules without the other person retaliating? Apply the rules playfully. How do kids learn to talk?
+[[Next|Mand7]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Mand7" tags="" position="100,475" size="100,100">After a while, start to break the rules. What are you not supposed to do in a conversation? Or, how far can you push the rules without the other person retaliating? Apply the rules playfully. How do kids learn to talk?
 
 Find a way to use these techniques to bring the piece to a close. If you’re with a friend, can you end the piece together, without talking about it?
 
-[[When you’ve had enough of that, you might enjoy some of the other activities on offer…|MandEnd]]</tw-passagedata><tw-passagedata pid="31" name="MandEnd" tags="" position="100,475" size="100,100">Jazz competition
+[[When you’ve had enough of that, you might enjoy some of the other activities on offer…|MandEnd]]</tw-passagedata><tw-passagedata pid="32" name="MandEnd" tags="" position="225,475" size="100,100">Jazz competition
 Pub piano competition
 Night Walk
-Leeds Citizens spoken word night</tw-passagedata><tw-passagedata pid="32" name="pHouse" tags="" position="225,475" size="100,100">Hello. Welcome to Leeds Playhouse! In the next couple of exercises, we’ll be looking at playing a simple piece which can grow for a long time, but which sprouts from just one note.
+Leeds Citizens spoken word night</tw-passagedata><tw-passagedata pid="33" name="pHouse" tags="" position="350,475" size="100,100">!Welcome to Leeds Playhouse! 
+In the next couple of exercises, we’ll be looking at playing a simple piece which can grow for a long time, but which sprouts from just one note.
 
-But, before we begin, please play the following test keys on the piano, to ensure that it is working. If the piano isn’t working, please [tap here to contact a member of staff.| dave.cartwright@leedspiano.com]
+But, before we begin, please play the following test keys on the piano, to ensure that it is working. 
 
-=Image shows piano with keys CDEFG highlighted=
+&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;400vw&quot;&gt;
+
+If the piano isn’t working...
+[[Please tap here to contact a member of staff.| mailto:dave.cartwright@leedspiano.com]]
 
 Once you’re certain it’s working, click ‘Next’.
+[[Next|PHouse2]]</tw-passagedata><tw-passagedata pid="34" name="PHouse2" tags="" position="475,475" size="100,100">Keep your hand resting comfortably on the test keys. The key which is furthest left, just before the two black keys, is called C, and it, along with all the rest of the white notes on the piano, are part of a group called ‘C Major’. 
 
-[[Next|PHouse2]]</tw-passagedata><tw-passagedata pid="33" name="PHouse2" tags="" position="350,475" size="100,100">Keep your hand resting comfortably on the test keys. The key which is furthest left, just before the two black keys, is called C, and it, along with all the rest of the white notes on the piano, are part of a group called ‘C Major’. People who work with music will often group notes together, and give the groups names, to help them remember which groups of notes all tend to work well together. It also helps us talk about music, and have a way to make sure many people can know which notes we’re talking about at a given time. 
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;400vw&quot;&gt;
 
-Grouping notes like this is not the only way to talk about music, but it’s quite common, kind of like how English and Chinese are very widespread, but they’re certainly not the only languages in the world.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;People who work with music will often group notes together, and give the groups names, to help them remember which groups of notes all tend to work well together. It also helps us talk about music, and have a way to make sure many people can know which notes we’re talking about at a given time. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Grouping notes like this is not the only way to talk about music, but it’s quite common, kind of like how English and Chinese are very widespread, but they’re certainly not the only languages in the world. Hindustani music, for example, uses completely different ideas to understand and notate sound. However, this tutorial uses C Major.
 
-[[Next|PHouse3]]</tw-passagedata><tw-passagedata pid="34" name="PHouse3" tags="" position="475,475" size="100,100">So. Right now, we’re just looking at one group of notes, which is C Major, or, all the white keys. We also call it C Major, because C is the ‘root’ note of the group. Essentially, what this means is that if you play a few notes of C Major, and end on a C, it will sound ‘finished’. 
+[[Next|PHouse3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="PHouse3" tags="" position="600,475" size="100,100">So. Right now, we’re just looking at one group of notes, which is C Major, or, all the white keys. We also call it C Major, because C is the ‘root’ note of the group. Essentially, what this means is that if you play a few notes of C Major, and end on a C, it will sound ‘finished’. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Have a go at doing that now. Here are the notes of C Major, with C highlighted for you. Just play three notes, and make the fourth note a C. ‘See’ what you think. 
 
-Have a go at doing that now. Here are the notes of C Major, with C highlighted for you. Just play three notes, and make the fourth note a C. ‘See’ what you think. When you’re done experimenting, click ‘Next’.
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;400vw&quot;&gt;
 
-=Image: A keyboard, with C Major highlighted, and the letter C clearly displayed on the ‘C’ key.=
+When you’re done experimenting, tap ‘Next’.
+[[Next|PHouse4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="PHouse4" tags="" position="725,475" size="100,100">Now, it’s time to turn this root into a tree. 
 
-[[Next|PHouse4]]</tw-passagedata><tw-passagedata pid="35" name="PHouse4" tags="" position="600,475" size="100,100">Now, it’s time to turn this root into a tree. All you need to do, as slowly as you like, is play sequences of notes that get longer and longer, but always return to C, the root.
-So, start by playing one note, then C.
-Then, two notes, then C.
-Then three notes, then C.
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;400vw&quot;&gt;
 
-And so on. It doesn’t have to be the same pattern every time, you can just play any notes, while counting up to the number you need, then play C again. Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again. Find a way to weave it into the piece, like an unexpected wildflower. What happens if you choose a different root? Don’t worry about losing count. It won’t really matter after a while. 
+All you need to do, as slowly as you like, is play sequences of notes that get longer and longer, but always return to C, the root. 
 
-When you feel yourself getting tired, choose a low number like 5, and play decreasing numbers of notes, always ending on C, until you find an ending.
+It doesn’t have to be the same pattern every time, you can just play any notes, while counting up to the number you need, then play C again.
+&lt;&lt;linkreplace &quot;Try beginning like this...&quot; t8n&gt;&gt;* Start by playing one note, then C.
+* Then, two notes, then C.
+* Then three notes, then C.
+* And so on. 
+&lt;&lt;linkreplace &quot;Tap to continue...&quot; t8n&gt;&gt;Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again. Find a way to weave it into the piece, like an unexpected wildflower. What happens if you choose a different root? Don’t worry about losing count. It won’t really matter after a while. 
+&lt;&lt;linkreplace &quot;When you feel yourself getting tired...&quot; t8n&gt;&gt;
+Choose a low number like 5, and play decreasing numbers of notes, always ending on C, until you find an ending.
 
 =Img: tree fractal=
 
 When you feel finished, why not take a look at some of the other activities the Leeds Piano Trail has to offer?
-[[Next|PHouseEnd]]</tw-passagedata><tw-passagedata pid="36" name="PHouseEnd" tags="" position="725,475" size="100,100">Heydays
+[[Next|PHouseEnd]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="PHouseEnd" tags="" position="850,475" size="100,100">Heydays
 Learn To Play In A Day
 Come Along and Plant
-Nature in Music</tw-passagedata><tw-passagedata pid="37" name="vicQuart" tags="" position="850,475" size="100,100">Hello. Welcome to the Victoria Quarter. Did you know that there used to be a music hall here, where Harvey Nichols is? It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
+Nature in Music</tw-passagedata><tw-passagedata pid="38" name="vicQuart" tags="" position="975,475" size="100,100">!Welcome to the Victoria Quarter. 
+Did you know that there used to be a music hall here, where Harvey Nichols now stands? 
 
-Before we start with the exercises, please make sure the piano is working. If it isn’t working, please [[tap here to contact a member of staff|dave.cartwright@leedspiano.com]]. To test the piano, please play the three test keys shown, in any order:
+It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Before we start with the exercises, please make sure the piano is working. To test the piano, please play the three test keys shown, in any order:
 
-==Image: Piano keys, with CEG labelled.=
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;400vw&quot;&gt;
+
+If the piano isn’t working, please [[tap here to contact a member of staff|mailto:dave.cartwright@leedspiano.com]]. 
+
 Once you’re sure the piano is working, tap ‘Next’.
+[[Next|VicQ2]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="VicQ2" tags="" position="1100,475" size="100,100">How can we sit at the piano, and make something sound like a tune? 
 
-[[Next|VicQ2]]</tw-passagedata><tw-passagedata pid="38" name="VicQ2" tags="" position="975,475" size="100,100">A big secret about making something sound like a tune is: just repeat things! 
-Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn on…
-[[Click to continue|-&gt;]]
-So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art. You may have no plan for what kind of art you’re going to make. But, if you decide on something you’re going to repeat, or keep coming back to, people will be able to find patterns fairly easily. 
-The way the audience creates their own patterns, from your music, and how you respond to them doing this… That is one of the joys of improvised music.
+Well, one of the secrets is to just //repeat things!// 
+
+Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn against…
+
+So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+ You may have no plan for what kind of art you’re going to make. But, if you decide on something you’re going to repeat, or keep coming back to, people will be able to find patterns fairly easily. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+The way the audience responds to your patterns, and the way you respond to their responses, and so on… That is one of the joys of improvised music.
+
 Great. Let’s put that into practice, shall we?
-[[Next|VicQ3]]</tw-passagedata><tw-passagedata pid="39" name="VicQ3" tags="" position="1100,475" size="100,100">Go back to the test keys, from earlier.
+[[Next|VicQ3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="VicQ3" tags="" position="1225,475" size="100,100">Go back to the test keys, from earlier.
 
-=Image: Piano keys, with CEG labelled.=
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;400vw&quot;&gt;
 
 Play the three keys from left to right. Notice that they’re all white keys, and they all have a gap of one white key between them, (for this set of exercises, ignore the black keys.)
 
-When you’re happy with playing these keys, go back to the middle. Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
-Keep going until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
+When you’re happy with playing these keys, go back to the middle. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
+
+Keep playing the pattern, and moving up, until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
 
 When you’re finished with this, tap ‘Next’.
-[[Next|VicQ4]]</tw-passagedata><tw-passagedata pid="40" name="VicQ4" tags="" position="1225,475" size="100,100">Sticking with the same pattern, go down to the lowest notes, and see how it sounds there. Or, play it backwards.
+[[Next|VicQ4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="VicQ4" tags="" position="100,600" size="100,100">Try and push this simple pattern to its limits.
 
-Can you make it sound happy? Can you make it sad? Or angry? Maybe you need to try a different speed for that. Are there any emotions, or ideas that this pattern is particularly good at? What is it not so good at? There are no right answers. Just try to explain to yourself why you feel the way you do about certain combinations of notes.
-[[Click to continue|-&gt;]]
-Using this pattern of three notes, find ways to create other patterns. Why not try patterns of speed, or loudness, or pitch? Perhaps every third time you play the three notes, it’s always the highest possible pitch? Then, try and find ways to subvert those patterns, to surprise your audience. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
+* Can you make it sound happy? 
+* How does speed affect the way it sounds? 
+* Are there any emotions, or ideas that this pattern is particularly good at? 
+* What is it not so good at? 
+
+There are no right answers. 
+
+Try to explain to yourself why you feel the way you do about certain combinations of notes.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Try and find ways to use this pattern in a surprising way. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
 
 When you’ve finished exploring the patterns, and breaking them apart, bring the piece to a close. 
 
-If you enjoyed this, [[tap here to see some of the other activities on the trail…|VicQ5]]</tw-passagedata><tw-passagedata pid="41" name="VicQ5" tags="" position="100,600" size="100,100">Why not try some of our other events?
-Learn to play in a day
+If you enjoyed this...
+[[Tap here to see some of the other activities on the trail…|VicQ5]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="VicQ5" tags="" position="225,600" size="100,100">Learn to play in a day
 Moonlight Walk
-Option 3</tw-passagedata><tw-passagedata pid="42" name="kirkMark" tags="" position="225,600" size="100,100">Hello, and welcome to Kirkgate Market! This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it hardly closed. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! The spirit of the market has blazed brighter than its adversities for 120 years.
+Option 3</tw-passagedata><tw-passagedata pid="43" name="kirkMark" tags="" position="350,600" size="100,100">!Welcome to Kirkgate Market! 
+This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it never closed for more than a few days. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! 
 
-We’ll be taking fire as an inspiration for the next few exercises. This place can handle it. Before we begin, however, we need to make sure the piano is working. If it isn’t working, [[please tap here to contact a member of staff.| dave.cartwright@leedspiano.com]]
+The spirit of the market has blazed brighter than its adversities for 120 years.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+We’ll be taking //fire// as an inspiration for the next few exercises. This place can handle it. 
 
-Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
+Before we begin, however, we need to make sure the piano is working. Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
 
-=Image: Piano keys, with F and G highlighted.=
+&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;400vw&quot;&gt;
+
+If the piano isn’t working...
+[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
 
 Once you’re sure that the piano is working, tap ‘Next’.
+[[Next|Kgate2]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Kgate2" tags="" position="475,600" size="100,100">Imagine a //spark//. A bright point of light, which quickly dies.
 
-[[Next|Kgate2]]</tw-passagedata><tw-passagedata pid="43" name="Kgate2" tags="" position="350,600" size="100,100">Imagine a spark. A bright point of light, which quickly dies. Starting with the test keys, play a single note, which sounds like a spark. Now, play a few of those. Sometimes, a spark ignites another spark. What does that sound like?
-[[Click to continue-&gt;]]
-From sparks, flames can grow. Now, find any two white keys that have one white note between them. Play them back and forth, over and over, like a flickering flame. Musicians often call this kind of playing a ‘trill’.
-How does that sound different from the sparks? What does it sound like when a spark becomes a flame?
-[[Click to continue-&gt;]]
-When you’re happy with how sparks and flames work, tap ‘Next’.
-[[Next|Kgate3]]</tw-passagedata><tw-passagedata pid="44" name="Kgate3" tags="" position="475,600" size="100,100">Finally, flames can become a blaze. Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
-[[Click to continue-&gt;]]
-Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the blaze?
+=image: spark=
 
-Play with the sparks, flames, and the blaze. When you feel you can make all three sound different from each other, click ‘Next’.
+ Starting with the test keys, play a single note, which you think sounds like a //spark//. 
 
-[[Next|Kgate4]]</tw-passagedata><tw-passagedata pid="45" name="Kgate4" tags="" position="600,600" size="100,100">[[Click to continue-&gt;]]
-Finally, imagine you’re making a film about a fire, from the first spark, to the ashes it leaves behind. The things the audience see on the screen are the things you’re pointing your camera at. The sparks, the flames, and the blaze.
-What do you film first? How do you show the movement of the fire? Does anyone try and stop it? How does that change your playing?
+&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;400vw&quot;&gt;
+
+Then, play a few of those. Sometimes, a //spark// ignites another //spark//. What does that sound like?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+From sparks, //flames// can grow. 
+
+=image: flame=
+
+Now, find any two white keys that have one white note between them. Play them back and forth, over and over, like a flickering //flame//. 
+
+(Musicians often call this kind of playing a ‘trill’.)
+
+How does that sound different from the //sparks//? What does it sound like when a spark becomes a //flame//?
+
+When you’re happy with how your //sparks// and //flames// sound, tap ‘Next’.
+[[Next|Kgate3]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Kgate3" tags="" position="600,600" size="100,100">Finally, //flames// can become a //blaze//. 
+
+=image: blaze=
+
+Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the //blaze//?
+
+Play with the //sparks//, //flames//, and the //blaze//. When you feel you can make all three sound different from each other, click ‘Next’.
+[[Next|Kgate4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Kgate4" tags="" position="725,600" size="100,100">Finally, imagine you’re making a film about a fire, from the first //spark//, to the //ashes// it leaves behind. 
+
+The things you&#39;re pointing the imaginary camera at becomes the music that your audience hears. The //sparks//, the //flames//, and the //blaze//.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;* What do you film first? 
+* How do you show the movement of the fire? 
+* Does anyone try and stop it? How does that change your playing?
 Bring the piece to a close, by finding a way to show the heat and light fading. What do ashes sound like?
 
-If you enjoyed this activity, [[why not try…|KgateEnd]]</tw-passagedata><tw-passagedata pid="46" name="KgateEnd" tags="" position="725,600" size="100,100">Option 1
+If you enjoyed this activity, why not try some of the other activities on The Leeds Piano Trail? 
+[[Next|KgateEnd]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="KgateEnd" tags="" position="850,600" size="100,100">Option 1
 Option 2
-Option 3</tw-passagedata><tw-passagedata pid="47" name="trinShop" tags="" position="850,600" size="100,100">Hello. Welcome to Trinity Shopping Centre! The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend. At the end, you can share your creation using #LeedsPianoTrail2021
+Option 3</tw-passagedata><tw-passagedata pid="48" name="trinShop" tags="" position="975,600" size="100,100">!Welcome to Trinity Shopping Centre! 
+The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend. At the end, you can share your creation using #LeedsPianoTrail2021
 
-Before we begin, we need to check to make sure the piano is working. If it isn’t, [[tap here to contact a member of staff|dave.cartwright@leedspiano.com]].
+Before we begin, we need to check to make sure the piano is working. 
 Please play the following five test keys in any order, preferably several times over:
 
-=Image: Keyboard with C3, F3, C4, Eb4, F4, highlighted.=
+&lt;img src=&quot;img/C3_F3_Eb4_F4.png&quot; width=&quot;400vw&quot;&gt;
 
-Once you’re satisfied all the keys are working, tap ‘Next’.
+If the piano isn&#39;t working
+[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
 
-[[Next|Trin2]]</tw-passagedata><tw-passagedata pid="48" name="Trin2" tags="" position="975,600" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, doesn’t have to sound the same, over and over. Make it up as you go! Put your fingers on these two keys, and play them at the same time.
+Once you’re satisfied that all the keys are working, tap ‘Next’.
+[[Next|Trin2]]</tw-passagedata><tw-passagedata pid="49" name="Trin2" tags="" position="1100,600" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, it doesn’t have to sound the same, over and over. Make it up as you go! Put your fingers on these two keys, and play them at the same time.
 
-=Image: Keyboard with C3, F3 highlighted=
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;400vw&quot;&gt;
 
-Now, find lots of different rhythms and beats, just playing these two keys over and over. Try not to keep it the same for too long. Imagine you have to do a whole song, with just these two keys, over and over. How are you going to stop yourself falling asleep? How can you surprise yourself?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;Now, find lots of different rhythms and beats, just playing these two keys over and over. Try not to keep it the same for too long. Imagine you have to do a whole song, with just these two keys, over and over. How are you going to stop yourself falling asleep? How can you surprise yourself?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Once you’ve had enough of that, tap ‘Next’ to add some more notes! Don’t worry, you won’t have to play anything with both hands at the same time. (Unless you want to.)
+[[Next|Trin3]]
 
-Once you’ve had enough of that, tap ‘Next’ to add some more notes! Don’t worry, you won’t have to play anything with both hands at the same time (unless you want to.)
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Trin3" tags="" position="1225,600" size="100,100">Great. Now it’s time to spice things up. Put your right hand on these keys:
 
-[[[[Next|Trin3]]</tw-passagedata><tw-passagedata pid="49" name="Trin3" tags="" position="1100,600" size="100,100">Great. Now it’s time to spice things up. Now, put your right hand on these keys:
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;400vw&quot;&gt;
 
-=Image: Keyboard with C4, Eb4, F4, highlighted.=
+Now, play them, and see how they sound. Start by playing them in order, from left to right. Then, play them again, but play each note twice before moving on. 
 
-Now, play with the new keys on your right hand, and see how they sound. Start by playing them in order, from left to right. Then, play them again, but play each note twice before moving on. Once you’re happy doing that, try blending the going-up-and-down, with the playing-them-twice.
+Once you’re happy doing that, try blending the &#39;going-up-and-down&#39;, with the &#39;playing-them-twice&#39;.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Keep experimenting with the notes. Just play the next key that you feel makes sense to play. Don’t plan a tune in advance. Limit your focus to these three keys, and the next note.
 
-Keep experimenting with the notes. Just play the next key that you feel makes sense to play. Don’t plan a tune in advance. Just limit your focus to these three keys, and the next note.
-
-When you’re happy with how the notes work together, you can probably guess what’s next.
-[[Next|Trin4]]</tw-passagedata><tw-passagedata pid="50" name="Trin4" tags="" position="1225,600" size="100,100">These notes are adapted from, Blues music, which is believed to have derived from African musical traditions of call-and-response. Blues music was often sung on plantations by enslaved West African people. Like Jazz, Blues have been incredibly influential on contemporary Western music. 
-The music you’re playing right now isn’t Blues. Frankly, the most charitable way to describe what you’re playing, is that ‘the notes are Blues-inspired’.
+When you’re happy with how these notes work together, you can probably guess what’s next.
+[[Next|Trin4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Trin4" tags="" position="100,725" size="100,100">These notes are adapted from Blues music, which is believed to have derived from African musical traditions of call-and-response. Blues were often sung on plantations by enslaved West African people. Like Jazz, Blues music has been incredibly influential on contemporary Western music. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+As these exercises are short, and designed to get you playing quickly, the music you’re playing right now isn’t Blues. The most charitable way to describe what you’re playing, is ‘Blues-inspired notes’.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 But, understanding where music comes from, and how it is changed, and subverted by people, over time, allows us to admire and value the way marginalised people have shaped popular music, and avoid claiming, or colonising traditions that don’t belong to us.
+[[Next|Trin5]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Trin5" tags="" position="225,725" size="100,100">Using the keys in your left hand:
 
-[[Next|Trin5]]</tw-passagedata><tw-passagedata pid="51" name="Trin5" tags="" position="100,725" size="100,100">Using the keys in your left hand:
-=Image: Keyboard with C3, F3 highlighted=
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;400vw&quot;&gt;
 
 And, the keys in your right hand:
-=Image: Keyboard with C4, Eb4, F4, highlighted.=
 
-Use everything we’ve done so far to make your own music. Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;400vw&quot;&gt;
+
+You&#39;re going to use everything we’ve done so far to make your own music. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
+
 Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+If you’re having a good time, why not record some of your experiments, and share them, using the hashtag #LeedsPianoTrail2021 
 
-If you’re having a good time, why not record some of your experiments, and share them, using the hashtag #LeedsPianoTrail2021 !
-If you enjoyed this activity, there’s plenty to get involved with on [[the rest of The Leeds Piano Trail.|TrinEnd]]</tw-passagedata><tw-passagedata pid="52" name="TrinEnd" tags="" position="225,725" size="100,100">Choice 1
+If you enjoyed this activity, there’s plenty to get involved with. 
+[[See some of our other events.|TrinEnd]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="TrinEnd" tags="" position="350,725" size="100,100">Choice 1
 Choice 2
-Choice 3</tw-passagedata><tw-passagedata pid="53" name="trainStat" tags="" position="350,725" size="100,100">Hello, and welcome to Leeds Train Station. The next few exercises are inspired by the work of a composer called Percy Grainger, who absolutely loved trains, and actually wrote a lot of his music while riding on them, or while waiting for his friends at the station.
-Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. If the piano is not working, please [tap here to contact a member of staff.| dave.cartwright@leedspiano.com]
+Choice 3</tw-passagedata><tw-passagedata pid="54" name="trainStat" tags="" position="475,725" size="100,100">!Welcome to Leeds Train Station. 
+Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. 
 
-=Image: Piano keys with all black keys highlighted=
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;400vw&quot;&gt;
+
+If the piano is not working...
+[[Tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
+(They&#39;re orange in the picture, and black in real life!)
 
 Once you’ve tested the keys, tap ‘Next’.
+[[Next|Train2]]</tw-passagedata><tw-passagedata pid="55" name="Train2" tags="" position="600,725" size="100,100">The next few exercises are inspired by the work of a composer called Percy Grainger, who absolutely loved trains, and actually wrote a lot of his music while riding on them, or while waiting for his friends at the station.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+One of the pieces Percy Grainger created was called ‘Arrival Platform Humlet’. A ‘Humlet’ is described by Grainger as: 
+&gt;//‘The sort of thing one hums to oneself as an accompaniment to one’s tramping feet as one happily, excitedly, paces up and down the arrival platform.’//
+[[Next|Train2-1]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Train2-1" tags="" position="725,725" size="100,100">Picture this: 
 
-[Next|Train2]</tw-passagedata><tw-passagedata pid="54" name="Train2" tags="" position="475,725" size="100,100">One of the pieces Percy Grainger created was called ‘Arrival Platform Humlet’. A ‘Humlet’ is described by Grainger as: 
-‘The sort of thing one hums to oneself as an accompaniment to one’s tramping feet as one happily, excitedly, paces up and down the arrival platform.’
-[Picture this:-&gt;] a person is waiting for a train to arrive on the platform. They walk a little way up the platform, then stop, turn, and walk back. Then, they turn again. And so on.
-[Tap to continue-&gt;]
-Now, look back at the black keys, and choose three that are next to each other. Use those three keys to play music for a ‘Humlet’, to accompany your imaginary person walking up the platform. When the imaginary person turns, choose three different keys, it doesn’t matter which ones, and move your hand to them. Then, play some music for the walk //down// the platform.
+A person is waiting for a train to arrive on the platform. 
+They walk a little way up the platform, 
+then stop, turn, 
+and walk back. 
+Then, they turn again. 
+And so on.
+
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;Now, look back at the black keys, and choose three that are next to each other. 
+
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;400vw&quot;&gt;
+
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;Use those three keys to play music for a ‘Humlet’, to accompany your imaginary person walking up the platform. Try that for a bit. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Now, just //before// the imaginary person turns, look at the keyboard, and choose three different keys, it doesn’t matter which ones, and move your hand to them. Then, play some music for the walk //down// the platform. 
+
+Repeat this process, as many times as you need, to get used to the feeling of choosing keys, then moving to them.
 
 When you’re happy with moving your hand to different groups of black keys, tap ‘Next’.
-[[Next|Train3]]</tw-passagedata><tw-passagedata pid="55" name="Train3" tags="" position="600,725" size="100,100">Now, it’s time to bring the other hand in. Try playing groups of three black notes, the Humlets, exactly the same as you were before, but play one Humlet with your left, and the next with your right, and so on.
+[[Next|Train3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Train3" tags="" position="850,725" size="100,100">Now, it’s time to bring the other hand in. Try playing groups of three black notes, the Humlets, exactly the same as you were before, but play one Humlet with your left, and the next with your right, and so on.
 
-Get used to looking for a place to move your other hand to, //just// before you want to finish one Humlet. You don’t need to do this quickly. It’s up to you how long the Humlets last! If you can’t decide, just stall for time by playing more notes. No-one will notice.
+Get used to looking for a place to move your other hand to, //just before// you want to finish one Humlet. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+You don’t need to do this quickly. It’s up to you how long the Humlets last! If you can’t decide on the next set of notes to move to, just stall for time by playing more notes. No-one will notice!
 
 When you’re happy with playing the black keys, and moving your hand to new places, tap ‘Next’.
-
-[[Next|Train4]]</tw-passagedata><tw-passagedata pid="56" name="Train4" tags="" position="725,725" size="100,100">Now see how long you can go for without stopping, looking ahead and stalling for time when you need it! 
+[[Next|Train4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Train4" tags="" position="975,725" size="100,100">Now, see how long you can go for without stopping, looking ahead and stalling for time when you need it! 
 
 Think about times when you’ve waited for a friend who is late, and the progression of emotions that arise from the waiting, and pacing. How can you describe that journey using the skills you’ve picked up in the last few minutes?
 
-Bring the piece to a close. Does the friend ever show up? What does that sound like?
+When you&#39;re ready...
+&lt;&lt;linkreplace &quot;Bring the piece to a close...&quot; t8n&gt;&gt;Bring the piece to a close...
 
-If you enjoyed this activity, take a look at the [[other activities on offer at The Leeds Piano Trail…|TrainEnd]]</tw-passagedata><tw-passagedata pid="57" name="TrainEnd" tags="" position="850,725" size="100,100">Choice 1
+If you enjoyed this activity...
+[[Check out the rest of The Leeds Piano Trail!|TrainEnd]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="TrainEnd" tags="" position="1100,725" size="100,100">Choice 1
 Choice 2
-Choice 3</tw-passagedata><tw-passagedata pid="58" name="Credits" tags="" position="975,725" size="100,100">!Historical/academic sources
-!!Background
+Choice 3</tw-passagedata><tw-passagedata pid="60" name="Credits" tags="" position="1225,725" size="100,100">!Credits
+!!Historical/academic sources
+!!!Background
 [[Jazz History Tree|https://www.jazzhistorytree.com/]]
 [[Social History of The Piano|https://www.take-a-piano-sheet-music-break.com/social-history-of-the-piano.html]]
 [[History of the jazz piano|https://www.jazzwax.com/2019/07/history-of-the-jazz-piano.html]]
 [[Working Lives In Black British Jazz|https://hummedia.manchester.ac.uk/institutes/cresc/sites/default/files/WLIBBJ%20NEW%20FINAL.pdf]]
 [[Black Scholars Confront White Supremacy in Classical Music|https://www.newyorker.com/magazine/2020/09/21/black-scholars-confront-white-supremacy-in-classical-music]]
 [[Music Theory and The White Racial Frame|https://mtosmt.org/issues/mto.20.26.2/mto.20.26.2.ewell.html]]
-[[Piano Learning In The Context of Schooling During China’s Piano Craze and Beyond|https://www.tandfonline.com/doi/abs/10.1080/14613808.2021.1929139?needAccess=true&amp;journalCode=cmue20]]</tw-passagedata><tw-passagedata pid="59" name="Contents" tags="" position="1100,725" size="100,100">!Contents
+[[Piano Learning In The Context of Schooling During China’s Piano Craze and Beyond|https://www.tandfonline.com/doi/abs/10.1080/14613808.2021.1929139?needAccess=true&amp;journalCode=cmue20]]
+!!!Merrion Centre Rest Gardens
+[[How the silence makes the music| https://www.nytimes.com/2019/10/02/arts/music/silence-classical-music.html]]
+[[Ma| https://new.uniquejapan.com/ikebana/ma/]]
+!!!Victoria Gardens:
+[[How Was Musical Notation Invented?|https://www.wqxr.org/story/how-was-musical-notation-invented-brief-history/]]
+[[Notating Indian Classical Music|https://raag-hindustani.com/Notation.html]]
+[[5 ½ Examples Of Experimental Musical Notation| https://www.smithsonianmag.com/arts-culture/5-12-examples-of-experimental-music-notation-92223646/]]
+!!!Mandela Gardens:
+[[Language of the blues - cutting contest| https://www.americanbluesscene.com/language-of-the-blues-cutting-contest/]]
+[[Jazz as a medium for social and political change| https://newyorkjazzworkshop.com/jazz-as-a-medium-for-social-and-political-change/]]
+[[Rent Parties|http://history-is-made-at-night.blogspot.com/2007/01/rent-parties.html]]
+[[Jazz as conversation| https://news.harvard.edu/gazette/story/2013/04/jazz-as-conversation/]]
+[[Jazz in America – II Improvisation| https://www.jazzinamerica.org/LessonPlan/8/2/198]]
+[[Jazz Profiles - Cutting Contests|https://jazzprofiles.blogspot.com/2017/04/cutting-sessions.html]]
+!!!Leeds Playhouse
+[[Terry Riley’s “In C” – Much More Than Minimalism| https://youtu.be/JN0bW3ilqF4]]
+!!!Victoria Quarter
+[[The Empire Palace Theatre| http://www.arthurlloyd.co.uk/Leeds/EmpirePalaceTheatreLeeds.htm]]
+!!!Kirkgate Market
+[[History of Kirkgate Market| https://www.leeds.gov.uk/leedsmarkets/about/history-of-kirkgate-market]]
+!!!Trinity Shopping Centre
+[[Call and Response – Jazz History Tree| https://www.jazzhistorytree.com/call-and-response/]]
+[[Work/Field Songs – Jazz History Tree| https://www.jazzhistorytree.com/work-field-songs/]]
+[[The Blues – Jazz History Tree|https://www.jazzhistorytree.com/blues/]]
+[[Open Edu: 12-Bar Blues|https://www.open.edu/openlearn/history-the-arts/discovering-music-the-blues/content-section-12.3]]
+!!!Leeds Train Station
+[[Arrival Platform Humlet|https://www.hyperion-records.co.uk/tw.asp?w=W1105]]
+!!Inspirations
+The Blue Danube by Johan Strauss II
+In C by Terry Riley
+4’33 by John Cage
+12-Bar Blues (Jazz Standard, oral tradition, coined by W.C Handy)
+The Firebird by Igor Stravinsky
+Feux d’artifice by Claude Debussy
+Portsmouth Sinfonia
+Arrival Platform Humlet by Percy Grainger
+[[‘Piano From Scratch’ YouTube Channel|https://www.youtube.com/c/PianoFromScratch]]
+[[‘Aleatoric Music – Live Looping and Chance’ by Tantacrul |https://youtu.be/xabYn35ngaY]]
+!!Tools Used
+!!!Development:
+[[‘Twine 2’ framework, originally by Chris Klimas|https://twinery.org/]]
+[[Twine Story Format: Sugarcube|https://www.motoslave.net/sugarcube/2/docs/]]
+[[TweeGo|https://www.motoslave.net/tweego/docs/#introduction]]
+[[VSCode|https://code.visualstudio.com/]]
+!!!Media Editing:
+[[Paint.Net|https://www.getpaint.net/]]
+[[Optipng|http://optipng.sourceforge.net/]]
+!!Version Control:
+[[Git/Github|https://git-scm.com/]]
+!!Special Thanks
+!!!The pianists, who gave me valuable insights on the process of teaching and playing piano improvisationally:
+Sam Marshall
+Felix Janeway
+Joe Samuel
+Dr. Matthew Bourne
+!!!The ‘Twine Games’ Discord server, for helping me with every technical problem, and special mentions to:
+TheMadExile
+dael.
+Cyrus Firheir
+kira
+!!Created by
+[[Laurence Owen|https://www.linkedin.com/in/laurence-owen-5b63011a1/]]
+
+&lt;&lt;back&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Contents" tags="" position="100,850" size="100,100">!Contents
 Scroll through the list and tap the location you are currently at, to view the tutorial for that area.
 
 [[Merrion Rest Gardens (In front of the church)|mgChurch]]
@@ -721,9 +952,8 @@ Scroll through the list and tap the location you are currently at, to view the t
 
 [[Victoria Gardens (Next to Leeds Art Gallery)|vicGard]]
 
-!!!UNDER CONSTRUCTION
 [[The Mandela Gardens (Next to Millenium Square)|manGard]]
-
+!!!UNDER CONSTRUCTION
 [[Leeds Playhouse|pHouse]]
 
 [[Victoria Quarter (Near Harvey Nichols)|vicQuart]]
@@ -732,11 +962,13 @@ Scroll through the list and tap the location you are currently at, to view the t
 
 [[Trinity Shopping Centre|trinShop]]
 
-[[Leeds Train Station|trainStat]]</tw-passagedata><tw-passagedata pid="60" name="StoryBanner" tags="" position="1225,725" size="100,100">&lt;img src=&quot;img/LPT_logo.png&quot; width=&quot;100vw&quot;&gt;</tw-passagedata><tw-passagedata pid="61" name="StorySubtitle" tags="" position="100,850" size="100,100">Have fun!
+[[Leeds Train Station|trainStat]]</tw-passagedata><tw-passagedata pid="62" name="StoryBanner" tags="" position="225,850" size="100,100">&lt;img src=&quot;img/LPT_logo.png&quot; width=&quot;100vw&quot;&gt;</tw-passagedata><tw-passagedata pid="63" name="StorySubtitle" tags="" position="350,850" size="100,100">Have fun!
 
 Click the &#39;Restart&#39; button to play the exercise from the beginning. 
 
-If the app doesn&#39;t work properly, please report it using the button below.</tw-passagedata><tw-passagedata pid="62" name="StoryAuthor" tags="" position="225,850" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="StoryCaption" tags="" position="350,850" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="StoryMenu" tags="" position="475,850" size="100,100">[[Technical Problems|mailto:laurence.owen@leedspiano.com]]</tw-passagedata><tw-passagedata pid="65" name="StoryShare" tags="" position="600,850" size="100,100">[[Twinery|https://twinery.org/]]</tw-passagedata></tw-storydata>
+If the app doesn&#39;t work properly, please report it using the button below.</tw-passagedata><tw-passagedata pid="64" name="StoryAuthor" tags="" position="475,850" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="StoryCaption" tags="" position="600,850" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="StoryMenu" tags="" position="725,850" size="100,100">[[Technical Problems and Feedback|mailto:laurence.owen@leedspiano.com]]
+[[Credits]]
+&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="67" name="StoryShare" tags="" position="850,850" size="100,100"></tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),o=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),s=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i,touch:o,transitionEndEvent:s})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))

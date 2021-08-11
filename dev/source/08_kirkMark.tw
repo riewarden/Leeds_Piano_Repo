@@ -1,44 +1,72 @@
 :: kirkMark
-Hello, and welcome to Kirkgate Market! This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it hardly closed. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! The spirit of the market has blazed brighter than its adversities for 120 years.
+!Welcome to Kirkgate Market! 
+This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it never closed for more than a few days. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! 
 
-We’ll be taking fire as an inspiration for the next few exercises. This place can handle it. Before we begin, however, we need to make sure the piano is working. If it isn’t working, [[please tap here to contact a member of staff.| dave.cartwright@leedspiano.com]]
+The spirit of the market has blazed brighter than its adversities for 120 years.
+<<linkreplace "Tap to continue." t8n>>
+We’ll be taking //fire// as an inspiration for the next few exercises. This place can handle it. 
 
-Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
+Before we begin, however, we need to make sure the piano is working. Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
 
-=Image: Piano keys, with F and G highlighted.=
+<img src="img/FG_keys.png" width="400vw">
+
+If the piano isn’t working...
+[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
 
 Once you’re sure that the piano is working, tap ‘Next’.
-
 [[Next|Kgate2]]
+<</linkreplace>>
 
 :: Kgate2
-Imagine a spark. A bright point of light, which quickly dies. Starting with the test keys, play a single note, which sounds like a spark. Now, play a few of those. Sometimes, a spark ignites another spark. What does that sound like?
-[[Click to continue->]]
-From sparks, flames can grow. Now, find any two white keys that have one white note between them. Play them back and forth, over and over, like a flickering flame. Musicians often call this kind of playing a ‘trill’.
-How does that sound different from the sparks? What does it sound like when a spark becomes a flame?
-[[Click to continue->]]
-When you’re happy with how sparks and flames work, tap ‘Next’.
+Imagine a //spark//. A bright point of light, which quickly dies.
+
+=image: spark=
+
+ Starting with the test keys, play a single note, which you think sounds like a //spark//. 
+
+<img src="img/FG_keys.png" width="400vw">
+
+Then, play a few of those. Sometimes, a //spark// ignites another //spark//. What does that sound like?
+<<linkreplace "Tap to continue." t8n>>
+From sparks, //flames// can grow. 
+
+=image: flame=
+
+Now, find any two white keys that have one white note between them. Play them back and forth, over and over, like a flickering //flame//. 
+
+(Musicians often call this kind of playing a ‘trill’.)
+
+How does that sound different from the //sparks//? What does it sound like when a spark becomes a //flame//?
+
+When you’re happy with how your //sparks// and //flames// sound, tap ‘Next’.
 [[Next|Kgate3]]
-
-
+<</linkreplace>>
 
 :: Kgate3
-Finally, flames can become a blaze. Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
-[[Click to continue->]]
-Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the blaze?
+Finally, //flames// can become a //blaze//. 
 
-Play with the sparks, flames, and the blaze. When you feel you can make all three sound different from each other, click ‘Next’.
+=image: blaze=
 
+Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
+<<linkreplace "Tap to continue." t8n>>
+Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the //blaze//?
+
+Play with the //sparks//, //flames//, and the //blaze//. When you feel you can make all three sound different from each other, click ‘Next’.
 [[Next|Kgate4]]
+<</linkreplace>>
 
 :: Kgate4
-[[Click to continue->]]
-Finally, imagine you’re making a film about a fire, from the first spark, to the ashes it leaves behind. The things the audience see on the screen are the things you’re pointing your camera at. The sparks, the flames, and the blaze.
-What do you film first? How do you show the movement of the fire? Does anyone try and stop it? How does that change your playing?
+Finally, imagine you’re making a film about a fire, from the first //spark//, to the //ashes// it leaves behind. 
+
+The things you're pointing the imaginary camera at becomes the music that your audience hears. The //sparks//, the //flames//, and the //blaze//.
+<<linkreplace "Tap to continue." t8n>>* What do you film first? 
+* How do you show the movement of the fire? 
+* Does anyone try and stop it? How does that change your playing?
 Bring the piece to a close, by finding a way to show the heat and light fading. What do ashes sound like?
 
-If you enjoyed this activity, [[why not try…|KgateEnd]]
-
+If you enjoyed this activity, why not try some of the other activities on The Leeds Piano Trail? 
+[[Next|KgateEnd]]
+<</linkreplace>>
 :: KgateEnd
 Option 1
 Option 2
