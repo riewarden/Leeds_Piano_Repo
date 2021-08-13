@@ -20,6 +20,6 @@ Leeds Piano Trail
 :: StoryInit
 
 :: PassageFooter
-<div style="border-top: solid #c0c0c0;clear: both;margin-top: 5em">@@color:#c0c0c0;//When you arrive at a new location, please close this tab to restart the app.//@@
+<div style="border-top: solid #c0c0c0;clear: both;margin-top: 5em">@@color:#c0c0c0;//When you find a new QR code, please close this tab to restart the app.//@@
 </div>
 <br>
