@@ -48,20 +48,11 @@ background: linear-gradient(0deg, rgba(210,50,141,1) 51%, rgba(230,108,78,1) 86%
 	text-align: center;
 }
 
-button {
-background-color: #FFF;
-color: black;
-font-weight: bold;
-}
-
 img {
   border: 4px solid #000;
   
 }
-/* 
-#ui-bar {
-	background-color: white;
-}
+
 
 #ui-dialog-titlebar {
  background-color:#FFF;
@@ -80,20 +71,12 @@ img {
  padding:1em
 }
 
-
 #ui-dialog-close:hover {
- background-color:#FFF;
+ 
  border-color:#FFF;
 }
 
-#menu li a {
-color: black;
-}
 
-#menu-item-saves{
-	display: none;
-}
-*/
 #StorySubtitle {
 font-size: small;
 } 
