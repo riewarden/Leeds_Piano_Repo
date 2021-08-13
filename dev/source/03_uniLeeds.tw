@@ -12,6 +12,7 @@ If the piano is not working:
 If all is good, tap the 'Next' button below.
 [[Next|Uni2]]@@
 
+
 :: Uni2
 @@.spButton;You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
 <<linkreplace "Tap to continue." t8n>> 
@@ -19,11 +20,11 @@ Right now, our world values products over people, and so, we often feel guilty i
 <<linkreplace "Tap to continue." t8n>> 
 But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
 [[Next|Uni3]]@@
-
 <</linkreplace>>
 <</linkreplace>>
 
 :: Uni3
+<<cacheaudio "blu" "audio/blu.mp3">>
 @@.spButton;Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
 
 <img src="img/GBD.png" width="400vw">
@@ -34,14 +35,11 @@ Play the following sequence of notes, pausing where there is a '...'. This is a 
 !!G G B D D ... D D ... B B
 
 If you’d like to hear it played, use the audio player below, and copy it. 
- <audio controls>
-  <source src="blue.ogg" type="audio/ogg">
-  <source src="blue.mp3" type="audio/mpeg">
-  Oh dear. Your browser does not support audio.
-</audio> 
+   
+<<link "Play audio">><<audio blu play>><</link>>
 
-Once you’re comfortable with playing this pattern, click ‘Next’.
-[[Next|Uni4]]@@
+Once you’re comfortable with playing this pattern, tap ‘Next’.
+[[Next|Uni4]]
 <</linkreplace>>
 
 

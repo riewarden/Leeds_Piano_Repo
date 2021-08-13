@@ -27,3 +27,22 @@ If the app doesn't work properly, please report it using the button below.
 <a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 :: StoryShare
 
+:: StoryInit
+<script>
+// Config.navigation.override = function (dest) {
+	
+// 	if (state.passage != "Start") {
+// 		return "Start";
+// 	}
+// };
+
+Dialog.setup();
+Dialog.wiki("Blah //blah// ''blah''.");
+Dialog.open();
+
+</script>
+
+:: PassageFooter
+<div style="border-top: solid #c0c0c0;clear: both;margin-top: 5em">@@color:#c0c0c0;//When you arrive at a new location, please close this tab to restart the app.//@@
+</div>
+<br>

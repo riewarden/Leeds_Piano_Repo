@@ -14,8 +14,21 @@ a {
 }*/
 
 
-a {
-
+#passages a {
+box-shadow: 0px 22px 14px -7px #b3b3b3;
+margin-top: 5vw;
+	background:linear-gradient(to bottom, #000000 5%, #d2328d 100%);
+	background-color:#000000;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:3vw;
+	font-weight:bold;
+	padding:5vw 5vw;
+	width: 60vw;
+	text-decoration:none;
+	text-align: center;
 }
 
 button {
@@ -68,7 +81,7 @@ color: black;
 font-size: small;
 }
 
-.bigturqButton a {
+.bigturqButton a{
 	box-shadow: 0px 22px 14px -7px #b3b3b3;
 	background:linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
 	background-color:#00b4b4;
@@ -84,19 +97,3 @@ font-size: small;
 	text-align: center;
 }
 
-.spButton a {
-	box-shadow: 0px 22px 14px -7px #b3b3b3;
-margin-top: 5vw;
-	background:linear-gradient(to bottom, #000000 5%, #d2328d 100%);
-	background-color:#000000;
-	border-radius:3px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:3vw;
-	font-weight:bold;
-	padding:5vw 5vw;
-	width: 60vw;
-	text-decoration:none;
-	text-align: center;
-}

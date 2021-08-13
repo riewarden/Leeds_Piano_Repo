@@ -10,15 +10,15 @@
 
 State.variables.varDestination = grabQuery("location");
 
+
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = ""}
 <</script>>/*varDestination: <<print $varDestination>>*/
-@@.bigturqButton; [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]@@
-
+[[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
-@@.bigturqButton; [[Tap here to play piano!|$varDestination]]@@
+ [[Tap here to play piano!|$varDestination]]
 
 <<else>>
-@@.bigturqButton; [[Tap here to play the piano!|Contents]]@@
+[[Tap here to play the piano!|Contents]]
 <</if>>
 (Tap the arrow in the top left corner to access options for this app. From there, you can restart, see credits, and report technical issues.)
