@@ -1,0 +1,274 @@
+:: UI-bar [stylesheet]
+/*
+	Patches to the core styles.
+
+CHANGES SUGGESTED BY DAEL!!
+
+- DONE - #ui-bar's height should be your desired length for the ui bar (defined right below the "default structural styles" comment)
+- DONE #ui-bar.stowed´s top should be a bigger negative number (so something like -27em instead of -15.5em), to your liking
+- DONE #ui-bar-toggle´s top property should be tweaked so the button is in your desired position, trial and error really
+that is all i changed to get it to work
+
+
+
+*/
+
+#story {
+	margin: auto;
+    margin-top: 20em;
+	transition: margin-top 200ms ease-in;
+	padding: 5%;
+    
+}
+#ui-bar.stowed ~ #story {
+	margin: auto;
+    margin-top: 4.5em;
+}
+@media screen and (max-width: 1136px) {
+	#story {
+		margin: auto;
+        margin-top: 20em;
+        
+	}
+	#ui-bar.stowed ~ #story {
+		margin: auto;
+        margin-top: 4.5em;
+        
+	}
+}
+/*
+	At very narrow viewport widths, set `#story{margin-left}` (now margin-top) equal to the value
+	of `#ui-bar.stowed~#story{margin-left}` (now margin-top), so that `#ui-bar` will side over top
+	of `#story` when unstowed, rather than shoving it over.
+*/
+@media screen and (max-width: 768px) {
+	#story {
+		margin: auto;
+        margin-top: 4.5em;
+        
+	}
+}
+
+
+/*
+	Default structural styles.
+*/
+#ui-bar {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+    right: 0;
+	width: 100%;
+	height: 26em;
+	margin: 0;
+	padding: 0;
+	transition: top 200ms ease-in;
+    border-bottom: 2px solid;
+}
+#ui-bar.stowed {
+	top: -20em;
+    left: 0em;
+    right: 0;
+}
+#ui-bar-tray {
+	text-align: center;
+    position: absolute;
+	top: 0.2em;
+	left: 0;
+	right: 0;
+
+}
+#ui-bar-body {
+	height: 90%; /* fallback for browsers without support for calc() */
+	height: calc(100% - 2.5em);
+
+	margin: auto;
+	padding: 0em 1.5em;
+
+
+}
+#ui-bar.stowed #ui-bar-history,
+#ui-bar.stowed #ui-bar-body {
+	visibility: hidden;
+	transition: visibility 200ms step-end;
+}
+
+
+/*
+	Default appearance styles.
+*/
+#ui-bar {
+	background-color: white;
+}
+
+#ui-bar a {
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: inherit;
+	color: #eee;
+	background-color: white;
+	border: 2px solid #444;
+}
+#ui-bar hr {
+	border-color: #444;
+}
+
+/*Defines style for BOTH ui-bar-toggle AND history buttons */
+#ui-bar-toggle,
+#ui-bar-history [id|="history"] {
+	font-size: 1.2em;
+	line-height: inherit;
+	color: black;
+	background-color: white;
+	border: 2px solid #444;
+    
+    
+}
+#ui-bar-toggle {
+	display: block;
+	position: relative;
+	top: 20.5em;
+    left: 0.4em;
+	margin: auto;
+}
+
+#ui-bar.stowed #ui-bar-toggle {
+	padding: 0.3em 0.55em;
+
+}
+#ui-bar-toggle:hover {
+	background-color: #FFB400;
+	border-color: black;
+}
+
+/*Settings for BOTH ui-bar-history buttons */
+#ui-bar-history {
+	margin: auto;
+	position: relative;
+	top: -2em;
+	left: 0em;
+	
+}
+#ui-bar-history [id|="history"] {
+	padding: 0.2em 0.45em 0.35em;
+}
+#ui-bar-history #history-jumpto {
+	padding: 0.2em 0.665em 0.35em;
+}
+#ui-bar-history [id|="history"]:not(:first-child) {
+	margin-left: 1.2em;
+}
+#ui-bar-history [id|="history"]:hover {
+	background-color: #FFB400;
+	border-color: black;
+}
+#ui-bar-history [id|="history"]:disabled {
+	color: #444;
+	background-color: #d3d3d3;
+	border-color: #444;
+}
+
+#ui-bar-body {
+	line-height: 1.5;
+	overflow: hidden;
+	padding-bottom: 15em;
+
+    
+}
+
+
+#ui-bar-body > :not(:first-child) {
+	margin-top: 2em;
+}
+#title{
+	margin-top: 3em;
+}
+
+#story-title {
+	
+    margin: 0;
+	font-size: 162.5%;
+}
+#story-author {
+	margin-top: 0;
+	font-weight: bold;
+}
+#menu ul {
+	margin: 1em 0 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #444;
+}
+#menu ul:empty {
+	display: none;
+}
+#menu li {
+	margin: 0;
+}
+#menu li:not(:first-child) {
+	border-top: 1px solid #444;
+}
+#menu li a {
+	display: block;
+	padding: 0.25em 0.75em;
+	border: 1px solid transparent;
+	color: black;
+	text-transform: uppercase;
+}
+
+#menu li a:hover {
+	background-color: #FFB400;
+	border-color: #eee;
+}
+
+/* Stop text selection on certain UI elements. */
+#ui-bar-history [id|="history"],
+#ui-bar-toggle,
+#menu a {
+	
+    user-select: none;
+}
+
+
+/*
+	Default font icon styles.
+*/
+#ui-bar-toggle:before,
+#ui-bar-history [id|="history"],
+#menu-core li[id|="menu-item"] a:before {
+	font-family: "tme-fa-icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	speak: none;
+}
+#ui-bar-toggle:before {
+	content: "\2B9D";
+	font-size: 1.2em;
+}
+#ui-bar.stowed #ui-bar-toggle:before {
+	content: "\2B9F";
+	font-size: 1.2em;
+
+}
+
+
+#menu-item-saves {
+	display: none;
+}
+
+#menu-item-saves a:before {
+	content: "\e82b\00a0";
+}
+#menu-item-settings a:before {
+	content: "\e82d\00a0";
+}
+#menu-item-restart a:before {
+	content: "\e82c\00a0";
+}
+#menu-item-share a:before {
+	content: "\e82f\00a0";
+}
