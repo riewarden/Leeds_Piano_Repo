@@ -4,6 +4,7 @@
 Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
-Config.history.maxStates = 1;
+Config.history.maxStates = 20;
+Config.history.controls = false;
 
 

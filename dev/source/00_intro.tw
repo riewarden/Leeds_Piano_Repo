@@ -10,7 +10,6 @@
 
 State.variables.varDestination = grabQuery("location");
 
-
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = ""}
 <</script>>/*varDestination: <<print $varDestination>>*/

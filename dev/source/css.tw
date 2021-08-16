@@ -7,13 +7,7 @@ background-color: white;
 color: black; 
 }
 
-/*link styling
-a { 
-	text-decoration: none;
-     font-weight: 900;
-
-}
-
+/* 
 HEX CODES:
 
 Orange: FFB400
@@ -22,15 +16,14 @@ Navy: 3C50BE
 Turquoise: 00B4B4
 Yellow: E6E119
 
-
-
 */
 
 #passages {
-	padding: 5%;
+	padding: 5em 2em 2em;
 }
 
-#passages a {
+
+.passage a {
 box-shadow: 0px 22px 14px -7px #b3b3b3;
 margin-top: 1em;
 	background: rgb(210,50,141);
@@ -48,11 +41,26 @@ background: linear-gradient(0deg, rgba(210,50,141,1) 51%, rgba(230,108,78,1) 86%
 	text-align: center;
 }
 
+
+.altlinks a {
+
+
+	
+background: linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
+
+	
+	
+	padding:1em 1em;
+	width: 90%;
+	text-decoration:none;
+	text-align: left;
+
+}
+
 img {
   border: 4px solid #000;
   
 }
-
 
 #ui-dialog-titlebar {
  background-color:#FFF;
@@ -81,19 +89,4 @@ img {
 font-size: small;
 } 
 
-.bigturqButton a{
-	box-shadow: 0px 22px 14px -7px #b3b3b3;
-	background:linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
-	background-color:#00b4b4;
-	border-radius:3px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff !important;
-	font-size:28px;
-	font-weight:bold;
-	padding:35px 5vw;
-	width: 72vw;
-	text-decoration:none;
-	text-align: center;
-}
 

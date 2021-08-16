@@ -37,9 +37,11 @@ that is all i changed to get it to work
 	}
 }
 /*
-	At very narrow viewport widths, set `#story{margin-left}` (now margin-top) equal to the value
-	of `#ui-bar.stowed~#story{margin-left}` (now margin-top), so that `#ui-bar` will side over top
+	At very narrow viewport widths, set `#story{margin-top}` equal to the value
+	of `#ui-bar.stowed~#story{margin-top}` , so that `#ui-bar` will slide over top
 	of `#story` when unstowed, rather than shoving it over.
+
+	(NOTE: this used to apply to margin-left)
 */
 @media screen and (max-width: 768px) {
 	#story {
@@ -60,14 +62,17 @@ that is all i changed to get it to work
 	left: 0;
     right: 0;
 	width: 100%;
-	height: 26em;
+	min-height: 60vh;
+	max-height: 80vh;
 	margin: 0;
 	padding: 0;
 	transition: top 200ms ease-in;
     border-bottom: 2px solid;
 }
+
+
 #ui-bar.stowed {
-	top: -20em;
+	top: -60%;
     left: 0em;
     right: 0;
 }
@@ -85,6 +90,9 @@ that is all i changed to get it to work
 
 	margin: auto;
 	padding: 0em 1.5em;
+	line-height: 1.5;
+	overflow: hidden;
+	padding-bottom: 10vh;
 
 
 }
@@ -128,9 +136,13 @@ that is all i changed to get it to work
 #ui-bar-toggle {
 	display: block;
 	position: relative;
-	top: 20.5em;
-    left: 0.4em;
-	margin: auto;
+
+	top: 70vh;
+	left: 50vw;
+/* 	
+	top: 30em;
+    left: 15em; 
+	margin: auto; */
 }
 
 #ui-bar.stowed #ui-bar-toggle {
@@ -144,10 +156,7 @@ that is all i changed to get it to work
 
 /*Settings for BOTH ui-bar-history buttons */
 #ui-bar-history {
-	margin: auto;
-	position: relative;
-	top: -2em;
-	left: 0em;
+	margin: 0 auto;
 	
 }
 #ui-bar-history [id|="history"] {
@@ -170,10 +179,7 @@ that is all i changed to get it to work
 }
 
 #ui-bar-body {
-	line-height: 1.5;
-	overflow: hidden;
-	padding-bottom: 15em;
-
+	
     
 }
 
@@ -246,11 +252,11 @@ that is all i changed to get it to work
 	speak: none;
 }
 #ui-bar-toggle:before {
-	content: "\2B9D";
+	content: "\e81f";
 	font-size: 1.2em;
 }
 #ui-bar.stowed #ui-bar-toggle:before {
-	content: "\2B9F";
+	content: "\e81c";
 	font-size: 1.2em;
 
 }

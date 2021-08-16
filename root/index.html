@@ -139,9 +139,11 @@ that is all i changed to get it to work
 	}
 }
 /*
-	At very narrow viewport widths, set `#story{margin-left}` (now margin-top) equal to the value
-	of `#ui-bar.stowed~#story{margin-left}` (now margin-top), so that `#ui-bar` will side over top
+	At very narrow viewport widths, set `#story{margin-top}` equal to the value
+	of `#ui-bar.stowed~#story{margin-top}` , so that `#ui-bar` will slide over top
 	of `#story` when unstowed, rather than shoving it over.
+
+	(NOTE: this used to apply to margin-left)
 */
 @media screen and (max-width: 768px) {
 	#story {
@@ -162,14 +164,17 @@ that is all i changed to get it to work
 	left: 0;
     right: 0;
 	width: 100%;
-	height: 26em;
+	min-height: 60vh;
+	max-height: 80vh;
 	margin: 0;
 	padding: 0;
 	transition: top 200ms ease-in;
     border-bottom: 2px solid;
 }
+
+
 #ui-bar.stowed {
-	top: -20em;
+	top: -60%;
     left: 0em;
     right: 0;
 }
@@ -187,6 +192,9 @@ that is all i changed to get it to work
 
 	margin: auto;
 	padding: 0em 1.5em;
+	line-height: 1.5;
+	overflow: hidden;
+	padding-bottom: 10vh;
 
 
 }
@@ -230,9 +238,13 @@ that is all i changed to get it to work
 #ui-bar-toggle {
 	display: block;
 	position: relative;
-	top: 20.5em;
-    left: 0.4em;
-	margin: auto;
+
+	top: 70vh;
+	left: 50vw;
+/* 	
+	top: 30em;
+    left: 15em; 
+	margin: auto; */
 }
 
 #ui-bar.stowed #ui-bar-toggle {
@@ -246,10 +258,7 @@ that is all i changed to get it to work
 
 /*Settings for BOTH ui-bar-history buttons */
 #ui-bar-history {
-	margin: auto;
-	position: relative;
-	top: -2em;
-	left: 0em;
+	margin: 0 auto;
 	
 }
 #ui-bar-history [id|="history"] {
@@ -272,10 +281,7 @@ that is all i changed to get it to work
 }
 
 #ui-bar-body {
-	line-height: 1.5;
-	overflow: hidden;
-	padding-bottom: 15em;
-
+	
     
 }
 
@@ -348,11 +354,11 @@ that is all i changed to get it to work
 	speak: none;
 }
 #ui-bar-toggle:before {
-	content: "\2B9D";
+	content: "\e81f";
 	font-size: 1.2em;
 }
 #ui-bar.stowed #ui-bar-toggle:before {
-	content: "\2B9F";
+	content: "\e81c";
 	font-size: 1.2em;
 
 }
@@ -383,13 +389,7 @@ background-color: white;
 color: black; 
 }
 
-/*link styling
-a { 
-	text-decoration: none;
-     font-weight: 900;
-
-}
-
+/* 
 HEX CODES:
 
 Orange: FFB400
@@ -398,15 +398,14 @@ Navy: 3C50BE
 Turquoise: 00B4B4
 Yellow: E6E119
 
-
-
 */
 
 #passages {
-	padding: 5%;
+	padding: 5em 2em 2em;
 }
 
-#passages a {
+
+.passage a {
 box-shadow: 0px 22px 14px -7px #b3b3b3;
 margin-top: 1em;
 	background: rgb(210,50,141);
@@ -424,11 +423,26 @@ background: linear-gradient(0deg, rgba(210,50,141,1) 51%, rgba(230,108,78,1) 86%
 	text-align: center;
 }
 
+
+.altlinks a {
+
+
+	
+background: linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
+
+	
+	
+	padding:1em 1em;
+	width: 90%;
+	text-decoration:none;
+	text-align: left;
+
+}
+
 img {
   border: 4px solid #000;
   
 }
-
 
 #ui-dialog-titlebar {
  background-color:#FFF;
@@ -455,28 +469,13 @@ img {
 
 #StorySubtitle {
 font-size: small;
-} 
-
-.bigturqButton a{
-	box-shadow: 0px 22px 14px -7px #b3b3b3;
-	background:linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
-	background-color:#00b4b4;
-	border-radius:3px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff !important;
-	font-size:28px;
-	font-weight:bold;
-	padding:35px 5vw;
-	width: 72vw;
-	text-decoration:none;
-	text-align: center;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">//this grabs the search query from the browser window
  //i.e, the ?location=x encoded in the QR code at each location  
 Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
-Config.history.maxStates = 1;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to the Leeds Piano Trail!&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
+Config.history.maxStates = 20;
+Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to the Leeds Piano Trail!&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
@@ -485,7 +484,6 @@ Config.history.maxStates = 1;</script><tw-passagedata pid="1" name="Start" tags=
 //window.alert(grabQuery(&quot;location&quot;));
 
 State.variables.varDestination = grabQuery(&quot;location&quot;);
-
 
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = &quot;&quot;}
@@ -1236,7 +1234,9 @@ Scroll through the list and tap the location you are currently at, to view the t
 
 [[Leeds Train Station|trainStat]]</tw-passagedata><tw-passagedata pid="62" name="StoryBanner" tags="" position="225,850" size="100,100">&lt;img src=&quot;img/LPT_logo.png&quot; width=&quot;70em&quot;&gt;</tw-passagedata><tw-passagedata pid="63" name="StoryMenu" tags="" position="350,850" size="100,100">[[Technical Problems and Feedback|mailto:laurence.owen@leedspiano.com]]
 [[Credits]]
-&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="64" name="StoryInit" tags="" position="475,850" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="PassageFooter" tags="" position="600,850" size="100,100">&lt;div style=&quot;border-top: solid #c0c0c0;clear: both;margin-top: 5em&quot;&gt;@@color:#c0c0c0;//When you find a new QR code, please close this tab to restart the app.//@@
+&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</tw-passagedata><tw-passagedata pid="64" name="StoryInit" tags="" position="475,850" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="PassageHeader" tags="" position="600,850" size="100,100">&lt;&lt;if previous()!= &quot;&quot;&gt;&gt;
+@@.altlinks;&lt;&lt;back &quot;Back&quot;&gt;&gt;@@
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="PassageFooter" tags="" position="725,850" size="100,100">&lt;div style=&quot;border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em&quot;&gt;@@color:#808080;//When you find a new QR code, please close this tab to restart the app.//@@
 &lt;/div&gt;
 &lt;br&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">

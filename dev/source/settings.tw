@@ -19,7 +19,12 @@ Leeds Piano Trail
 
 :: StoryInit
 
+:: PassageHeader
+<<if previous()!= "">>
+@@.altlinks;<<back "Back">>@@
+<</if>>
+
 :: PassageFooter
-<div style="border-top: solid #c0c0c0;clear: both;margin-top: 5em">@@color:#c0c0c0;//When you find a new QR code, please close this tab to restart the app.//@@
+<div style="border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em">@@color:#808080;//When you find a new QR code, please close this tab to restart the app.//@@
 </div>
 <br>
