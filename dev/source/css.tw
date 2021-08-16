@@ -59,6 +59,7 @@ background: linear-gradient(to bottom, #00b4b4 5%, #000000 100%);
 
 img {
   border: 4px solid #000;
+  width: 90%;
   
 }
 
