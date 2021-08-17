@@ -62,11 +62,8 @@ Finally, using all the experimentation you’ve just done, try to come up with a
 
 <img src="img/GBD.png" width="400vw">
 
-<audio controls>
-  <source src="blue.ogg" type="audio/ogg">
-  <source src="blue.mp3" type="audio/mpeg">
-  Oh dear. Your browser does not support audio.
-</audio> 
+<<link "Play audio">><<audio blu play>><</link>>
+
 <<linkreplace "Tap to continue." t8n>> 
 …Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the 'why', just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
 <<linkreplace "Tap to continue." t8n>> 

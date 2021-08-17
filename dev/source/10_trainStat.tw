@@ -1,8 +1,10 @@
 :: trainStat
 !Welcome to Leeds Train Station. 
+[[Tap here to access a screen-reader version of this tutorial.|trainStat_ac]]
+
 Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. 
 
-<img src="img/All_Black_Keys.png" width="400vw">
+<img src="img/All_Black_Keys.png" width="90%">
 
 If the piano is not working...
 [[Tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
@@ -32,7 +34,7 @@ And so on.
 
 <<linkreplace "Tap to continue." t8n>>Now, look back at the black keys, and choose three that are next to each other. 
 
-<img src="img/All_Black_Keys.png" width="400vw">
+<img src="img/All_Black_Keys.png" width="90%">
 
 <<linkreplace "Tap to continue." t8n>>Use those three keys to play music for a ‘Humlet’, to accompany your imaginary person walking up the platform. Try that for a bit. 
 <<linkreplace "Tap to continue." t8n>>

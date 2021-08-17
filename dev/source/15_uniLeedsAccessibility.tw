@@ -22,7 +22,6 @@ Let’s start with something simple. Look at the picture of piano keys below. Th
 <img src="img/GBD.png" width="400vw" alt="The keys ‘G, B, D’ are highlighted.">
 
 !When you have found the keys...
-
 Play the following sequence of notes, from ‘The Blue Danube’, by Johann Strauss. 
 
 G. G. B. D. D...
@@ -30,7 +29,6 @@ D. D...
 B. B.
 
 If you’d like to hear it played, use the audio player below, and copy it. 
-   
 <<link "Play audio">><<audio blu play>><</link>>
 
 Move on to the next part when you're happy with copying the pattern.
@@ -54,25 +52,18 @@ The audio player is below, if you would like to listen again.
 
 <img src="img/GBD.png" width="400vw">
 
-<audio controls>
-  <source src="blue.ogg" type="audio/ogg">
-  <source src="blue.mp3" type="audio/mpeg">
-  Oh dear. Your browser does not support audio.
-</audio> 
+<<link "Play audio">><<audio blu play>><</link>>
 
 !Think about what, if someone else was playing, you might expect them to play after it. 
-
 Don’t think too hard about the 'why', just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
 
 Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
 
 !Find a way to bring the piece to a close. 
-
 Take a moment to think about what you created, and how you created it. Is there a way to apply this process to a different creative pursuit?
 
 !If you’re having a good time...
-
-Tap the button below to tweet a video of your compositions, using the hashtag: 
+Tap the button below to tweet about your compositions, using the hashtag: 
 @@.altlinks;<a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8">@@
 
 !If you enjoyed this, why not try some of our other events?
