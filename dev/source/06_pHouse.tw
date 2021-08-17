@@ -4,7 +4,7 @@ In the next couple of exercises, we’ll be looking at playing a simple piece wh
 
 But, before we begin, please play the following test keys on the piano, to ensure that it is working. 
 
-<img src="img/CDEFG.png" width="400vw">
+<img src="img/CDEFG.png" width="95%">
 
 If the piano isn’t working...
 [[Please tap here to contact a member of staff.| mailto:dave.cartwright@leedspiano.com]]
@@ -15,7 +15,7 @@ Once you’re certain it’s working, click ‘Next’.
 :: PHouse2
 Keep your hand resting comfortably on the test keys. The key which is furthest left, just before the two black keys, is called C, and it, along with all the rest of the white notes on the piano, are part of a group called ‘C Major’. 
 
-<img src="img/C_Major_with_obvious_C.png" width="400vw">
+<img src="img/C_Major_with_obvious_C.png" width="95%">
 
 <<linkreplace "Tap to continue." t8n>>People who work with music will often group notes together, and give the groups names, to help them remember which groups of notes all tend to work well together. It also helps us talk about music, and have a way to make sure many people can know which notes we’re talking about at a given time. 
 <<linkreplace "Tap to continue." t8n>>
@@ -30,7 +30,7 @@ So. Right now, we’re just looking at one group of notes, which is C Major, or,
 <<linkreplace "Tap to continue." t8n>>
 Have a go at doing that now. Here are the notes of C Major, with C highlighted for you. Just play three notes, and make the fourth note a C. ‘See’ what you think. 
 
-<img src="img/C_Major_with_obvious_C.png" width="400vw">
+<img src="img/C_Major_with_obvious_C.png" width="95%">
 
 When you’re done experimenting, tap ‘Next’.
 [[Next|PHouse4]]
@@ -39,7 +39,7 @@ When you’re done experimenting, tap ‘Next’.
 :: PHouse4
 Now, it’s time to turn this root into a tree. 
 
-<img src="img/C_Major_with_obvious_C.png" width="400vw">
+<img src="img/C_Major_with_obvious_C.png" width="95%">
 
 All you need to do, as slowly as you like, is play sequences of notes that get longer and longer, but always return to C, the root. 
 
@@ -48,15 +48,16 @@ It doesn’t have to be the same pattern every time, you can just play any notes
 * Then, two notes, then C.
 * Then three notes, then C.
 * And so on. 
-<<linkreplace "Tap to continue..." t8n>>Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again. Find a way to weave it into the piece, like an unexpected wildflower. What happens if you choose a different root? Don’t worry about losing count. It won’t really matter after a while. 
+<img src="img/treefractal.png" width="95%">
+<<linkreplace "Tap to continue..." t8n>>
+Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again. 
+
+Find a way to weave it into the piece, like an unexpected wildflower. What happens if you choose a different root? Don’t worry about losing count. It won’t really matter after a while. 
 <<linkreplace "When you feel yourself getting tired..." t8n>>
 Choose a low number like 5, and play decreasing numbers of notes, always ending on C, until you find an ending.
 
-=Img: tree fractal=
-
 If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
 @@.altlinks;<a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8">@@
-
 
 Or, why not take a look at some of the other activities the Leeds Piano Trail has to offer?
 [[Next|PHouseEnd]]

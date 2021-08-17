@@ -1,23 +1,22 @@
 :: vicGard
-@@.spButton;
-!Welcome to Trinity Gardens! 
+!Welcome to Victoria Gardens! 
 Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
 
-<img src="img/All_Black_Keys.png" width="400vw">
+<img src="img/All_Black_Keys.png" width="95%">
 //(They're orange in the picture, but black, in the real world.)//
 
 If the piano is not working,
 [[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
 
 If all is well, tap the 'Next' button below.
-[[Next|VicGard2]]@@
+[[Next|VicGard2]]
 
 :: VicGard2
-@@.spButton;For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
+For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
 
 A lot of people have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
 <<linkreplace "Tap to continue." t8n>> 
-=img: section of John Stump’s Death Waltz=
+<img src="img/scarbo.png" width="95%">
 
 The reality is, sheet music is just a //common// way of recording music. 
 
@@ -30,22 +29,17 @@ Christmas isn’t immoral to participate in, by any means. However, when a socie
 Christmas can eclipse other ways of celebrating. How does sheet music do the same thing for music? How many musicians have we lost, who were told off by the teacher, because they didn’t read sheet music?
 <<linkreplace "Tap to continue." t8n>> 
 With that said, let’s take a look at how music can be recorded in a completely different way to European sheet music.
-[[Next|VicGard3]]@@
-
-<</linkreplace>>
-<</linkreplace>>
-<</linkreplace>>
-<</linkreplace>>
-<</linkreplace>>
+[[Next|VicGard3]]<</linkreplace>><</linkreplace>><</linkreplace>><</linkreplace>><</linkreplace>>
 
 :: VicGard3
-@@.spButton;‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall's 'The Spark Catchers'.
+‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall's 'The Spark Catchers'. She writes her scores like this before writing them up as sheet music, but, this is still a picture of the music she hears in her head.
 
-=img of her score=
+<img src="img/hkendall-1.png" width="95%">
 <<linkreplace "Tap to continue." t8n>> 
 It could be anything, right? Well, that’s true, unless you make some decisions about //how// to look at it.
 
 Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. 
+
 Then, look back at the picture. 
 <<linkreplace "Tap to continue." t8n>> 
 Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
@@ -54,15 +48,12 @@ If you’re not sure where to start, how about deciding:
 * How do the shapes tell you the length of each note?
 * Then, how do the colours change the notes again?
 When you’ve had enough of this, take a look at the full version…
-[[Next|VicGard4]]@@
-<</linkreplace>>
-<</linkreplace>>
-<</linkreplace>>
+[[Next|VicGard4]]<</linkreplace>><</linkreplace>><</linkreplace>>
 
 :: VicGard4
-@@.spButton;Here’s another section of Hannah Kendall's score. 
+Here’s another section of Hannah Kendall's score. 
 
-=img: Kendall's score=
+<img src="img/hkendall.png" width="95%">
 
 Keeping in mind a few of the rules you came up with for yourself, are there any other ways to play these notes that might be hard to describe, without pictures? 
 <<linkreplace "Tap to continue." t8n>> 
@@ -71,14 +62,13 @@ Keeping in mind a few of the rules you came up with for yourself, are there any 
 *Which parts are the most difficult to interpret? 
 *How would you change it?
 
-Try to play through all of this section. 
+Try to play through all of the score, then bring the piece to a close. 
 
 If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
 @@.altlinks;<a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8">@@
 
-
-[[When you’ve had enough of this, why not try…|VicGardEnd]]@@
+[[When you’ve had enough of this, why not try…|VicGardEnd]]
 <</linkreplace>>
 
 :: VicGardEnd
-@@.spButton;[[Learn to play in a day.]]@@
+[[Learn to play in a day.]]

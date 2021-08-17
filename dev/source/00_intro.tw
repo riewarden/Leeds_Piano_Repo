@@ -1,6 +1,7 @@
 
 :: Start
-!Welcome to the Leeds Piano Trail!<<script>> /* This handles the redirection, by putting the search query into varDestination */
+!Welcome to:
+!//The Leeds Piano Trail!//<<script>> /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
     return parameters.get(parameterName);
@@ -13,9 +14,15 @@ State.variables.varDestination = grabQuery("location");
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = ""}
 <</script>>/*varDestination: <<print $varDestination>>*/
+From here, you can:
+* Learn more about the artwork. 
+* Play through an interactive piano tutorial! 
 Tap the arrow at the top to access options for this app. From there, you can restart, see credits, and report technical issues. 
 
-Always close the tab before scanning a new QR code!
+Every location has a different tutorial. 
+//Find them all!//
+
+Always close this tab before scanning a new QR code!
 [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
  [[Tap here to play piano!|$varDestination]]

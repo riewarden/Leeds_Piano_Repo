@@ -204,7 +204,7 @@ that is all i changed to get it to work
 	margin: 1em 0 0;
 	padding: 0;
 	list-style: none;
-	border: 1px solid #444;
+	border: 2px solid #444;
 }
 #menu ul:empty {
 	display: none;
@@ -213,12 +213,12 @@ that is all i changed to get it to work
 	margin: 0;
 }
 #menu li:not(:first-child) {
-	border-top: 1px solid #444;
+	border-top: 2px solid #444;
 }
 #menu li a {
 	display: block;
 	padding: 0.25em 0.75em;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	color: black;
 	text-transform: uppercase;
 }

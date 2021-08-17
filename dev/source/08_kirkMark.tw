@@ -8,7 +8,7 @@ We’ll be taking //fire// as an inspiration for the next few exercises. This pl
 
 Before we begin, however, we need to make sure the piano is working. Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
 
-<img src="img/FG_keys.png" width="400vw">
+<img src="img/FG_keys.png" width="95%">
 
 If the piano isn’t working...
 [[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
@@ -20,17 +20,17 @@ Once you’re sure that the piano is working, tap ‘Next’.
 :: Kgate2
 Imagine a //spark//. A bright point of light, which quickly dies.
 
-=image: spark=
+<img src="img/spark.png" width="95%">
 
  Starting with the test keys, play a single note, which you think sounds like a //spark//. 
 
-<img src="img/FG_keys.png" width="400vw">
+<img src="img/FG_keys.png" width="95%">
 
 Then, play a few of those. Sometimes, a //spark// ignites another //spark//. What does that sound like?
 <<linkreplace "Tap to continue." t8n>>
 From sparks, //flames// can grow. 
 
-=image: flame=
+<img src="img/fire.png" width="95%">
 
 Now, find any two white keys that have one white note between them. Play them back and forth, over and over, like a flickering //flame//. 
 
@@ -45,7 +45,7 @@ When you’re happy with how your //sparks// and //flames// sound, tap ‘Next�
 :: Kgate3
 Finally, //flames// can become a //blaze//. 
 
-=image: blaze=
+<img src="img/blaze.png" width="95%">
 
 Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
 <<linkreplace "Tap to continue." t8n>>
