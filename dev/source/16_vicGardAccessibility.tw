@@ -1,54 +1,67 @@
 :: vicGard_ac
 !Welcome to Victoria Gardens! 
-Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
+Before we begin, please play the following test keys, in any order, to ensure the piano is working.
 
-<img src="img/All_Black_Keys.png" width="95%">
-//(They're orange in the picture, but black, in the real world.)//
+All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from C.
+
+<img src="img/All_Black_Keys.png" width="95%" alt="All of the raised black keys are highlighted.">
 
 If the piano is not working,
 [[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
 
-If all is well, tap the 'Next' button below.
-
-For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
+!For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
 
 A lot of people have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
 
-<img src="img/scarbo.png" width="95%">
+<img src="img/scarbo.png" width="95%" alt="A complicated-looking musical score, with many groups of notes in quick succession - Maurice Ravel’s ‘Scarbo’">
 
-The reality is, sheet music is just a //common// way of recording music. 
+!The reality is, sheet music is just a //common// way of recording music. 
 
 That’s all. 
 
 It’s familiar to lot of people, and it’s an old tradition. But, I’m sure you can think of many aspects of life that also fit that criteria, but which you know aren't 'the only' way of doing things. Like, for example, Christmas. 
 
+!What about Christmas?
 Christmas isn’t immoral to participate in, by any means. However, when a society gives lots of space to Christmas, and no space for non-Christian celebrations, or, if people are made to feel guilty for not celebrating Christmas... This makes Christmas harmful. 
 
 Christmas can eclipse other ways of celebrating. How does sheet music do the same thing for music? How many musicians have we lost, who were told off by the teacher, because they didn’t read sheet music?
 
 With that said, let’s take a look at how music can be recorded in a completely different way to European sheet music.
 
-‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall's 'The Spark Catchers'. She writes her scores like this before writing them up as sheet music, but, this is still a picture of the music she hears in her head.
+!Graphic Scores
+‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Listen to the description of the score for Hannah Kendall's 'The Spark Catchers'. She draws her scores as pictures, before writing them up as sheet music, but, this is still a picture of the music she hears in her head.
 
-<img src="img/hkendall-1.png" width="95%">
+<img src="img/hkendall-1.png" width="95%" alt="Paper, with thick red lines with blobs on the end, which criss-cross each other, drawn in coloured pencil.">
 
-It could be anything, right? Well, that’s true, unless you make some decisions about //how// to look at it.
 
+This picture could be anything, right? Well, that’s true, unless you make some decisions about //how// to use it.
+
+!Using the graphic score
 Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. 
 
-Then, look back at the picture. 
+Then, listen to, or look at, Hannah Kendall's graphic score, again. 
 
 Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
 Not sure where to start?"
 If you’re not sure where to start, how about deciding:
 * How do the shapes tell you the length of each note?
 * Then, how do the colours change the notes again?
+
 When you’ve had enough of this, take a look at the full version…
 
-Here’s another section of Hannah Kendall's score. 
+!Here’s the full image of Hannah Kendall's score. 
 
-<img src="img/hkendall.png" width="95%">
+<img src="img/hkendall.png" width="95%" alt="A sketch of a score in pen and coloured pencil, using dashes of pen, green diamonds, red crayon, and orange marker. More detail follows in the description below.">
+!!Full description of Kendall's graphic score.
+On the left side of the page, headings for ‘WW’ and ‘Brass’, followed by symbols from left to right. The background has orange scribbles all over, and blue shading on the right.
 
+!!!The WW heading
+This is followed by short dashes of pen, in many directions, then three green diamonds arranging in a triangle, then a long group of short dashes and green triangles.
+
+!!!The Brass heading
+This is followed by thick red lines with blobs on the end, which criss-cross each other. The red lines furthest right have orange scribbles under them.
+
+!Thinking about the whole graphic score
 Keeping in mind a few of the rules you came up with for yourself, are there any other ways to play these notes that might be hard to describe, without pictures? 
 
 *Which parts are the same? 
@@ -58,10 +71,11 @@ Keeping in mind a few of the rules you came up with for yourself, are there any 
 
 Try to play through all of the score, then bring the piece to a close. 
 
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+!If you’re having a good time:
+
+tap the button below to tweet a video of your compositions, using the hashtag: 
 @@.altlinks;<a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8">@@
 
-[[When you’ve had enough of this, why not try…|VicGardEnd]]
-
+When you’ve had enough of this, why not try…
 
 [[Learn to play in a day.]]
