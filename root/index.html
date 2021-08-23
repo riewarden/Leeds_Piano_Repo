@@ -495,7 +495,37 @@ Every location has a different tutorial.
 //Find them all!//
 
 Always close this tab before scanning a new QR code!
+/*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
+&lt;&lt;nobr&gt;&gt;&lt;&lt;set $sculpLink to &quot;&quot;&gt;&gt;
+/*Check to see if $varDestination holds a valid query*/
+&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
+/*Set the sculpture link to the link which corresponds to the location of the attendee*/
+    &lt;&lt;if $varDestination is &quot;mgChurch&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;mgGrave&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;uniLeeds&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;vicGard&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;manGard&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;pHouse&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;vicQuart&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;kirkMark&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;trinShop&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;elseif $varDestination is &quot;trainStat&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://twinery.org/cookbook/terms/terms_variables.html&quot;&gt;&gt;
+    &lt;&lt;/if&gt;&gt;
+    [[Tap here for more information.|$sculpLink]]
+/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail&#39;s main website. */
+&lt;&lt;else&gt;&gt;
 [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
+&lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
  [[Tap here to play piano!|$varDestination]]
 
@@ -514,45 +544,44 @@ If the piano is not working:
 If all is well, tap the &#39;Next&#39; button below.
 [[Next|MerrionDeep2]]</tw-passagedata><tw-passagedata pid="3" name="MerrionDeep2" tags="" position="350,100" size="100,100">A useful skill for music-making is being able to listen to the other sounds around you, to help you make a decision about what sounds you’d like to add to them.
 &lt;&lt;linkreplace &quot;Tap to continue.@@&quot; t8n&gt;&gt;
-Nearby, there is a sculpture, by Pianodrome, called Deep Listening, which has a cast-iron frame, that you can strike with a beater. Go over and play it, or wait for someone else to. Then, just listen to the sounds it can make. 
+Nearby, there is a sculpture, by Pianodrome, called Deep Listening, which has a cast-iron frame, that you can strike with a beater. Go over and play it, or wait for someone else to. Then, just listen to the sounds it can make. How are these sounds different to the sounds you just made with the piano?
 &lt;&lt;linkreplace &quot;Listen deeply.@@&quot; t8n&gt;&gt;
 When a sound starts to fade away, try to pinpoint the moment it turns from vibrations in the air, to stillness. How do these sounds blend with the other sounds, in and around the Rest Gardens? 
 
 &lt;img src=&quot;img/soundwaves.png&quot; width = &quot;95%&quot;&gt;
 
 &lt;&lt;linkreplace &quot;Take your time.@@&quot; t8n&gt;&gt;
-Go nice and slowly, and take at least three minutes to do this. When you’re ready to move on, tap the ‘Next’ button below.
+When you’re ready to move on, tap the ‘Next’ button below.
 
 [[Next|MerrionDeep3]]
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="MerrionDeep3" tags="" position="475,100" size="100,100">How does this sound exist in the world? Ask yourself questions, to create your understanding of the sound. There are no right answers. All you need to pursue is what feels right to you.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="MerrionDeep3" tags="" position="475,100" size="100,100">How does the sound from the Deep Listening sculpture exist in the world, and how is it different to the piano? If you like, go back and forth between them, while you think about the next few questions.
 
-&lt;&lt;linkreplace &quot;How do we describe the sound?&quot; t8n&gt;&gt;&lt;&lt;linkreplace &quot;Duration&quot; t8n&gt;&gt;&#39;&#39;Duration:&#39;&#39;
+&lt;&lt;linkreplace &quot;How do we describe the sound?&quot; t8n&gt;&gt;&lt;&lt;linkreplace &quot;Duration?&quot; t8n&gt;&gt;&#39;&#39;Duration:&#39;&#39;
 How long can the sound last? How short? How quickly can it make another sound? Does it need time to rest?&lt;&lt;/linkreplace&gt;&gt;
 
-&lt;&lt;linkreplace &quot;Timbre&quot; t8n&gt;&gt;&#39;&#39;Timbre:&#39;&#39;
+&lt;&lt;linkreplace &quot;Timbre?&quot; t8n&gt;&gt;&#39;&#39;Timbre:&#39;&#39;
 If this sound was a colour, or a shape, what would it look like? Does this sound have emotions? What makes this sound’s shape different to the piano’s shape?&lt;&lt;/linkreplace&gt;&gt;
 
-&lt;&lt;linkreplace &quot;Pitch@@&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
+&lt;&lt;linkreplace &quot;Pitch?&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
 Is this a high, or a low sound? If you hum the sound, is it easy for you to reach, or is it a strain?
 
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;What other questions could you ask about the sound? Are there any questions you can’t find the answer to? Is it because no answer exists, or would you find it by asking someone else?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 
 When you’ve had enough listening for one day, click ‘Next’.
 [[Next|MerrionDeep4]]
 &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="MerrionDeep4" tags="" position="600,100" size="100,100">Now go back to the piano. If you were playing the sculpture yourself, give the iron one last hit, and make a note that’s going to last a little while. If you were letting other people play, wait for someone to play another note.
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="MerrionDeep4" tags="" position="600,100" size="100,100">Now, go back to the piano. If you were playing the sculpture yourself, give the iron one last hit, and make a note that’s going to last a little while. If you were letting other people play, wait for someone to play another note.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-When you’re back at the piano, listen to the iron note, and try and find a note on it that you think works well with the iron note. Search for the note very slowly. It could be the same note, it could be a contrasting note, or something else entirely. 
+When you’re back at the piano, play any note, and let it go for a long time. Under your feet, you&#39;ll find some pedals. If you press down the right-hand one, this will make the note longer. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-If you play some notes that don’t sound like what you wanted, that’s great. The journey to finding the note you want is now going to be part of this composition that’s emerging, as you go along.
+Now, play that note, and while it is playing, look for another note that sounds good with it. Maybe it sounds nice, maybe it just...sounds interesting. If you play some notes that don’t sound like what you wanted, that’s fine. Your journey to finding the note you want is now part of this composition that’s emerging.
 
-When you find a note you like, click ‘Next’.
+When you&#39;re happy with those two notes, tap ‘Next’.
 [[Next|MerrionDeep5]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="MerrionDeep5" tags="" position="725,100" size="100,100">Now that you’ve found one note that works, look for another, and a third. Try playing some at the same time. Try playing them in sequences. If people come up to the sculpture to strike it, respond to the notes they create.
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="MerrionDeep5" tags="" position="725,100" size="100,100">Now that you’ve found two notes that work together, look for more. Try playing some at the same time. Try playing them in sequences. If people come up to the sculpture to strike it, respond to the notes they create.
 
 Find a time to come gently to a stop.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
@@ -751,19 +780,16 @@ Then, look back at the picture.
 Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
 &lt;&lt;linkreplace &quot;Not sure where to start?&quot; t8n&gt;&gt; 
 If you’re not sure where to start, how about deciding:
-* How do the shapes tell you the length of each note?
-* Then, how do the colours change the notes again?
+* What direction will you take, across the page, in order to read it? Left to right, like a book, or perhaps top to bottom?
+* How could you use the shapes to decide how long each note will be played for?
 When you’ve had enough of this, take a look at the full version…
 [[Next|VicGard4]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="VicGard4" tags="" position="350,350" size="100,100">Here’s another section of Hannah Kendall&#39;s score. 
 
 &lt;img src=&quot;img/hkendall.png&quot; width=&quot;95%&quot;&gt;
 
-Keeping in mind a few of the rules you came up with for yourself, are there any other ways to play these notes that might be hard to describe, without pictures? 
+Remember the rules that you decided on in the previous section, and think about which parts of the image need some more rules, so that you can play it.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt; 
-*Which parts are the same? 
-*Which parts are different? 
-*Which parts are the most difficult to interpret? 
-*How would you change it?
+* 
 
 Try to play through all of the score, then bring the piece to a close. 
 
@@ -794,7 +820,9 @@ If you find the piano is not working,
 Once you’ve played the test keys a few times, click ‘Next’.
 [[Next|Mand2]]</tw-passagedata><tw-passagedata pid="27" name="Mand2" tags="" position="850,350" size="100,100">Jazz music has a rich and complex history, rooted in the people of African Diaspora communities, who were trafficked, primarily by white people, and brought to the West during the Transatlantic Slave Trade. Jazz fuses African musical traditions with Western musical traditions. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation. Music with a call-and-response pattern isn&#39;t common in European music, but is found in many genres of music influenced by West African culture.
+One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation. In the history of European music, musicians have always tended to write music down, and then have people perform it exactly as it was recorded. In many African countries, however, it&#39;s more common for music to spring from the relationship between musicians, their audience, and the context where music is being made. This approach to music, but using European instruments, is how Jazz arose in the West. 
+
+So, how can we make pianos talk to each other?
 
 First of all, look back at the test keys. 
 
@@ -844,7 +872,12 @@ In Black neighbourhoods, people often held &#39;Rent Parties&#39;, where the com
 Tap the arrow at the top of the page to access the &#39;Credits&#39;, where you can learn more about cutting contests, and the origins of Jazz. 
 
 [[Next|Mand6-2]]
-&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Mand6-2" tags="" position="100,475" size="100,100">If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts. How are these two characters interacting? If you’re with a friend, try to have a conversation, or a competition, through your pianos, using no words.
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Mand6-2" tags="" position="100,475" size="100,100">If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts, played by two characters. 
+* Are they different ages?
+* Are they arguing, or, are they confessing their love for each other?
+* Does the conversation start suddenly, or, do they slowly notice each other from across a room?
+
+If you’re with a friend, try to have a conversation, or a competition, through your pianos, using no words.
 
 &lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;95%&quot;&gt;
 
@@ -1030,7 +1063,7 @@ When you’re happy with how your //sparks// and //flames// sound, tap ‘Next�
 
 &lt;img src=&quot;img/blaze.png&quot; width=&quot;95%&quot;&gt;
 
-Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
+Starting from the middle of the keyboard, find two white keys that have one white key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the //blaze//?
 
@@ -1065,7 +1098,7 @@ If the piano isn&#39;t working
 [[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
 
 Once you’re satisfied that all the keys are working, tap ‘Next’.
-[[Next|Trin2]]</tw-passagedata><tw-passagedata pid="50" name="Trin2" tags="" position="1225,600" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, it doesn’t have to sound the same, over and over. Make it up as you go! Put your fingers on these two keys, and play them at the same time.
+[[Next|Trin2]]</tw-passagedata><tw-passagedata pid="50" name="Trin2" tags="" position="1225,600" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, it doesn’t have to sound the same, over and over. Make it up as you go! Put the fingers of your left hand on these two keys, and play them at the same time.
 
 &lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
 
@@ -1111,7 +1144,11 @@ You&#39;re going to use everything we’ve done so far to make your own music.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
 
-Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. Don&#39;t think too much about the next note, just let it happen.
+Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. Don&#39;t think too much about the next note, just let it happen. 
+
+To make something closer to the Blues...
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Play a chord, then a few keys on your right hand. Then, repeat what you just did. Then, the third time, play the keys in your right hand, but make the ending a bit different.
 
 Then, find a way to bring the piece to a close.
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
@@ -1121,8 +1158,7 @@ If you’re having a good time, tap the button below to tweet a video of your co
 
 If you enjoyed this activity, there’s plenty to get involved with. 
 [[See some of our other events.|TrinEnd]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="TrinEnd" tags="" position="475,725" size="100,100">Choice 1
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="TrinEnd" tags="" position="475,725" size="100,100">Choice 1
 Choice 2
 Choice 3</tw-passagedata><tw-passagedata pid="55" name="trainStat" tags="" position="600,725" size="100,100">!Welcome to Leeds Train Station. 
 [[Tap here to access a screen-reader version of this tutorial.|trainStat_ac]]
@@ -1154,7 +1190,7 @@ And so on.
 
 &lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;90%&quot;&gt;
 
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;Use those three keys to play music for a ‘Humlet’, to accompany your imaginary person walking up the platform. Try that for a bit. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;Play those three keys in any order, to accompany your imaginary person walking up the platform. Try that for a bit. 
 &lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
 Now, just //before// the imaginary person turns, look at the keyboard, and choose three different keys, it doesn’t matter which ones, and move your hand to them. Then, play some music for the walk //down// the platform. 
 
@@ -1602,7 +1638,7 @@ If you find the piano is not working,
 !What is Jazz music?
 Jazz music has a rich and complex history, rooted in the people of African Diaspora communities, who were trafficked, primarily by white people, and brought to the West during the Transatlantic Slave Trade. Jazz fuses African musical traditions with Western musical traditions. 
 
-One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation. Music with a call-and-response pattern isn&#39;t common in European music, but is found in many genres of music influenced by West African culture.
+One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation. In the history of European music, musicians have always tended to write music down, and then have people perform it exactly as it was recorded. In many African countries, however, it&#39;s more common for music to spring from the relationship between musicians, their audience, and the context where music is being made. This approach to music, but using European instruments, is how Jazz arose in the West. 
 
 First of all, go back to the test keys. 
 
@@ -1916,6 +1952,9 @@ And, the keys in your right hand:
 Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
 
 Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. Play for as long as you like. Don&#39;t think too much about the next note, just let it happen.
+
+!!To play something closer to the Blues...
+Play a chord in your left hand, then a few keys on your right hand. Then, repeat what you just did. Then, the third time, play the keys in your right hand, but make the ending a bit different.
 
 Then, find a way to bring the piece to a close.
 

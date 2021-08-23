@@ -23,7 +23,37 @@ Every location has a different tutorial.
 //Find them all!//
 
 Always close this tab before scanning a new QR code!
+/*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn't throw a weird exception */
+<<nobr>><<set $sculpLink to "">>
+/*Check to see if $varDestination holds a valid query*/
+<<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
+/*Set the sculpture link to the link which corresponds to the location of the attendee*/
+    <<if $varDestination is "mgChurch">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "mgGrave">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "uniLeeds">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "vicGard">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "manGard">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "pHouse">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "vicQuart">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "kirkMark">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "trinShop">>
+    <<set $sculpLink to "https://en.wikipedia.org/wiki/Main_Page">>
+    <<elseif $varDestination is "trainStat">>
+    <<set $sculpLink to "https://twinery.org/cookbook/terms/terms_variables.html">>
+    <</if>>
+    [[Tap here for more information.|$sculpLink]]
+/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail's main website. */
+<<else>>
 [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
+<</if>><</nobr>>
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
  [[Tap here to play piano!|$varDestination]]
 
