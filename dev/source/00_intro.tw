@@ -1,5 +1,6 @@
 
 :: Start
+
 !Welcome to //The Leeds Piano Trail!//<nobr>
 <<script>> /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
@@ -16,10 +17,10 @@ State.variables.varDestination = grabQuery("location");
 <</script>>/*varDestination: <<print $varDestination>>*/</nobr>
 From here, you can access:
 * ''An information page'' about the artwork at this location, the artists who contributed to it, and upcoming events happening at this place on the Trail. 
-* ''//Impromptunes!//'' Play through an interactive piano tutorial for this location.
+* ''//Impromptunes!//'' Play through an interactive piano tutorial, based on this location.
 Tap the arrow at the top to access options for this app. From there, you can report technical issues, share your experience on Twitter, and restart the app. 
 
-Every piano on The Leeds Piano Trail has a different tutorial. //Find them all!//
+There are ten different //Impromptunes// tutorials, one for every location on The Leeds Piano Trail. Find and play them all!
 
 Always close this tab before scanning a new QR code!
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn't throw a weird exception */

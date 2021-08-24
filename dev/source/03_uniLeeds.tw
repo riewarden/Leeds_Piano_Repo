@@ -1,10 +1,10 @@
 :: uniLeeds
-!Welcome to The University Of Leeds Student's Union.
+!Welcome to The University Of Leeds, Student's Union.
 [[Tap here to access a screen-reader version of this tutorial|uniLeeds_ac]]
 
 To start with, please play the following test keys, in any order, to ensure the piano is working. 
 
-<img src="img/GBD.png" width="400vw">
+<img src="img/GBD.png" width="95%">
 
 If the piano is not working:
 [[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
@@ -17,7 +17,9 @@ If all is good, tap the 'Next Section' button below.
 :: Uni2
 You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
 <<linkreplace "Tap to read more." t8n>> 
-Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. And I think you’re going to do great.
+Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. 
+
+And I think you’re going to do great.
 <<linkreplace "Tap to read more." t8n>> 
 But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
 [[Next Section|Uni3]]
@@ -25,18 +27,15 @@ But you have to believe it too, and to do so, you must change the way you define
 <</linkreplace>>
 
 :: Uni3
-<<cacheaudio "blu" "audio/blu.mp3">>
-Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
+<nobr><<cacheaudio "blu" "audio/blu.mp3">></nobr>Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played earlier, in the test sequence. 
 
-<img src="img/GBD.png" width="400vw">
+<img src="img/GBD.png" width="95%">
 
 When you have found the keys...
 <<linkreplace "Tap to read more." t8n>> 
 Play the following sequence of notes, pausing where there is a '...'. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
 !!G G B D D ... D D ... B B
-
 If you’d like to hear it played, use the audio player below, and copy it. 
-   
 <<link "Play audio">><<audio blu play>><</link>>
 
 Once you’re comfortable with playing this pattern, tap ‘Next Section’.
@@ -49,41 +48,43 @@ Now, it’s time to make this lovely little pattern sound terrible! If you touch
 <<linkreplace "Tap to read more." t8n>> 
 Try playing the 'Blue Danube' pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
 <<linkreplace "Tap to read more." t8n>> 
-Can you do a version that uses keys that are as far apart as possible? Can you do a version that almost sounds like a joke, with a set-up and punchline? How about using your elbow, or the back of your hand to play?
+Can you do a version that uses keys that are as far apart as possible? Can you do a version that sounds like a joke, with a set-up, and a punchline? How about using your elbow, or the back of your hand to play?
 
-Once you’ve found as many versions as you have the patience for, tap Next Section.
+Once you’ve found as many versions as you have the patience for, tap 'Next Section'.
 [[Next Section|Uni5]]
 <</linkreplace>>
 <</linkreplace>>
 
 :: Uni5
-Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the Blue Danube pattern. Perhaps, even go back to the original version that you copied…
+Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the 'Blue Danube' pattern. Perhaps, even go back to the original version that you copied…
 !!G G B D D ... D D ... B B
 
-<img src="img/GBD.png" width="400vw">
+<img src="img/GBD.png" width="95%">
 
 <<link "Play audio">><<audio blu play>><</link>>
 
 <<linkreplace "Tap to read more." t8n>> 
-…Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the 'why', just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
+…Think about this: if someone else was playing your sequence, what would you expect them to play, //after// it? 
+
+Don’t think too hard about the 'why', just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
 <<linkreplace "Tap to read more." t8n>> 
 Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
 <<linkreplace "Tap to read more." t8n>> 
 Find a way to bring the piece to a close. Take a moment to think about what you created. 
 
-Is there a way to apply this process to a different creative pursuit?
+You started from somebody else's music. You then played it 'wrong', and then kept adding the next thing that felt right. Your new piece could go on forever, if you just kept adding more sequels.
 
+Is there a way to apply this process to a different form of art? Writing? Painting? Carving? Calligraphy? 
+
+Is it right to make art in this way, or is it just plagiarism?
+<<linkreplace "Tap to finish." t8n>> 
+!Thanks for playing!
 If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
 @@.altlinks;<a href="https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="I composed some wonderful music on The Leeds Piano Trail!" data-url="https://twitter.com/leedspiano" data-related="leedspiano" data-lang="en" data-dnt="true" data-show-count="false">Tweet #LeedsPiano2021</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8">@@
 
 
-[[If you enjoyed this, why not try some of our other events?| UniEnd]]
-<</linkreplace>>
-<</linkreplace>>
-<</linkreplace>>
-
-:: UniEnd
+If you enjoyed this, why not try some of our other events?
  [[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
  [[Brudenell Piano Sessions (12th September)|https://www.leedspiano.com/event/brudenell-piano-sessions/]]
  [[Musical Theatre Sing-a-long (15th September)|https://www.leedspiano.com/event/musical-theatre-sing-a-long-15-september/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]<</linkreplace>><</linkreplace>><</linkreplace>><</linkreplace>>

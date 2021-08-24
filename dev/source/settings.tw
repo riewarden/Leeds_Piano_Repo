@@ -7,13 +7,13 @@
 }
 
 :: StoryTitle
-Impromptunes
+Impromptunes!
 
 :: StoryAuthor
-Part of The Leeds Piano Trail
+@@font-transform: uppercase; Part of The Leeds Piano Trail@@
 
 :: StoryBanner
-@@.noBor;<img src="img/LIP_Logo.png" width="150em">@@
+@@.noBor;<img src="img/PianoTrailPink.png" width="130em">@@
 
 :: StoryMenu
 [[Technical Problems and Feedback|mailto:laurence.owen@leedspiano.com]]
@@ -22,11 +22,10 @@ Part of The Leeds Piano Trail
 [[Credits]]
 
 :: PassageHeader
-<div style="margin-bottom: 5%">
-<<if previous()!= "">>
+<<if previous()!= "">><div style="margin-bottom: 5%"><nobr>
 @@.altlinks;<<back "Back">>@@
-<</if>>
-</div>
+</nobr>
+</div><</if>>
 :: PassageFooter
 <div style="border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em">@@color:#808080;//When you find a new QR code, please close this tab to restart the app.//@@
 </div>
