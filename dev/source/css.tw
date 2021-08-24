@@ -59,6 +59,11 @@ img {
   
 }
 
+.noBor img{
+	border: 0px solid #000;
+
+}
+
 #ui-dialog-titlebar {
  background-color:#FFF;
  min-height:24px

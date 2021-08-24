@@ -194,7 +194,7 @@ that is all i changed to get it to work
 #story-title {
 	
     margin: 0;
-	font-size: 162.5%;
+	font-size: 200%;
 }
 #story-author {
 	margin-top: 0;
@@ -220,7 +220,7 @@ that is all i changed to get it to work
 	padding: 0.25em 0.75em;
 	border: 2px solid transparent;
 	color: black;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 #menu li a:hover {
