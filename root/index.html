@@ -479,8 +479,7 @@ Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
 Config.history.maxStates = 20;
-Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to:
-!//The Leeds Piano Trail!//
+Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to //The Leeds Piano Trail!//&lt;nobr&gt;
 &lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
@@ -493,14 +492,13 @@ State.variables.varDestination = grabQuery(&quot;location&quot;);
 
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = &quot;&quot;}
-&lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/
+&lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/&lt;/nobr&gt;
 From here, you can access:
-* An information page with more information about the artwork at this location. 
-* //Impromptunes//! Play through an interactive piano tutorial for this location.
-Tap the arrow at the top to access options for this app. From there, you can restart, see credits, and report technical issues. 
+* &#39;&#39;An information page&#39;&#39; about the artwork at this location, the artists who contributed to it, and upcoming events happening at this place on the Trail. 
+* &#39;&#39;//Impromptunes!//&#39;&#39; Play through an interactive piano tutorial for this location.
+Tap the arrow at the top to access options for this app. From there, you can report technical issues, share your experience on Twitter, and restart the app. 
 
-Every piano on The Leeds Piano Trail has a different tutorial. 
-//Find them all!//
+Every piano on The Leeds Piano Trail has a different tutorial. //Find them all!//
 
 Always close this tab before scanning a new QR code!
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
@@ -509,27 +507,27 @@ Always close this tab before scanning a new QR code!
 &lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
 /*Set the sculpture link to the link which corresponds to the location of the attendee*/
     &lt;&lt;if $varDestination is &quot;mgChurch&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;mgGrave&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;uniLeeds&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;vicGard&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;manGard&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;pHouse&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;vicQuart&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;kirkMark&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;trinShop&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://en.wikipedia.org/wiki/Main_Page&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/&quot;&gt;&gt;
     &lt;&lt;elseif $varDestination is &quot;trainStat&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://twinery.org/cookbook/terms/terms_variables.html&quot;&gt;&gt;
+    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/&quot;&gt;&gt;
     &lt;&lt;/if&gt;&gt;
-    [[Tap here for more information.|$sculpLink]]
+    [[Tap here for more information about this location on the Trail.|$sculpLink]]
 /*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail&#39;s main website. */
 &lt;&lt;else&gt;&gt;
 [[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
