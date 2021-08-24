@@ -10,17 +10,17 @@ If the piano is not working:
 [[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
 
 
-If all is good, tap the 'Next' button below.
-[[Next|Uni2]]
+If all is good, tap the 'Next Section' button below.
+[[Next Section|Uni2]]
 
 
 :: Uni2
 You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. And I think you’re going to do great.
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
-[[Next|Uni3]]
+[[Next Section|Uni3]]
 <</linkreplace>>
 <</linkreplace>>
 
@@ -31,7 +31,7 @@ Let’s start with something simple. Look at the picture of piano keys below. Th
 <img src="img/GBD.png" width="400vw">
 
 When you have found the keys...
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Play the following sequence of notes, pausing where there is a '...'. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
 !!G G B D D ... D D ... B B
 
@@ -39,20 +39,20 @@ If you’d like to hear it played, use the audio player below, and copy it.
    
 <<link "Play audio">><<audio blu play>><</link>>
 
-Once you’re comfortable with playing this pattern, tap ‘Next’.
-[[Next|Uni4]]
+Once you’re comfortable with playing this pattern, tap ‘Next Section’.
+[[Next Section|Uni4]]
 <</linkreplace>>
 
 
 :: Uni4
 Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Try playing the 'Blue Danube' pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Can you do a version that uses keys that are as far apart as possible? Can you do a version that almost sounds like a joke, with a set-up and punchline? How about using your elbow, or the back of your hand to play?
 
-Once you’ve found as many versions as you have the patience for, click next.
-[[Next|Uni5]]
+Once you’ve found as many versions as you have the patience for, tap Next Section.
+[[Next Section|Uni5]]
 <</linkreplace>>
 <</linkreplace>>
 
@@ -64,11 +64,11 @@ Finally, using all the experimentation you’ve just done, try to come up with a
 
 <<link "Play audio">><<audio blu play>><</link>>
 
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 …Think about what, if someone else was playing, you might expect them to play after it. Don’t think too hard about the 'why', just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
-<<linkreplace "Tap to continue." t8n>> 
+<<linkreplace "Tap to read more." t8n>> 
 Find a way to bring the piece to a close. Take a moment to think about what you created. 
 
 Is there a way to apply this process to a different creative pursuit?
