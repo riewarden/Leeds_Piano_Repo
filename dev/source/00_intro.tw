@@ -49,10 +49,10 @@ Always close this tab before scanning a new QR code!
     <<elseif $varDestination is "trainStat">>
     <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/">>
     <</if>>
-    [[Tap here for more information about this location on the Trail.|$sculpLink]]
-/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail's main website. */
+    [[Tap here to access the information page.|$sculpLink]]
+/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail's main website. I've done it in this inefficient way because for some reason the VSCode live server has a tantrum if the variable isn't set to anything, so I have to put error cases in these weird else statements*/
 <<else>>
-[[Tap here for more information.|https://www.leedspiano.com/piano-trail-2021/]]
+[[Tap here to access the information page.|https://www.leedspiano.com/piano-trail-2021/]]
 <</if>><</nobr>>
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
  [[Impromptunes: Tap here to play piano!|$varDestination]]

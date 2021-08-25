@@ -4,7 +4,7 @@ To start with, please play the following test keys, in any order, to ensure the 
 
 All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A.
 
-<img src="img/GBD.png" width="400vw" alt="The keys ‘G, B, D’ are highlighted.">
+<img src="img/GBD.png" width="95%" alt="The keys ‘G, B, D’ are highlighted.">
 
 If the piano is not working:
 [[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
@@ -19,7 +19,7 @@ But you have to believe it too, and to do so, you must change the way you define
 <<cacheaudio "blu" "audio/blu.mp3">>
 Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played in the test sequence, a minute ago, so you’re halfway there. 
 
-<img src="img/GBD.png" width="400vw" alt="The keys ‘G, B, D’ are highlighted.">
+<img src="img/GBD.png" width="95%" alt="The keys ‘G, B, D’ are highlighted.">
 
 !When you have found the keys...
 Play the following sequence of notes, from ‘The Blue Danube’, by Johann Strauss. 
@@ -50,7 +50,7 @@ B. B.
 
 The audio player is below, if you would like to listen again.
 
-<img src="img/GBD.png" width="400vw">
+<img src="img/GBD.png" width="95%">
 
 <<link "Play audio">><<audio blu play>><</link>>
 
