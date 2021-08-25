@@ -103,16 +103,6 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	<!-- UUID://7B96D1FA-510E-48EC-B14A-061FBDEA4156// --><tw-storydata name="Impromptunes!" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7B96D1FA-510E-48EC-B14A-061FBDEA4156" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "UI-bar" */
 /*
 	Patches to the core styles.
-
-CHANGES SUGGESTED BY DAEL!!
-
-- DONE - #ui-bar's height should be your desired length for the ui bar (defined right below the "default structural styles" comment)
-- DONE #ui-bar.stowed´s top should be a bigger negative number (so something like -27em instead of -15.5em), to your liking
-- DONE #ui-bar-toggle´s top property should be tweaked so the button is in your desired position, trial and error really
-that is all i changed to get it to work
-
-
-
 */
 
 #story {
@@ -242,7 +232,7 @@ that is all i changed to get it to work
 	position: relative;
 
 	top: 70vh;
-	left: 50vw;
+	left: calc(50vw - 19px);
 /* 	
 	top: 30em;
     left: 15em; 
