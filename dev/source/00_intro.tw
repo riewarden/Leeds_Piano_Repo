@@ -1,7 +1,7 @@
 
 :: Start
 
-!Welcome to //Impromptunes!//<nobr>
+!Welcome to Impromptunes!<nobr>
 <<script>> /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
@@ -24,9 +24,9 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
 <<nobr>>
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn't throw a weird exception */
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
- [[Impromptunes: Tap here to play piano!|$varDestination]]
+ [[START PIANO TUTORIAL|$varDestination]]
 <<else>>
-[[Impromptunes: Tap here to play the piano!|Contents]]
+[[START PIANO TUTORIAL|Contents]]
 <</if>>
 <<set $sculpLink to "">>
 /*Check to see if $varDestination holds a valid query*/
@@ -53,10 +53,10 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
     <<elseif $varDestination is "trainStat">>
     <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/">>
     <</if>>
-    [[Tap here to access the information page.|$sculpLink]]
+    [[Learn more about the Trail|$sculpLink]]
 /*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail's main website. I've done it in this inefficient way because for some reason the VSCode live server has a tantrum if the variable isn't set to anything, so I have to put error cases in these weird else statements*/
 <<else>>
-[[Tap here to access the information page.|https://www.leedspiano.com/piano-trail-2021/]]
+[[Learn More About The Trail|https://www.leedspiano.com/piano-trail-2021/]]
 <</if>><</nobr>>
 
 

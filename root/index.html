@@ -472,7 +472,7 @@ Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
 Config.history.maxStates = 20;
-Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to //Impromptunes!//&lt;nobr&gt;
+Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to Impromptunes!&lt;nobr&gt;
 &lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
@@ -495,9 +495,9 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
 &lt;&lt;nobr&gt;&gt;
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
 &lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
- [[Impromptunes: Tap here to play piano!|$varDestination]]
+ [[START PIANO TUTORIAL|$varDestination]]
 &lt;&lt;else&gt;&gt;
-[[Impromptunes: Tap here to play the piano!|Contents]]
+[[START PIANO TUTORIAL|Contents]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $sculpLink to &quot;&quot;&gt;&gt;
 /*Check to see if $varDestination holds a valid query*/
@@ -524,10 +524,10 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
     &lt;&lt;elseif $varDestination is &quot;trainStat&quot;&gt;&gt;
     &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/&quot;&gt;&gt;
     &lt;&lt;/if&gt;&gt;
-    [[Tap here to access the information page.|$sculpLink]]
+    [[Learn more about the Trail|$sculpLink]]
 /*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail&#39;s main website. I&#39;ve done it in this inefficient way because for some reason the VSCode live server has a tantrum if the variable isn&#39;t set to anything, so I have to put error cases in these weird else statements*/
 &lt;&lt;else&gt;&gt;
-[[Tap here to access the information page.|https://www.leedspiano.com/piano-trail-2021/]]
+[[Learn More About The Trail|https://www.leedspiano.com/piano-trail-2021/]]
 &lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 
 
