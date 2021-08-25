@@ -14,6 +14,10 @@
 [[How the silence makes the music| https://www.nytimes.com/2019/10/02/arts/music/silence-classical-music.html]]
 [[Ma| https://new.uniquejapan.com/ikebana/ma/]]
 
+!!!The University of Leeds, Student's Union
+[['The Blue Danube' by Johan Strauss II|https://www.youtube.com/watch?v=IDaJ7rFg66A]]
+[[Portsmouth Sinfonia|https://www.atlasobscura.com/articles/portsmouth-sinfonia-classical-music-eno-orchestra]]
+
 !!!Cookridge Street:
 [[How Was Musical Notation Invented?|https://www.wqxr.org/story/how-was-musical-notation-invented-brief-history/]]
 [[Notating Indian Classical Music|https://raag-hindustani.com/Notation.html]]
@@ -37,16 +41,26 @@
 
 !!!Kirkgate Market
 [[History of Kirkgate Market| https://www.leeds.gov.uk/leedsmarkets/about/history-of-kirkgate-market]]
+[['The Firebird' by Igor Stravinsky|https://www.youtube.com/watch?v=RZkIAVGlfWk]]
+[['Feux d’artifice' by Claude Debussy|https://www.youtube.com/watch?v=UjHDpuCYq9Y]]
 
 !!!Trinity Shopping Centre
 [[Call and Response – Jazz History Tree| https://www.jazzhistorytree.com/call-and-response/]]
-[[Work/Field Songs – Jazz History Tree| https://www.jazzhistorytree.com/work-field-songs/]]
-[[The Blues – Jazz History Tree|https://www.jazzhistorytree.com/blues/]]
-[[Open Edu: 12-Bar Blues|https://www.open.edu/openlearn/history-the-arts/discovering-music-the-blues/content-section-12.3]]
-[[PBS - Understanding the 12-Bar Blues|https://www.pbs.org/theblues/classroom/essays12bar.html]]
+[[Work/Field Songs (Jazz History Tree)| https://www.jazzhistorytree.com/work-field-songs/]]
+[[The Blues (Jazz History Tree)|https://www.jazzhistorytree.com/blues/]]
+[[12-Bar Blues (Open Edu)|https://www.open.edu/openlearn/history-the-arts/discovering-music-the-blues/content-section-12.3]]
+[[Understanding the 12-Bar Blues (PBS)|https://www.pbs.org/theblues/classroom/essays12bar.html]]
 
 !!!Leeds Train Station
-[[Arrival Platform Humlet|https://www.hyperion-records.co.uk/tw.asp?w=W1105]]
+[[Arrival Platform Humlet (Hyperion Records)|https://www.hyperion-records.co.uk/tw.asp?w=W1105]]
+[['Arrival Platform Humlet' by Percy Grainger|https://www.youtube.com/watch?v=W2gMjtlYthk]]
+
+!!General Musical Inspirations
+[['In C' by Terry Riley|https://www.youtube.com/watch?v=aX96z7AuICs]]
+[['4’33' by John Cage|https://www.youtube.com/watch?v=yoAbXwr3qkg]]
+[[12-Bar Blues (Oral tradition, coined by W.C Handy)|https://www.youtube.com/watch?v=cqWl2Zxs2es]]
+[[‘Piano From Scratch’ YouTube Channel|https://www.youtube.com/c/PianoFromScratch]]
+[[‘Aleatoric Music – Live Looping and Chance’ by Tantacrul |https://youtu.be/xabYn35ngaY]]
 
 !!Images used
 [[Keyboard Piano (unedited)|https://pixabay.com/vectors/keyboard-piano-music-sound-keys-153343/]]
@@ -61,18 +75,6 @@
 [[Fire burning at night photo|https://unsplash.com/photos/cV7cOur4sAM]]
 [[Red flame photo|https://unsplash.com/photos/5qxUqPnpWtI]]
 
-
-!!Inspirations
-The Blue Danube by Johan Strauss II
-In C by Terry Riley
-4’33 by John Cage
-12-Bar Blues (Jazz Standard, oral tradition, coined by W.C Handy)
-The Firebird by Igor Stravinsky
-Feux d’artifice by Claude Debussy
-Portsmouth Sinfonia
-Arrival Platform Humlet by Percy Grainger
-[[‘Piano From Scratch’ YouTube Channel|https://www.youtube.com/c/PianoFromScratch]]
-[[‘Aleatoric Music – Live Looping and Chance’ by Tantacrul |https://youtu.be/xabYn35ngaY]]
 !!Tools Used
 !!!Development:
 [[‘Twine 2’ framework, originally by Chris Klimas|https://twinery.org/]]
@@ -81,22 +83,30 @@ Arrival Platform Humlet by Percy Grainger
 [[VSCode|https://code.visualstudio.com/]]
 !!!Media Editing:
 [[Paint.Net|https://www.getpaint.net/]]
-[[Optipng|http://optipng.sourceforge.net/]]
 !!!Version Control:
 [[Git/Github|https://git-scm.com/]]
+!!!Source Code
+[[GitHub Repository|https://github.com/riewarden/Leeds_Piano_Repo]]
+
 !!Special Thanks
 !!!The pianists who gave me valuable insights on the process of teaching and playing piano improvisationally:
 Sam Marshall
 Felix Janeway
 Joe Samuel
 Dr. Matthew Bourne
+
 !!!The ‘Twine Games’ Discord server, for helping me with every technical problem, and special mentions to:
 TheMadExile
 dael.
 Cyrus Firheir
 kira
+Gil
+
 !!!Testers
 Ben, Malcolm, Kim, Skylar, Philippa, Sam, Phil, Ewan.
+
+!!!Sensitivity Reader
+[[Rosie Bergonzi|https://www.rosiebergonzi.com/]]
 
 !!Created by
 [[Laurence Owen|https://www.linkedin.com/in/laurence-owen-5b63011a1/]]
