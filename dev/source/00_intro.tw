@@ -1,7 +1,7 @@
 
 :: Start
 
-!Welcome to //The Leeds Piano Trail!//<nobr>
+!Welcome to //Impromptunes!//<nobr>
 <<script>> /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
@@ -15,16 +15,20 @@ State.variables.varDestination = grabQuery("location");
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = ""}
 <</script>>/*varDestination: <<print $varDestination>>*/</nobr>
-From here, you can access:
-* ''An information page'' about the artwork at this location, the artists who contributed to it, and upcoming events happening at this place on the Trail. 
-* ''//Impromptunes!//'' Play through an interactive piano tutorial, based on this location.
-Tap the arrow at the top to access options for this app. From there, you can report technical issues, share your experience on Twitter, and restart the app. 
+Play through an interactive piano tutorial, based on your location!
 
-There are ten different //Impromptunes// tutorials, one for every location on The Leeds Piano Trail. Find and play them all!
+There are ten different tutorials, one for every stop on the Leeds Piano Trail. Find and play them all! 
 
-Always close this tab before scanning a new QR code!
+...Let's get started!
+
+<<nobr>>
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn't throw a weird exception */
-<<nobr>><<set $sculpLink to "">>
+<<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
+ [[Impromptunes: Tap here to play piano!|$varDestination]]
+<<else>>
+[[Impromptunes: Tap here to play the piano!|Contents]]
+<</if>>
+<<set $sculpLink to "">>
 /*Check to see if $varDestination holds a valid query*/
 <<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
 /*Set the sculpture link to the link which corresponds to the location of the attendee*/
@@ -54,8 +58,6 @@ Always close this tab before scanning a new QR code!
 <<else>>
 [[Tap here to access the information page.|https://www.leedspiano.com/piano-trail-2021/]]
 <</if>><</nobr>>
-<<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
- [[Impromptunes: Tap here to play piano!|$varDestination]]
-<<else>>
-[[Impromptunes: Tap here to play the piano!|Contents]]
-<</if>>
+
+
+//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen. //

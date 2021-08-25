@@ -472,7 +472,7 @@ Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
 Config.history.maxStates = 20;
-Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to //The Leeds Piano Trail!//&lt;nobr&gt;
+Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to //Impromptunes!//&lt;nobr&gt;
 &lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
  window.grabQuery = function getParameter(parameterName){
     let parameters = new URLSearchParams(window.location.search);
@@ -486,16 +486,20 @@ State.variables.varDestination = grabQuery(&quot;location&quot;);
 //if (State.variables.varDestination == null) {
 //State.variables.varDestination = &quot;&quot;}
 &lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/&lt;/nobr&gt;
-From here, you can access:
-* &#39;&#39;An information page&#39;&#39; about the artwork at this location, the artists who contributed to it, and upcoming events happening at this place on the Trail. 
-* &#39;&#39;//Impromptunes!//&#39;&#39; Play through an interactive piano tutorial, based on this location.
-Tap the arrow at the top to access options for this app. From there, you can report technical issues, share your experience on Twitter, and restart the app. 
+Play through an interactive piano tutorial, based on your location!
 
-There are ten different //Impromptunes// tutorials, one for every location on The Leeds Piano Trail. Find and play them all!
+There are ten different tutorials, one for every stop on the Leeds Piano Trail. Find and play them all! 
 
-Always close this tab before scanning a new QR code!
+...Let&#39;s get started!
+
+&lt;&lt;nobr&gt;&gt;
 /*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
-&lt;&lt;nobr&gt;&gt;&lt;&lt;set $sculpLink to &quot;&quot;&gt;&gt;
+&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
+ [[Impromptunes: Tap here to play piano!|$varDestination]]
+&lt;&lt;else&gt;&gt;
+[[Impromptunes: Tap here to play the piano!|Contents]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $sculpLink to &quot;&quot;&gt;&gt;
 /*Check to see if $varDestination holds a valid query*/
 &lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
 /*Set the sculpture link to the link which corresponds to the location of the attendee*/
@@ -525,11 +529,9 @@ Always close this tab before scanning a new QR code!
 &lt;&lt;else&gt;&gt;
 [[Tap here to access the information page.|https://www.leedspiano.com/piano-trail-2021/]]
 &lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
-&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
- [[Impromptunes: Tap here to play piano!|$varDestination]]
-&lt;&lt;else&gt;&gt;
-[[Impromptunes: Tap here to play the piano!|Contents]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
+
+
+//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen. //</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
 [[Tap here to access a screen-reader version of this tutorial.|mgChurch_ac]]
 
 Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
@@ -1741,7 +1743,7 @@ If you’re playing on your own, keep playing your conversation, but imagine you
 Once you’ve got the hang of that, move on to the last section.
 
 !Breaking the rules
-After a while, start to break the rules. What are you not supposed to do in a conversation? Or, how far can you push the rules without the other person retaliating? Apply the rules playfully. How do kids learn to talk?
+After a while, start to break the rules of conversation, and show that in your music. What does an interruption sound like? Or, can you mimic the other player, sarcastically? Can you patronise, or lie, using the piano? What other things are you not supposed to do in a conversation?
 
 Find a way to use these techniques to bring the piece to a close. If you’re with a friend, can you end the piece together, without talking about it?
 
