@@ -27,6 +27,6 @@ Impromptunes!
 </nobr>
 </div><</if>>
 :: PassageFooter
-<div style="border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em">@@color:#808080;//When you find a new QR code, please close this tab to restart the app.//@@
+<div style="border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em">@@color:#808080;//When you find a new piano, tap the arrow at the top to restart the app.//@@
 </div>
 <br>
