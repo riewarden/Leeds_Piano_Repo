@@ -27,37 +27,7 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
  [[START PIANO TUTORIAL|$varDestination]]
 <<else>>
 [[START PIANO TUTORIAL|Contents]]
-<</if>>
-<<set $sculpLink to "">>
-/*Check to see if $varDestination holds a valid query*/
-<<if ["mgChurch", "mgGrave", "uniLeeds" , "vicGard" , "manGard" , "pHouse" , "vicQuart" , "kirkMark" , "trinShop" , "trainStat"].includes($varDestination)>>
-/*Set the sculpture link to the link which corresponds to the location of the attendee*/
-    <<if $varDestination is "mgChurch">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/">>
-    <<elseif $varDestination is "mgGrave">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/">>
-    <<elseif $varDestination is "uniLeeds">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/">>
-    <<elseif $varDestination is "vicGard">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/">>
-    <<elseif $varDestination is "manGard">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/">>
-    <<elseif $varDestination is "pHouse">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/">>
-    <<elseif $varDestination is "vicQuart">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/">>
-    <<elseif $varDestination is "kirkMark">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/">>
-    <<elseif $varDestination is "trinShop">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/">>
-    <<elseif $varDestination is "trainStat">>
-    <<set $sculpLink to "https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/">>
-    <</if>>
-    [[Learn more about the Trail|$sculpLink]]
-/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail's main website. I've done it in this inefficient way because for some reason the VSCode live server has a tantrum if the variable isn't set to anything, so I have to put error cases in these weird else statements*/
-<<else>>
-[[Learn More About The Trail|https://www.leedspiano.com/piano-trail-2021/]]
 <</if>><</nobr>>
 
 
-//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen. //
+//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen to open the menu.//

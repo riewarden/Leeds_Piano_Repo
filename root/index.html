@@ -498,40 +498,10 @@ There are ten different tutorials, one for every stop on the Leeds Piano Trail. 
  [[START PIANO TUTORIAL|$varDestination]]
 &lt;&lt;else&gt;&gt;
 [[START PIANO TUTORIAL|Contents]]
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;set $sculpLink to &quot;&quot;&gt;&gt;
-/*Check to see if $varDestination holds a valid query*/
-&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
-/*Set the sculpture link to the link which corresponds to the location of the attendee*/
-    &lt;&lt;if $varDestination is &quot;mgChurch&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;mgGrave&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;uniLeeds&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;vicGard&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;manGard&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;pHouse&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;vicQuart&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;kirkMark&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;trinShop&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/&quot;&gt;&gt;
-    &lt;&lt;elseif $varDestination is &quot;trainStat&quot;&gt;&gt;
-    &lt;&lt;set $sculpLink to &quot;https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/&quot;&gt;&gt;
-    &lt;&lt;/if&gt;&gt;
-    [[Learn more about the Trail|$sculpLink]]
-/*If, for some reason, sculpLink has no valid value (testing, and use after the festival) make the link go to Leeds Piano Trail&#39;s main website. I&#39;ve done it in this inefficient way because for some reason the VSCode live server has a tantrum if the variable isn&#39;t set to anything, so I have to put error cases in these weird else statements*/
-&lt;&lt;else&gt;&gt;
-[[Learn More About The Trail|https://www.leedspiano.com/piano-trail-2021/]]
 &lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 
 
-//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen. //</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
+//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen to open the menu.//</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
 [[Tap here to access a screen-reader version of this tutorial.|mgChurch_ac]]
 
 Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
