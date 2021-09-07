@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://7B96D1FA-510E-48EC-B14A-061FBDEA4156// --><tw-storydata name="Impromptunes!" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7B96D1FA-510E-48EC-B14A-061FBDEA4156" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "UI-bar" */
+	<!-- UUID://7B96D1FA-510E-48EC-B14A-061FBDEA4156// --><tw-storydata name="Impromptunes!" startnode="17" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7B96D1FA-510E-48EC-B14A-061FBDEA4156" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "UI-bar" */
 /*
 	Patches to the core styles.
 */
@@ -472,768 +472,7 @@ Config.ui.stowBarInitially = true;
 Config.saves.autoload = false;
 Config.saves.autosave = false;
 Config.history.maxStates = 20;
-Config.history.controls = false;</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">!Welcome to Impromptunes!&lt;nobr&gt;
-&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
- window.grabQuery = function getParameter(parameterName){
-    let parameters = new URLSearchParams(window.location.search);
-    return parameters.get(parameterName);
-    };
-//for debugging grabQuery: 
-//window.alert(grabQuery(&quot;location&quot;));
-
-State.variables.varDestination = grabQuery(&quot;location&quot;);
-
-//if (State.variables.varDestination == null) {
-//State.variables.varDestination = &quot;&quot;}
-&lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/&lt;/nobr&gt;
-Play through an interactive piano tutorial, based on your location!
-
-There are ten different tutorials, one for every stop on the Leeds Piano Trail. Find and play them all! 
-
-...Let&#39;s get started!
-
-&lt;&lt;nobr&gt;&gt;
-/*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
-&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
- [[START PIANO TUTORIAL|$varDestination]]
-&lt;&lt;else&gt;&gt;
-[[START PIANO TUTORIAL|Contents]]
-&lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
-
-
-//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen to open the menu.//</tw-passagedata><tw-passagedata pid="2" name="mgChurch" tags="" position="225,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
-[[Tap here to access a screen-reader version of this tutorial.|mgChurch_ac]]
-
-Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
-
-&lt;img src=&quot;img/d-minor.png&quot; width = &quot;90%&quot;&gt;
-
-If the piano is not working: 
-[[Tap here to email a member of staff|mailto:sam.berrill@leedspiano.com]]
-
-If all is well, tap the &#39;Next Section&#39; button below.
-[[Next Section|MerrionDeep2]]</tw-passagedata><tw-passagedata pid="3" name="MerrionDeep2" tags="" position="350,100" size="100,100">A useful skill for music-making is being able to listen to the other sounds around you, to help you make a decision about what sounds you’d like to add to them.
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Nearby, there is a sculpture, by Pianodrome, called Deep Listening, which has a cast-iron frame, that you can strike with a beater. Go over and play it, or wait for someone else to. Then, just listen to the sounds it can make. How are these sounds different to the sounds you just made with the piano?
-
-&lt;&lt;linkreplace &quot;Listen deeply.&quot; t8n&gt;&gt;
-When a sound starts to fade away, try to pinpoint the moment it turns from vibrations in the air, to stillness. How do these sounds blend with the other sounds, in and around the Rest Gardens? 
-
-&lt;img src=&quot;img/soundwaves.png&quot; width = &quot;95%&quot;&gt;
-
-&lt;&lt;linkreplace &quot;Take your time.&quot; t8n&gt;&gt;
-When you’re ready to move on, tap the ‘Next Section’ button below.
-
-[[Next Section|MerrionDeep3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="MerrionDeep3" tags="" position="475,100" size="100,100">How does the sound from the Deep Listening sculpture exist in the world, and how is it different to the piano? If you like, go back and forth between them, and compare their sounds, while you think about the next few questions.
-
-&lt;&lt;linkreplace &quot;How can we describe these sounds?&quot; t8n&gt;&gt;&lt;&lt;linkreplace &quot;Duration?&quot; t8n&gt;&gt;&#39;&#39;Duration:&#39;&#39;
-How long can the sound last? How short? How quickly can it make another sound? Does it need time to rest?&lt;&lt;/linkreplace&gt;&gt;
-
-&lt;&lt;linkreplace &quot;Timbre?&quot; t8n&gt;&gt;&#39;&#39;Timbre:&#39;&#39;
-//(Pronounced &#39;Taahm-BRUH&#39;)// If this sound was a colour, or a shape, what would it look like? Does this sound have emotions? What makes the sculpture&#39;s shape different to the piano’s shape?&lt;&lt;/linkreplace&gt;&gt;
-
-&lt;&lt;linkreplace &quot;Pitch?&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
-Is this a high, or a low sound? If you hum the sound, is it easy for you to reach, or is it a strain?
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-When you’ve had enough listening for one day, tap ‘Next Section’.
-[[Next Section|MerrionDeep4]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="MerrionDeep4" tags="" position="600,100" size="100,100">Now, go back to the piano. When you’re back at the piano, play any note, and let it go for a long time. Under your feet, you&#39;ll find some pedals. If you press down the one on the right, this will make the note last longer. 
-
-If you&#39;re not sure where to start, use one of the test keys from earlier:
-
-&lt;img src=&quot;img/d-minor.png&quot; width = &quot;90%&quot;&gt;
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Now, play that note, and while it is playing, look for another note that sounds good with it. Maybe it sounds pretty, maybe it sounds strange, or spooky. It&#39;s up to you.
-
-If you play some notes that don’t sound like what you wanted, that’s fine. Your journey to finding the note you want is now part of this composition that’s emerging.
-
-When you&#39;re happy with those two notes, tap ‘Next Section’.
-[[Next Section|MerrionDeep5]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="MerrionDeep5" tags="" position="725,100" size="100,100">Now that you’ve found two notes that work together, look for more. Try playing some at the same time. Try playing them in sequences. Can you play the same sequences, but change their shape, and give them different textures?
-
-Find a time to come gently to a stop.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;
-@@
-
-Or, come to some of our other events:
-[[Learn To Play In A Day|https://www.leedstownhall.co.uk/whatson-event/learn-to-play-in-a-day/?venue=4033//]]
-[[A Musical Night Walk|https://www.leedspiano.com/event/a-musical-night-walk/]]
-[[An Interview With Pianodrome|https://www.leedspiano.com/event/an-interview-with-pianodrome/]]
-[[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="mgGrave" tags="" position="850,100" size="100,100">!Welcome to the Merrion Street Rest Gardens.
-[[Tap here to access a screen-reader version of this tutorial|mgGrave_ac]]
-
-Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
-
-&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
-
-If the piano is not working:
-[[Tap here to tell a member of staff|mailto:sam.berrill@leedspiano.com]]
-
-If all is well, tap the &#39;Next Section&#39; button below.
-[[Next Section|MerrionSil2]]</tw-passagedata><tw-passagedata pid="8" name="MerrionSil2" tags="" position="975,100" size="100,100">When listening to music, we often pay a lot of attention to the notes...but not the spaces in-between the notes. The silences between notes are often called &#39;rests&#39;, in music. 
-
-Pretty apt that we’re in the ‘Rest Gardens’ to think about ‘rests’!
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-The parts of an artwork where there is no ink, or sculpture, or paint, is sometimes called ‘negative space’. 
-
-In Japanese art, this is called ‘ma’, and it is just as important, if not more important, as the rest of an artwork. 
-
-&lt;img src=&quot;img/ma.png&quot; width=&quot;95%&quot;&gt;
-
-[[Next Section|MerrionSil3]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="MerrionSil3" tags="" position="1100,100" size="100,100">Think about a song you know. It can be anything, and it doesn’t have to be a piano song. 
-
-Imagine that you broke this song into pieces, and then changed how the silences, or pauses, appeared in it. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-How would it change with no silences at all? Or, if there was more silence than notes? How about a patchwork of both of those? 
-
-How much can you mess with the gaps between notes, while still being able to recognise the song?
-
-When you’ve had enough of that, tap &#39;Next Section&#39;.
-[[Next Section|MerrionSil4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="MerrionSil4" tags="" position="1225,100" size="100,100">Go back to these keys that you used to test the piano, pictured below. 
-
-Arrange your hands so that every key highlighted in the picture has one finger on top of it. Your left hand should go over the keys on the left, and your right hand, over the keys on the right.
-
-&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
-
-Got it? Tap ‘Next Section’.
-[[Next Section|MerrionSil5]]</tw-passagedata><tw-passagedata pid="11" name="MerrionSil5" tags="" position="100,225" size="100,100">&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
-
-Using the keys under your fingers, find a pattern of three notes that you like. If you take a while to find one, don’t worry. That journey is a part of the process of improvising. No-one’s going to know that it’s just you figuring things out. 
-
-Play the pattern of three a few times, until it’s familiar. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Now, play the pattern three times, but on the third time, don’t play the final note. Let the absence of the note be an intentional part of the piece, and not a mistake. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-&lt;img src=&quot;img/missing.png&quot; width=&quot;95%&quot;&gt;
-
-Think about the missing note.
-* What do you feel ‘should be there’? 
-* Why does it matter, when it isn’t there?
-* If you feel like this is just ‘bad music’, what exactly about it is ‘bad’? 
-There’s no right answer, just try to explain to yourself why it is that you feel the way you do about the missing note.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-If you’re not sure, perhaps try a longer sequence, which has more of a build-up, before the missing note. 
-
-When you’ve had enough. Tap ‘Next Section’.
-[[Next Section|MerrionSil6]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="MerrionSil6" tags="" position="225,225" size="100,100">Last part. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Take a moment to listen to the silence around you. 
-* Is it really silence? 
-* What noises are in the distance? 
-* Are there sounds which don’t //sound// like sounds because they’re constant?
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; Now, using the same keys, and some of the techniques from the previous exercise, experiment with playing notes, and creating sequences, while focusing almost completely on the space created //between// the notes.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Go nice and slowly. Try and imagine the silences existing as a physical force, like a ripple of water, as it expands outwards. How can you fit the notes around noises that are already here? 
-
-Take as long as you need with this.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-When you feel satisfied, bring the piece to a close, listening for the moment the last note stops being vibrations in the air, and silence returns.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-
-Or, come to some of our other events:
-[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[The Lullaby Series (5th-18th September)|https://www.leedstownhall.co.uk/whatson-event/lullaby-series/]]
-[[Come Along And Chat (9th September)|https://www.leedspiano.com/event/come-along-and-tea-and-chat/]]
-[[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
-&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="uniLeeds" tags="" position="350,225" size="100,100">!Welcome to The University Of Leeds, Student&#39;s Union.
-[[Tap here to access a screen-reader version of this tutorial|uniLeeds_ac]]
-
-To start with, please play the following test keys, in any order, to ensure the piano is working. 
-
-&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
-
-If the piano is not working:
-[[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
-
-
-If all is good, tap the &#39;Next Section&#39; button below.
-[[Next Section|Uni2]]</tw-passagedata><tw-passagedata pid="14" name="Uni2" tags="" position="475,225" size="100,100">You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. 
-
-And I think you’re going to do great.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
-[[Next Section|Uni3]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Uni3" tags="" position="600,225" size="100,100">&lt;nobr&gt;&lt;&lt;cacheaudio &quot;blu&quot; &quot;audio/blu.mp3&quot;&gt;&gt;&lt;/nobr&gt;Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played earlier, in the test sequence. 
-
-&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
-
-When you have found the keys...
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Play the following sequence of notes, pausing where there is a &#39;...&#39;. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
-!!G G B D D ... D D ... B B
-If you’d like to hear it played, use the audio player below, and copy it. 
-&lt;&lt;link &quot;Play audio&quot;&gt;&gt;&lt;&lt;audio blu play&gt;&gt;&lt;&lt;/link&gt;&gt;
-
-Once you’re comfortable with playing this pattern, tap ‘Next Section’.
-[[Next Section|Uni4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Uni4" tags="" position="725,225" size="100,100">Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Try playing the &#39;Blue Danube&#39; pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Can you do a version that uses keys that are as far apart as possible? Can you do a version that sounds like a joke, with a set-up, and a punchline? How about using your elbow, or the back of your hand to play?
-
-Once you’ve found as many versions as you have the patience for, tap &#39;Next Section&#39;.
-[[Next Section|Uni5]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Uni5" tags="" position="850,225" size="100,100">Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the &#39;Blue Danube&#39; pattern. Perhaps, even go back to the original version that you copied…
-!!G G B D D ... D D ... B B
-
-&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
-
-&lt;&lt;link &quot;Play audio&quot;&gt;&gt;&lt;&lt;audio blu play&gt;&gt;&lt;&lt;/link&gt;&gt;
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-…Think about this: if someone else was playing your sequence, what would you expect them to play, //after// it? 
-
-Don’t think too hard about the &#39;why&#39;, just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Find a way to bring the piece to a close. Take a moment to think about what you created. 
-
-You started from somebody else&#39;s music. You then played it &#39;wrong&#39;, and then kept adding the next thing that felt right. Your new piece could go on forever, if you just kept adding more sequels.
-
-Is there a way to apply this process to a different form of art? Writing? Painting? Carving? Calligraphy? 
-
-Is it right to make art in this way, or is it just plagiarism?
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt; 
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-
-If you enjoyed this, why not try some of our other events?
- [[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
- [[Musical Theatre Sing-a-long (15th September)|https://www.leedspiano.com/event/musical-theatre-sing-a-long-15-september/]]
- [[Poptastic Sing-a-long (9th September)|https://www.leedspiano.com/event/pop-anthems-sing-a-long/]]
- [[All Events at University of Leeds|https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="vicGard" tags="" position="975,225" size="100,100">!Welcome to Cookridge Street! 
-[[Tap here to access a screen-reader version of this tutorial|vicGard_ac]]
-
-Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
-
-&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;95%&quot;&gt;
-//(They&#39;re orange in the picture, but black, in the real world.)//
-
-If the piano is not working,
-[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
-
-If all is well, tap the &#39;Next Section&#39; button below.
-[[Next Section|VicGard2]]</tw-passagedata><tw-passagedata pid="19" name="VicGard2" tags="" position="1100,225" size="100,100">For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
-
-A lot of people have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-&lt;img src=&quot;img/scarbo.png&quot; width=&quot;95%&quot;&gt;
-
-The reality is, sheet music is just a //common// way of recording music. 
-
-That’s all. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Sheet music is often taught very early in musical education. It&#39;s a common practice, and everyone is used to things being done that way. 
-
-But, I’m sure you can think of many aspects of life that also fit that criteria, but which you know aren&#39;t &#39;the only&#39; way of doing things. Like, for example, being right-handed. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-There are far more right-handed people in the world, than there are left-handed people. Thanks to the Catholic Church, in the past, almost all left-handed people in the UK were forced to write with their right hand instead, even though doing this caused all sorts of problems for their brains. This still happens in some schools today! 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Left handed people were less common, and they didn&#39;t do things in the same way as everyone else. They were made to feel like this was their own fault, when really, right-handers were just more common. 
-
-How does this have anything to do with sheet music? Well, I wonder how many musicians we&#39;ve lost, because they didn&#39;t, or couldn&#39;t, read sheet music. Is sheet music actually essential for being a musician, or is it just a common idea of what a musician should be? 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-With that said, let’s take a look at how music can be recorded in a completely different way to European sheet music.
-[[Next Section|VicGard3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="VicGard3" tags="" position="1225,225" size="100,100">‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall&#39;s &#39;The Spark Catchers&#39;. She writes her scores like this before writing them up as sheet music, but, this is still a picture of the music she hears in her head.
-
-&lt;img src=&quot;img/hkendall-1.png&quot; width=&quot;95%&quot;&gt;
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-It could be anything, right? Well, that’s true, unless you make some decisions about //how// to look at it.
-
-Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. 
-
-Then, look back at the picture. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
-&lt;&lt;linkreplace &quot;Not sure where to start?&quot; t8n&gt;&gt; 
-If you’re not sure where to start, how about deciding:
-* What direction will you take, across the page, in order to read it? Left to right, like a book, or perhaps top to bottom?
-* How could you use the shapes to decide how long each note will be played for?
-When you’ve had enough of this, take a look at the full version…
-[[Next Section|VicGard4]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="VicGard4" tags="" position="100,350" size="100,100">Here’s another section of Hannah Kendall&#39;s score. 
-
-&lt;img src=&quot;img/hkendall.png&quot; width=&quot;95%&quot;&gt;
-
-Remember the rules that you decided on in the previous section, and think about which parts of the image need some more rules, so that you can play it.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
-* What do the diamonds mean?
-* What does the shading on the right-hand side mean?
-* What are the scratchy blue pen marks for?
-
-Try to play through all of the score, then bring the piece to a close. 
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt; 
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-Take a look at some of the other events on the trail:
-[[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
-[[All Events At Cookridge Street|https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="manGard" tags="" position="225,350" size="100,100">!Welcome to Mandela Gardens. 
-[[Tap here to access a screen-reader version of this tutorial|manGard_ac]]
-
-These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-There are three pianos in the area. Are you here by yourself, or do you have company?
-
-&lt;&lt;linkreplace &quot;I came here by myself.&quot;&gt;&gt; If you came here by yourself, go to the piano on the plinth, which overlooks the other two.
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;linkreplace &quot;Actually, I came here with a friend.&quot;&gt;&gt;If you’re here with a friend, get them to scan the QR code on their device, (or, just shout the instructions to them, across the square).
-
-Then, set yourselves up on the pianos that are facing each other, and follow the instructions together.&lt;&lt;/linkreplace&gt;&gt;
-[[Next Section|MandIntro]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="MandIntro" tags="" position="350,350" size="100,100">Before we do anything, however, we need to ensure the piano is working. Please play the following test keys, in any order, a few times over. 
-
-&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;95%&quot;&gt;
-
-If you find the piano is not working,
-[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
-
-Once you’ve played the test keys a few times, tap ‘Next Section’.
-[[Next Section|Mand2]]</tw-passagedata><tw-passagedata pid="24" name="Mand2" tags="" position="475,350" size="100,100">Jazz music has a rich and complex history, rooted in the people of African Diaspora communities, who were trafficked, and brought to the West, during the Transatlantic Slave Trade. Jazz fuses African musical traditions with Western musical traditions. 
-
-One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation.
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
- In the history of European music, musicians have always tended to write music down, and then have people perform it, exactly as it was recorded. 
- 
- In many African countries, however, it&#39;s more common for music to spring from the relationship between musicians, their audience, and the context where music is being made. This approach to music, but using European instruments, is how Jazz arose in the West. 
-
-So, how can we make pianos talk to each other?
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-First of all, look back at the test keys. 
-
-&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;95%&quot;&gt;
-
-Play the three test keys at the same time. Whenever you play more than one note at the same time, it’s called playing a ‘chord’. Try that, and see how it sounds, in comparison to just playing a note by itself.
-
-Once you’re happy with playing that chord, keep your left hand on it, and tap ‘Next Section’.
-[[Next Section|Mand3]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Mand3" tags="" position="600,350" size="100,100">When we talk to another person, there can often be unspoken rules or conventions that indicate, for example, when one person is finished talking, and another person can begin. There’s no right or wrong way to converse. It will always vary according to culture, family, how much practice we’ve had, etc.
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-Keep your left hand on the chord, the three notes.
-Then, put your right hand on the notes highlighted below. Arrange your right hand so that every key highlighted in the picture has one finger on top of it. 
-&lt;&lt;linkreplace &quot;Optional: I need help with this.&quot;&gt;&gt;&#39;&#39;Optional: I need help with this.&#39;&#39;
-Find two black keys on their own, and put your right-hand thumb on the white key just to the left of them. Then, put the rest of your fingers on the keys that follow it.&lt;&lt;/linkreplace&gt;&gt;
-
-&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;95%&quot;&gt;
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-Don’t worry, you won’t be asked to play both hands together. Get used to your hands being in this position. Try playing the keys a little to see how this position feels and sounds.
-
-When you’re ready to move on, tap ‘Next Section’.
-[[Next Section-&gt;Mand5]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Mand5" tags="" position="725,350" size="100,100">Think again about comparing music with a conversation. 
-
-In some conversations, people will indicate to their partner that they’ve finished speaking. They might do this by lowering the pitch at the end of a sentence, or asking the other person a question. 
-
-You can apply similar rules like this to music, and some Jazz musicians actually call this ‘conversation’.
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-Look back at the piano. Make sure your hands are set up like this.
-
-&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;95%&quot;&gt;
-
-Try playing a few of the notes under your right fingers, just going up and down, and then use the three-note chord, in your left hand, to show when you’ve finished that section. Then, do it again.
-
-Once you’re happy with this as a pattern, tap ‘Next’.
-[[Next Section-&gt;Mand6]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Mand6" tags="" position="850,350" size="100,100">If you’ve been following these exercises with another person, you’ll probably have started to see how you can turn this shared set of rules into a duet, without having to read sheet music at all. 
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-This style of playing has also been known as ‘cutting contests’ in the past. Cutting contests involve Jazz musicians testing each other&#39;s musical skills, and were common in the Harlem Jazz community in New York, between the 1940s and the 1970s. 
-
-They were also a form of musical education. Competitors had to listen carefully, and respond to their opponent, and the audience reaction, in order to be the most entertaining performer. Musicians like James P. Johnson, Fats Waller, and Art Tatum, often battled it out at cutting contests. 
-&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
-In Black neighbourhoods, people often held &#39;Rent Parties&#39;, where the community came together, to enjoy music, dancing, and cutting contests. These parties were also a method for this marginalised community to provide mutual aid for those in need, as the entry fee went towards the rent, for the party hosts. 
-
-&lt;img src=&quot;img/rent.png&quot; width=&quot;95%&quot;&gt;
-
-Tap the arrow at the top of the page to access the &#39;Credits&#39;, where you can learn more about cutting contests, and the origins of Jazz. 
-
-[[Next Section|Mand6-2]]
-&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Mand6-2" tags="" position="975,350" size="100,100">If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts, played by two characters. 
-* Are they different ages?
-* Are they arguing, or, are they confessing their love for each other?
-* Does the conversation start suddenly, or, do they slowly notice each other from across a room?
-If you’re with a friend, try to have a conversation, or a competition, through your pianos, using no words.
-
-&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;95%&quot;&gt;
-
-Once you’ve got the hang of that, tap ‘Next Section’
-[[Next Section|Mand7]]</tw-passagedata><tw-passagedata pid="29" name="Mand7" tags="" position="1100,350" size="100,100">After a while, start to break the rules of conversation, and show that in your music. What does an interruption sound like? Or, can you mimic the other player, sarcastically? Can you patronise, or lie, using the piano? What other things are you not supposed to do in a conversation?
-
-Find a way to use these techniques to bring the piece to a close. If you’re with a friend, can you end the piece together, without talking about it?
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-Check out some of the other activities on offer…
-[[Learn To Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
-[[Power To The People - Spoken Word Night|https://www.leedspiano.com/event/power-to-the-people/]]
-[[All Events At Mandela Gardens|https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="pHouse" tags="" position="1225,350" size="100,100">!Welcome to The Leeds Playhouse Gardens! 
-[[Tap here to access a screen-reader version of this tutorial|pHouse_ac]]
-
-In the next couple of exercises, we’ll be looking at playing a simple piece which can grow for a long time, but which sprouts from just one note.
-
-But, before we begin, please play the following test keys on the piano, to ensure that it is working. 
-
-&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;95%&quot;&gt;
-
-If the piano isn’t working...
-[[Please tap here to contact a member of staff.| mailto:dave.cartwright@leedspiano.com]]
-
-Once you’re certain it’s working, tap ‘Next Section’.
-[[Next Section|PHouse2]]</tw-passagedata><tw-passagedata pid="31" name="PHouse2" tags="" position="100,475" size="100,100">Keep your hand resting comfortably on some of the test keys. The key which is furthest left, just before the two black keys, is called C, and it, along with all the rest of the white notes on the piano, are part of a group called ‘C Major’. 
-
-&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;People who work with music will often group notes together, and give the groups names, to help them remember which groups of notes all tend to work well together. 
-
-It also helps us talk about music, and have a way to make sure many people can know which notes we’re talking about at a given time. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Grouping notes like this is not the only way to talk about music, but it’s quite common, kind of like how English and Chinese are very widespread, but they’re certainly not the only languages in the world. 
-
-Hindustani music, for example, uses completely different ideas to understand and notate sound. However, this tutorial uses C Major.
-[[Next Section|PHouse3]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="PHouse3" tags="" position="225,475" size="100,100">So. Right now, we’re just looking at one group of notes, which is C Major, or, all the white keys. We also call it C Major, because C is the ‘root’ note of the group. 
-
-Essentially, what this means is that if you play a few notes of C Major, and end on a C, it will sound ‘finished’. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Have a go at doing that now. Here are the notes of C Major, with C highlighted for you. Just play three notes, and make the fourth note a C. ‘See’ what you think. Try it a few times.
-
-&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
-
-When you’re done experimenting, tap ‘Next Section’.
-[[Next Section|PHouse4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="PHouse4" tags="" position="350,475" size="100,100">Now, it’s time to turn this root into a tree. 
-
-&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
-
-All you need to do, as slowly as you like, is play sequences of notes that get longer and longer, but always return to C, the root. 
-
-It doesn’t have to be the same pattern every time, you can just play any notes, while counting up to the number you need, then play C again.
-&lt;&lt;linkreplace &quot;Try beginning like this...&quot; t8n&gt;&gt;* Start by playing one note, then C.
-* Then, two notes, then C.
-* Then three notes, then C.
-* And so on. 
-&lt;img src=&quot;img/treefractal.png&quot; width=&quot;95%&quot;&gt;
-&lt;&lt;linkreplace &quot;Tap to read more...&quot; t8n&gt;&gt;
-Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again, until it becomes a pattern. 
-
-And don’t worry about losing count of the number of notes that you&#39;re supposed to be up to. It won’t really matter after a while. Start from one, and see where it goes.
-&lt;&lt;linkreplace &quot;When you feel yourself getting tired...&quot; t8n&gt;&gt;
-Choose a low number like 5, and play decreasing numbers of notes, always ending on C, until you find an ending.
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thannks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-Or, why not take a look at some of the other activities the Leeds Piano Trail has to offer?
-[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Come Along and Plant|https://www.leedspiano.com/event/come-along-and-plant/]]
-[[Talks: Nature in Music, Music In Nature|https://www.leedspiano.com/event/lecture-series/]]
-[[Nature Concerts|https://www.leedspiano.com/event/nature-concerts-8-15-september/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
-[[All Leeds Playhouse Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/]]
-&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="vicQuart" tags="" position="475,475" size="100,100">!Welcome to the Victoria Quarter. 
-[[Tap here to access a screen-reader version of this tutorial.|vicQuart_ac]]
-
-Did you know that there used to be a music hall here, where Harvey Nichols now stands? 
-
-It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Before we start with the exercises, please make sure the piano is working. To test the piano, please play the three test keys shown, in any order:
-
-&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;90%&quot;&gt;
-
-If the piano isn’t working, please [[tap here to contact a member of staff|mailto:dave.cartwright@leedspiano.com]]. 
-
-Once you’re sure the piano is working, tap ‘Next Section’.
-[[Next Section|VicQ2]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="VicQ2" tags="" position="600,475" size="100,100">How can we sit at the piano, and make something sound like a tune? 
-
-Well, one of the secrets is to just //repeat things!// 
-
-Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn against…
-
-So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
- You don&#39;t need a plan to make great art. If you just decide on some pattern that you’re going to repeat, or keep coming back to, your audience will make the art great, all by themselves. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-The way the audience responds to your patterns, and the way you respond to their responses, and so on… That is one of the joys of improvised music.
-
-Great. Let’s put that into practice, shall we?
-[[Next Section|VicQ3]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="VicQ3" tags="" position="725,475" size="100,100">Go back to the test keys, from earlier.
-
-&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;90%&quot;&gt;
-
-Play the three keys from left to right. Notice that they’re all white keys, and they all have a gap of one white key between them, (for this set of exercises, ignore the black keys.)
-
-When you’re happy with playing these keys, play this three-note pattern somewhere in the middle of the keyboard. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
-
-Keep playing the pattern, and moving up, until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
-
-When you’re finished with this, tap ‘Next Section’.
-[[Next Section|VicQ4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="VicQ4" tags="" position="850,475" size="100,100">Try and push this simple pattern to its limits.
-
-* Can you make it sound happy? 
-* How does speed affect the way it sounds? 
-* Are there any emotions, or ideas that this pattern is particularly good at? 
-* What is it not so good at? 
-
-There are no right answers. But, try to explain to yourself why you feel the way you do about certain combinations of notes.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Try and find ways to use this pattern in a surprising way. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
-
-When you’ve finished exploring the patterns, and breaking them apart, bring the piece to a close. 
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-If you enjoyed this, check out some of the other activities on the Trail:
-[[Learn to play in a day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Belonging Here - Theatre Show (September 11th)|https://www.leedspiano.com/event/sarah-nicolls-belonging-here-theatre-show/]]
-[[All Victoria Quarter Events|https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="kirkMark" tags="" position="975,475" size="100,100">!Welcome to Kirkgate Market! 
-[[Tap here to access a screen-reader version of this tutorial.|kirkMark_ac]]
-
-This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it never closed for more than a few days. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! 
-
-The spirit of the market has blazed brighter than its adversities for 120 years.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-We’ll be taking //fire// as an inspiration for the next few exercises. This place can handle it. 
-
-Before we begin, however, we need to make sure the piano is working. Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
-
-&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;95%&quot;&gt;
-
-If the piano isn’t working...
-[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
-
-Once you’re sure that the piano is working, tap ‘Next Section’.
-[[Next Section|Kgate2]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Kgate2" tags="" position="1100,475" size="100,100">Imagine a //spark//. A bright point of light, which quickly dies.
-
-&lt;img src=&quot;img/spark.png&quot; width=&quot;95%&quot;&gt;
-
- Starting with the test keys, play a single note, which you think sounds like a //spark//. 
-
-&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;95%&quot;&gt;
-
-Then, use the rest of the keyboard, and play a few of those. Sometimes, a //spark// ignites another //spark//. What does that sound like?
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-From sparks, //flames// can grow. 
-
-&lt;img src=&quot;img/fire.png&quot; width=&quot;95%&quot;&gt;
-
-Now, find any two white keys that have one white key between them. Play them back and forth, over and over, like a flickering //flame//. 
-
-(Musicians often call this kind of playing a ‘trill’.)
-
-How does that sound different from the //sparks//? What does it sound like when a spark becomes a //flame//?
-
-When you’re happy with how your //sparks// and //flames// sound, tap ‘Next Section’.
-[[Next Section|Kgate3]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Kgate3" tags="" position="1225,475" size="100,100">Finally, //flames// can become a //blaze//. 
-
-&lt;img src=&quot;img/blaze.png&quot; width=&quot;95%&quot;&gt;
-
-Starting from the middle of the keyboard, find two white keys that have one white key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the //blaze//?
-
-Play with the //sparks//, //flames//, and the //blaze//. When you feel you can make all three sound different from each other, tap ‘Next Section’.
-[[Next Section|Kgate4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Kgate4" tags="" position="100,600" size="100,100">Finally, imagine you’re making a film about a fire, from the first //spark//, to the //ashes// it leaves behind. 
-
-The things you&#39;re pointing the imaginary camera at becomes the music that your audience hears. The //sparks//, the //flames//, and the //blaze//.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;* What do you film first? 
-* How do you show the movement of the fire? 
-* Does anyone try and stop it? How does that change your playing?
-Bring the piece to a close, by finding a way to show the heat and light fading. What do ashes sound like?
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-If you enjoyed this why not try some of the other activities on The Leeds Piano Trail? 
-[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Come Along And Make|https://www.leedspiano.com/event/come-along-and-make/]]
-[[All Kirkgate Market Events|https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="trinShop" tags="" position="225,600" size="100,100">!Welcome to Trinity Shopping Centre! 
-[[Tap here to access a screen-reader version of this tutorial.|trinShop_ac]]
-
-The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend.
-
-Before we begin, we need to check to make sure the piano is working. 
-Please play the following five test keys in any order, preferably several times over:
-
-&lt;img src=&quot;img/C3_F3_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
-
-If the piano isn&#39;t working
-[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
-
-Once you’re satisfied that all the keys are working, tap ‘Next Section’.
-[[Next Section|Trin2]]</tw-passagedata><tw-passagedata pid="43" name="Trin2" tags="" position="350,600" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, it doesn’t //have// to sound exactly the same, over and over. Make it up as you go! 
-
-Put the fingers of your left hand on these two keys, and play them at the same time.
-
-&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Now, find lots of different rhythms and beats, just playing these two keys over and over. Try not to keep it the same for too long. 
-
-Imagine you have to do a whole song, with just these two keys, over and over. How are you going to stop yourself falling asleep? How can you surprise yourself?
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Once you’ve had enough of that, tap ‘Next Section’ to add some more notes! Don’t worry, you won’t have to play anything with both hands at the same time, unless you want to.
-[[Next Section|Trin3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Trin3" tags="" position="475,600" size="100,100">Great. Now it’s time to spice things up. Put your right hand on these keys:
-
-&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
-
-Now, play them, and see how they sound. Start by playing them in order, from left to right. Then, play them again, but play each note twice before moving on. 
-
-Once you’re happy doing that, try switching back and forth, between &#39;going-up-and-down&#39; and the &#39;playing-them-twice&#39; styles.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Keep experimenting with the notes. Just play the next key that you feel makes sense to play. Don’t plan a tune in advance. Limit your focus to these three keys, and the next note. This doesn&#39;t need to be done quickly.
-
-When you’re happy with how these notes work together, you can probably guess what’s next.
-[[Next Section|Trin4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Trin4" tags="" position="600,600" size="100,100">Side note: 
-
-These notes are adapted from Blues music, which is believed to have derived from African musical traditions of call-and-response. 
-
-Blues were often sung by trafficked, enslaved African people, while they were being held at plantations. Like Jazz, Blues music has been incredibly influential on contemporary Western music. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-As these exercises are short, and designed to get you playing quickly, the music you’re playing right now isn’t authentic Blues. The most charitable way to describe what you’re playing, is ‘Blues-inspired notes’.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-But, understanding where music comes from, and how it is changed, and subverted by people, over time, allows us to admire and value the way marginalised people have shaped popular music, and avoid claiming, or colonising traditions that don’t belong to us.
-
-Tap the arrow at the top of the page to access the &#39;Credits&#39; page, where you can read more about how the actual Blues are played. (Or, do this at the end of the tutorial.)
-[[Next Section|Trin5]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Trin5" tags="" position="725,600" size="100,100">Using the keys in your left hand:
-
-&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
-
-And, the keys in your right hand:
-
-&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
-
-You&#39;re going to use everything we’ve done so far to make your own music. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
-
-Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. Don&#39;t think too much about the next note, just let it happen. 
-
-To make something closer to the Blues...
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Play a chord, then a few keys on your right hand. Then, repeat what you just did. Then, the third time, starting playing the same thing again, but make the ending different.
-
-Then, find a way to bring the piece to a close.
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-If you enjoyed this activity, there’s plenty to get involved with. 
-[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Pop Anthem Sing-A-Long|https://www.leedspiano.com/event/pop-anthems-sing-a-long/]]
-[[The Lullaby Series|https://www.leedspiano.com/event/lullaby-series-baby-yoga-live-music/]]
-[[All Trinity Shopping Center Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="trainStat" tags="" position="850,600" size="100,100">!Welcome to Leeds Train Station. 
-[[Tap here to access a screen-reader version of this tutorial.|trainStat_ac]]
-
-Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. 
-
-&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;90%&quot;&gt;
-(They&#39;re orange in the picture, and black in real life!)
-
-If the piano is not working...
-[[Tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
-
-
-Once you’ve tested the keys, tap ‘Next Section’.
-[[Next Section|Train2]]</tw-passagedata><tw-passagedata pid="48" name="Train2" tags="" position="975,600" size="100,100">The next few exercises are inspired by the work of a composer called Percy Grainger, who absolutely loved trains, and actually wrote a lot of his music while riding on them, or while waiting for his friends at the station.
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-One of the pieces Percy Grainger created was called ‘Arrival Platform Humlet’. A ‘Humlet’ is described by Grainger as: 
-&gt;//‘The sort of thing one hums to oneself as an accompaniment to one’s tramping feet as one happily, excitedly, paces up and down the arrival platform.’//
-[[Next Section|Train2-1]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Train2-1" tags="" position="1100,600" size="100,100">Picture this: 
-
-A person is waiting for a train to arrive on the platform. 
-They walk a little way up the platform, 
-then stop, turn, 
-and walk back. 
-Then, they turn again. 
-And so on.
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Now, look back at the black keys, and choose three that are next to each other. 
-
-&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;90%&quot;&gt;
-
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Play those three keys in any order, to accompany your imaginary person walking up the platform. Try that for a bit. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-Now, just //before// the imaginary person turns, look at the keyboard, and choose three different keys, it doesn’t matter which ones, and move your hand to them. Then, play some music for the walk //down// the platform. 
-
-Repeat this process, as many times as you need, to get used to the feeling of choosing keys, then moving to them.
-
-When you’re happy with moving your hand to different groups of black keys, tap ‘Next Section’.
-[[Next Section|Train3]]
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Train3" tags="" position="1225,600" size="100,100">Now, it’s time to bring the other hand in. Try playing with groups of three black notes, exactly the same as you were before, but play one section with your left, and the next one with your right, then the next with your left, and so on.
-
-Get used to looking for a place to move your other hand to, //just before// you want to finish one section. 
-&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
-You don’t need to do this quickly. It’s up to you how long the sections last! If you can’t decide on the next set of notes to move to, just stall for time by playing more notes. No-one will notice!
-
-When you’re happy with playing the black keys, and moving both of your hands around, tap ‘Next Section’.
-[[Next Section|Train4]]
-&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Train4" tags="" position="100,725" size="100,100">Now, see how long you can go for without stopping, looking ahead and stalling for time when you need it! 
-
-Think about times when you’ve waited for a friend who is late, and the progression of emotions that arise from the waiting, and pacing. How can you describe that journey using the skills you’ve picked up in the last few minutes?
-
-When you&#39;re ready...bring the piece to a close.
-&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
-!Thanks for playing!
-If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
-@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
-
-If you enjoyed this, check out the rest of The Leeds Piano Trail!
-[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
-[[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
-[[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
-[[All Events at Leeds Train Station|https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Credits" tags="" position="225,725" size="100,100">!Credits
+Config.history.controls = false;</script><tw-passagedata pid="1" name="Credits" tags="" position="100,100" size="100,100">!Credits
 !!Sources Used
 !!!Background
 [[Jazz History Tree|https://www.jazzhistorytree.com/]]
@@ -1349,28 +588,959 @@ Ben, Malcolm, Kim, Skylar, Philippa, Sam, Phil, Ewan.
 
 @@.altlinks;
 [[Top of Page|Credits]]
-&lt;&lt;back&gt;&gt;@@</tw-passagedata><tw-passagedata pid="53" name="Contents" tags="" position="350,725" size="100,100">!Contents
+&lt;&lt;back&gt;&gt;@@</tw-passagedata><tw-passagedata pid="2" name="Contents" tags="" position="225,100" size="100,100">!Contents
 Scroll through the list and tap the location you are currently at, to view the tutorial for that area.
 
-[[Merrion Street Rest Gardens (In front of the church)|mgChurch]]
+[[Trinity Shopping Center|kidTrinShop]]
 
-[[Merrion Street Rest Gardens (The graveyard)|mgGrave]]
+[[Kirkgate Market|kidKirkMark]]
 
-[[The University of Leeds Student&#39;s Union|uniLeeds]]
+[[University of Leeds Students Union|kidUniLeeds]]
 
-[[Cookridge Street (Next to Leeds Art Gallery)|vicGard]]
+[[Victoria Quarter|kidClimCh]]</tw-passagedata><tw-passagedata pid="3" name="kidTrinShop" tags="" position="350,100" size="100,100">Hello. Welcome to Trinity Shopping Centre! The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend. At the end, you can share your creation using #LeedsPianoTrail2021
 
-[[Mandela Gardens (Next to Millennium Square)|manGard]]
+Before we begin, we need to check to make sure the piano is working. If it isn’t, [[tap here to contact a member of staff| info@leedspiano.com]].
+Please play the following five test keys in any order, preferably several times over:
 
-[[Leeds Playhouse Gardens|pHouse]]
+&lt;img src=&quot;img/C3_F3_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
 
-[[Victoria Quarter (Near Harvey Nichols)|vicQuart]]
+Once you’re satisfied all the keys are working, tap ‘Next’.
 
-[[Kirkgate Market|kirkMark]]
+[[Next|kidTrin2]]</tw-passagedata><tw-passagedata pid="4" name="kidTrin2" tags="" position="475,100" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, doesn’t have to sound the same, over and over. Make it up as you go! Put your fingers on these two keys, and have your adult find the same keys, somewhere else on the keyboard. Play the notes one by one, then, play them all at the same time.
 
-[[Trinity Shopping Centre|trinShop]]
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
 
-[[Leeds Train Station|trainStat]]</tw-passagedata><tw-passagedata pid="54" name="mgChurch_ac" tags="" position="475,725" size="100,100">!Welcome to the Merrion Street Rest Gardens.
+Now, find lots of different rhythms and beats, just using these four keys. Try not to keep it the same for too long. Imagine you have to do a whole song, with just these four keys, over and over. How are you going to stop yourself falling asleep? How can you surprise yourself?
+
+Once you’ve had enough of that, tap ‘Next’ to add some more notes! Don’t worry, neither of you have to play anything with both hands at the same time (unless you want to.)
+
+[[Next|kidTrin3]]</tw-passagedata><tw-passagedata pid="5" name="kidTrin3" tags="" position="600,100" size="100,100">Great. Now it’s time to spice things up. Now, find these keys on the keyboard, and have your adult find them somewhere else.
+
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
+
+Try playing them, and see how they sound. Start by playing them in order, from left to right, together. Then, play them again, but play each note twice before moving on. Once you’re both happy doing that, the two of you should try playing the keys in any order you like. 
+If you’re not sure where to start, just play the keys up and down, and sometimes play a key twice.
+Limit your focus to your three keys, and try playing without telling each other what to do. Your adult might be worried about making it sound ‘nice’, and may be tempted to tell you how they think you should play. If they do this, point at this paragraph!
+When you’re happy with how the notes work together, you can probably guess what’s next.
+[[Next|kidTrin4]]</tw-passagedata><tw-passagedata pid="6" name="kidTrin4" tags="" position="725,100" size="100,100">A bit of reading, but, I promise that it’s interesting: 
+These notes come from Blues music. Blues music comes all the way from ancient African musical traditions. Blues were often sung by trafficked, enslaved African people, while they were being held at plantations, during the Slave Trade, from 1619 to 1865. The Blues have influenced millions of musicians over the years, and you can find bits of Blues music in almost every modern song.
+As these exercises are short, and try to get you playing quickly, the music you’re playing right now isn’t really ‘Blues’. You’re just playing ‘Blues-inspired notes’.
+But, understanding where music comes from allows us to admire and value the art that came out of communities who were put through unnecessary harm. This helps us appreciate traditions, and not steal from them.
+[[Next|kidTrin5]]</tw-passagedata><tw-passagedata pid="7" name="kidTrin5" tags="" position="850,100" size="100,100">Reading is over. Time for playing! Have your adult find these this set of keys in two places on the keyboard.
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
+
+And, then, go back to these keys (or, find two sets of these keys on the keyboard.)
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
+
+Use everything we’ve done so far to make your own music. Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
+Your adult should make some rhythms with their keys, while you make tunes with your keys.
+To play something closer to the Blues, play a tune together. Then, repeat what you just did. Then, the third time, play most of it again, but make the ending a bit different.
+Find a way to end your piece.</tw-passagedata><tw-passagedata pid="8" name="kidKirkMark" tags="" position="975,100" size="100,100">Hello, and welcome to Kirkgate Market! This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it hardly closed. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! The spirit of the market has blazed brighter than its adversities for 120 years.
+
+We’ll be taking fire as an inspiration for the next few exercises. This place can handle it. Before we begin, however, we need to make sure the piano is working. If it isn’t working, [please tap here to contact a member of staff.| info@leedspiano.com]
+
+Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
+
+=Image: Piano keys, with F and G highlighted.=
+
+Once you’re sure that the piano is working, tap ‘Next’.
+
+[[Next|kidKgate2]]</tw-passagedata><tw-passagedata pid="9" name="kidKgate2" tags="" position="1100,100" size="100,100">Both of you are going to create sparks. To play a spark, imagine a bright light that quickly disappears, and play a quick note on the piano. Make sure to share the piano! Perhaps one of you takes the black keys and the other takes the white keys.
+
+Tap to continue.
+
+When you can both do sparks, try adding some flames into the mix. To play a flame, just find any two keys with one white key between them, and play them back and forth, over and over. 
+
+Play a game where if one of you plays a spark, the other should respond with a flame near that same place. If you lose track of the last spark your partner did, just wait for the next one. 
+
+You can try to catch each other out, but don’t try to win. Just have fun and work together. Try and keep the music going without stopping.
+
+When you’re happy with how sparks and flames work, tap ‘Next’.
+[[Next|kidKgate3]]</tw-passagedata><tw-passagedata pid="10" name="kidKgate3" tags="" position="1225,100" size="100,100">Finally, flames can become a blaze. 
+
+Starting from the middle of the keyboard, find two keys that have one key between them, like a flame. Put one finger from your hand on the left key, and your adult should put one finger from their hand, on the right key.
+[Click to continue-&gt;]
+Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the blaze? 
+
+Play with the sparks and the flames, then, when the fire feels very big, both of you should make a blaze together. When you feel you can make all three sound different from each other, tap ‘Next’.
+
+[[Next|kidKgate4]]</tw-passagedata><tw-passagedata pid="11" name="kidKgate4" tags="" position="100,225" size="100,100">Finally, imagine you’re making a film about a fire, from the first spark, to the ashes it leaves behind. The things that you’re pointing your imaginary camera at are the things your audience hears in the music. The sparks, the flames, and the blaze.
+Talk out loud about the story of the fire, so that you can create this piece together. Describe what you’re pointing the camera at, and make it happen in the music. Try directing each other.
+Bring the piece to a close, by finding a way to show the heat and light fading. What do ashes sound like?</tw-passagedata><tw-passagedata pid="12" name="kidUniLeeds" tags="" position="225,225" size="100,100">Hello, and welcome to The University Of Leeds. This activity is for a child, and their adult. To start with, please play the following test keys, in any order, to ensure the piano is working. If the piano is not working, please [tap here to contact a member of staff.| info@leedspiano.com]
+
+=Image of piano keys, with GBD highlighted.=
+
+[[Next|kidUni2]]</tw-passagedata><tw-passagedata pid="13" name="kidUni2" tags="" position="350,225" size="100,100">You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. You might want to immediately play something amazing, that everyone thinks is brilliant! 
+That’s a big goal, and that’s great. But, a big part of being creative is trying stuff, even if you aren’t sure if it’s going to work. Sometimes, it feels awful when we make something, and it doesn’t work. But, those times are worth it for the times when we take a chance, and discover something beautiful.
+To start with, look back at these keys.
+Then, play the following sequence, pausing at the end of each line. This is a few notes from ‘The Blue Danube’, by Johann Strauss.
+GGBDD
+DD
+GG
+If you’d like to hear it played, use the audio player below.
+One of you should start by playing the pattern in one place on the piano. Then, the other player should play the same pattern in a different place on the piano. Do that over and over, until you’re both comfortable playing it.
+=Audio player with the first few notes of ‘Blue Danube=
+=Image of piano keys, with GBD highlighted.=
+Once you’re comfortable with playing this pattern, tap ‘Next’.
+
+[[Next|kidUni4]]</tw-passagedata><tw-passagedata pid="14" name="kidUni4" tags="" position="475,225" size="100,100">Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play a little more freely, then go for it.
+
+Take it in turns to play the ‘Blue Danube’ pattern with completely the wrong keys. Try to play it in a way where it’s wrong, but still recognisable. It might take a bit of time, plinking and plonking, to get there, but keep at it. As you go back and forth, try to make the next version sillier than the last.
+
+Can you do a version that uses keys that are as far apart as possible? Can you do a version that sounds like a joke, with a set-up and punchline? How about using your elbow, or the back of your hand to play?
+
+Once you’ve found as many versions as you have the patience for, click next.
+[[Next|kidUni5]]</tw-passagedata><tw-passagedata pid="15" name="kidUni5" tags="" position="600,225" size="100,100">Finally, using all the experimentation you’ve just done, try to turn the ‘Blue Danube’ pattern into an entire song. Go back to the original version that you copied…
+GGBDD
+DD
+GG
+=Audio player with the first few notes of ‘Blue Danube=
+=Image of piano keys, with GBD highlighted.=
+
+…One of you should play it again. Then, the next player should listen, and respond by playing a ‘wrong’ tune that is slightly different. Be inspired by all the variations you just created. Don’t think too hard about //why// you’re playing something. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel. Listen, and respond, and keep the tune going for as long as you can.
+
+Find a way to bring the piece to a close.</tw-passagedata><tw-passagedata pid="16" name="kidClimCh" tags="" position="725,225" size="100,100">Note: This tutorial is immensely inspired by the work of climate scientist and data sonifier, Judy Twedt. Links to her work are provided at the end.
+Welcome to the piano. Today, we’ll take a look at how music can help us connect with one of the greatest threats to human life in living memory. Climate Change. Before we get into that, it’s important to make sure the pianos is working. Please play the following test keys in any order.
+
+= Test keys: C Eb F =
+
+If the piano is not working, please contact a member of staff.
+When you’ve done that, you have two options before you move on. You can learn a little bit about what ‘Climate Change’ is, or if you already know all that, you can skip to the next bit.
+-	Tell me about Climate Change?
+-	Skip the stuff about Climate Change. -&gt; What does this have to do with music?
+
+&gt; Tell me about Climate Change?
+A ‘climate’ is the name for what the weather looks like, in a particular place, over a really long time. If you kept a diary of the weather for the UK over 100 years, and compared it to a diary of the weather in the Sahara Desert, over 100 years, they would be two very different stories. That means that the UK and the Sahara desert have two different ‘climates’. We can also think of the Earth as having one big climate, made of all the little ones.
+
+=Diagram=
+
+‘Climate Change’ has been a big topic in the news, because for a long time now, humans, particularly the humans who run big companies and like to make lots of money, have caused the Earth’s climate to change for the worse. Pollution from cars, factories, rubbish tips, and more, create hot gases (also called ‘greenhouse gases’). Greenhouse gases heat up the Earth, and one of the things this does is melt the Polar Ice Caps. These are huge masses of ice on both sides of the world, so when they melt, seas all over the Earth rise. This destroys the homes of people, and animals. That’s only one effect of climate change. 
+
+=image of climate refugees=
+
+You can read more about Climate Change on NASA’s website. Always be careful about who you get your information from about Climate Change. Big companies love to pretend that Climate Change isn’t real, to try and make everyone stop being cross with them, for making it so bad. NASA is a good source of information about Climate Change because they are an organisation of scientists, not business owners.
+-	What does this have to do with music? -&gt;
+
+&gt; What does this have to do with music?
+Take a look at all these charts. Go on. Look at all these charts, and just…understand them.
+
+= Ridiculous number of charts from various climate orgs =
+
+Did you understand all the charts? Do you now feel completely equipped to tackle Climate Change? No?
+That’s ok. In fact, that’s completely normal. Charts, and facts, and figures are often the way we see Climate Change represented. But humans are not computers. We can’t just eat numbers, and then do what the numbers say we should do. 
+Humans do things because we are driven by emotions. When we are given lots of information that tells us a lot of stressful and horrible things, we tend to shut it out. Otherwise, we’d probably be crying, every second of every day.
+This is where art, and in our case, music, can help us.
+-	How do you expect me to change the world with a piano?
+
+&gt; How do you expect me to change the world with a piano?
+Let’s start with something small. Take a look at this chart.
+ 
+For reference, just one million square kilometers is the size of four United Kingdoms! Take a second to think about how much ice would be in 7 million square kilometers.
+
+This chart shows the amount of Arctic Sea Ice over time. In the Arctic, the sea water freezes and thaws naturally, over the course of a single year. Because of Climate Change, the total amount of ice is melting more and more, as the years go by. You can see the years going by at the bottom of the chart. They go up in 8’s. How can we show years, using music?
+
+Find this set of keys on the piano. They’re the same ones from earlier.
+
+= Test keys: C Eb F =
+
+Play all the keys at the same time, with your left hand. This is called a ‘chord’.
+The first year on the chart is 1976. Play the chord to represent the start of that year. Then, again for 1984. Then, again, for the rest of the years. 
+Practice reading the chart from left to right, and playing your chord, every time you reach a year marker, on the grid. Notice where the line spikes, and flattens. As you’re playing the years, in the back of your mind, think about how this line might fit alongside the years.
+-	I’m happy playing this chord, and I’m ready to move on.
+
+&gt; I’m happy playing this chord, and I’m ready to move on.
+Give the chord a rest, and look at all the white keys on the keyboard.
+Look at the chart again, specifically at the line which shows the total amount of ice, over time. We are going to play higher notes when the line is higher, and lower notes when the line is lower. Don’t play the whole chart just yet, we’ll do that soon. For the moment, think about this:
+1.	Where should the first note of the song be?
+2.	Where should the last note be?
+3.	Where should the middle note be, just after the year ‘2000’?
+If you decide this before starting, you won’t run out of keyboard when you play the whole thing. You don’t need to remember these notes exactly, but having a rough idea is useful.
+
+-	I’m ready to move on.
+
+
+&gt; I’m ready to move on.
+Here’s the chart:
+= Chart =
+Time to make music from data. Notice the places on the line where it changes direction, and makes points, and dips, to show the amount of ice over time. When the line goes up, you’ll play a higher note, when it points down, play a lower note.
+Start by using your left hand to play the chord for 1976, then your right hand to play the notes for the ice level over that period. Then, when you reach 1984, play the chord in your left hand again, and play the notes for the next 8 years. Keep going, until you reach the end of the chart.
+Tap the button below to play some atmospheric noise, to accompany the piece:
+-	Button (Which plays the noise of the sea, arctic birds, the wind)
+
+While you play, think about the following things:
+1.	What do you imagine the ice doing, as you play?
+2.	When is the piece easiest to play?
+3.	Apart from the pitch of the notes, is there anything about the sound of the piece that changes as time goes on?
+
+Bring the piece to a close, and take a moment to think about how the music connected with the data, and what emotions may have arisen. If you didn’t feel anything, that’s alright too.
+
+This tutorial was inspired by the work of Judy Twedt. She is a climate scientist whose whole job is to turn climate data into music, to make it easier for people to empathise with the scale of the climate crisis.
+
+Listen to her talk about her work here:
+-	TED Talk: https://www.youtube.com/watch?v=eYXxAE5grRQ&amp;t=5s
+-	Making Music From Data: https://www.youtube.com/watch?v=PnvvBWvqvG0
+-	Translating Climate Data Into Art: https://www.youtube.com/watch?v=3tEWmI_qblo</tw-passagedata><tw-passagedata pid="17" name="Start" tags="" position="850,225" size="100,100">!Welcome to Impromptunes!&lt;nobr&gt;
+&lt;&lt;script&gt;&gt; /* This handles the redirection, by putting the search query into varDestination */
+ window.grabQuery = function getParameter(parameterName){
+    let parameters = new URLSearchParams(window.location.search);
+    return parameters.get(parameterName);
+    };
+//for debugging grabQuery: 
+//window.alert(grabQuery(&quot;location&quot;));
+
+State.variables.varDestination = grabQuery(&quot;location&quot;);
+
+//if (State.variables.varDestination == null) {
+//State.variables.varDestination = &quot;&quot;}
+&lt;&lt;/script&gt;&gt;/*varDestination: &lt;&lt;print $varDestination&gt;&gt;*/&lt;/nobr&gt;
+Play through an interactive piano tutorial, based on your location!
+
+There are ten different tutorials, one for every stop on the Leeds Piano Trail. Find and play them all! 
+
+...Let&#39;s get started!
+
+&lt;&lt;nobr&gt;&gt;
+/*Set sculpLink, the variable for the link to the location-based sculpture, to a default value, so it doesn&#39;t throw a weird exception */
+&lt;&lt;if [&quot;mgChurch&quot;, &quot;mgGrave&quot;, &quot;uniLeeds&quot; , &quot;vicGard&quot; , &quot;manGard&quot; , &quot;pHouse&quot; , &quot;vicQuart&quot; , &quot;kirkMark&quot; , &quot;trinShop&quot; , &quot;trainStat&quot;].includes($varDestination)&gt;&gt;
+ [[START PIANO TUTORIAL|$varDestination]]
+&lt;&lt;else&gt;&gt;
+[[START PIANO TUTORIAL|Contents]]
+&lt;&lt;/if&gt;&gt;&lt;&lt;/nobr&gt;&gt;
+
+
+//If you’d like to share your experience on Twitter, need to report technical issues, or return to the home page at any time - simply tap the arrow at the top of your screen to open the menu.//</tw-passagedata><tw-passagedata pid="18" name="mgChurch" tags="" position="975,225" size="100,100">!Welcome to the Merrion Street Rest Gardens.
+[[Tap here to access a screen-reader version of this tutorial.|mgChurch_ac]]
+
+Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
+
+&lt;img src=&quot;img/d-minor.png&quot; width = &quot;90%&quot;&gt;
+
+If the piano is not working: 
+[[Tap here to email a member of staff|mailto:sam.berrill@leedspiano.com]]
+
+If all is well, tap the &#39;Next Section&#39; button below.
+[[Next Section|MerrionDeep2]]</tw-passagedata><tw-passagedata pid="19" name="MerrionDeep2" tags="" position="1100,225" size="100,100">A useful skill for music-making is being able to listen to the other sounds around you, to help you make a decision about what sounds you’d like to add to them.
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Nearby, there is a sculpture, by Pianodrome, called Deep Listening, which has a cast-iron frame, that you can strike with a beater. Go over and play it, or wait for someone else to. Then, just listen to the sounds it can make. How are these sounds different to the sounds you just made with the piano?
+
+&lt;&lt;linkreplace &quot;Listen deeply.&quot; t8n&gt;&gt;
+When a sound starts to fade away, try to pinpoint the moment it turns from vibrations in the air, to stillness. How do these sounds blend with the other sounds, in and around the Rest Gardens? 
+
+&lt;img src=&quot;img/soundwaves.png&quot; width = &quot;95%&quot;&gt;
+
+&lt;&lt;linkreplace &quot;Take your time.&quot; t8n&gt;&gt;
+When you’re ready to move on, tap the ‘Next Section’ button below.
+
+[[Next Section|MerrionDeep3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="MerrionDeep3" tags="" position="1225,225" size="100,100">How does the sound from the Deep Listening sculpture exist in the world, and how is it different to the piano? If you like, go back and forth between them, and compare their sounds, while you think about the next few questions.
+
+&lt;&lt;linkreplace &quot;How can we describe these sounds?&quot; t8n&gt;&gt;&lt;&lt;linkreplace &quot;Duration?&quot; t8n&gt;&gt;&#39;&#39;Duration:&#39;&#39;
+How long can the sound last? How short? How quickly can it make another sound? Does it need time to rest?&lt;&lt;/linkreplace&gt;&gt;
+
+&lt;&lt;linkreplace &quot;Timbre?&quot; t8n&gt;&gt;&#39;&#39;Timbre:&#39;&#39;
+//(Pronounced &#39;Taahm-BRUH&#39;)// If this sound was a colour, or a shape, what would it look like? Does this sound have emotions? What makes the sculpture&#39;s shape different to the piano’s shape?&lt;&lt;/linkreplace&gt;&gt;
+
+&lt;&lt;linkreplace &quot;Pitch?&quot; t8n&gt;&gt;&#39;&#39;Pitch:&#39;&#39;
+Is this a high, or a low sound? If you hum the sound, is it easy for you to reach, or is it a strain?
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+When you’ve had enough listening for one day, tap ‘Next Section’.
+[[Next Section|MerrionDeep4]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="MerrionDeep4" tags="" position="100,350" size="100,100">Now, go back to the piano. When you’re back at the piano, play any note, and let it go for a long time. Under your feet, you&#39;ll find some pedals. If you press down the one on the right, this will make the note last longer. 
+
+If you&#39;re not sure where to start, use one of the test keys from earlier:
+
+&lt;img src=&quot;img/d-minor.png&quot; width = &quot;90%&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Now, play that note, and while it is playing, look for another note that sounds good with it. Maybe it sounds pretty, maybe it sounds strange, or spooky. It&#39;s up to you.
+
+If you play some notes that don’t sound like what you wanted, that’s fine. Your journey to finding the note you want is now part of this composition that’s emerging.
+
+When you&#39;re happy with those two notes, tap ‘Next Section’.
+[[Next Section|MerrionDeep5]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="MerrionDeep5" tags="" position="225,350" size="100,100">Now that you’ve found two notes that work together, look for more. Try playing some at the same time. Try playing them in sequences. Can you play the same sequences, but change their shape, and give them different textures?
+
+Find a time to come gently to a stop.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;
+@@
+
+Or, come to some of our other events:
+[[Learn To Play In A Day|https://www.leedstownhall.co.uk/whatson-event/learn-to-play-in-a-day/?venue=4033//]]
+[[A Musical Night Walk|https://www.leedspiano.com/event/a-musical-night-walk/]]
+[[An Interview With Pianodrome|https://www.leedspiano.com/event/an-interview-with-pianodrome/]]
+[[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="mgGrave" tags="" position="350,350" size="100,100">!Welcome to the Merrion Street Rest Gardens.
+[[Tap here to access a screen-reader version of this tutorial|mgGrave_ac]]
+
+Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
+
+&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
+
+If the piano is not working:
+[[Tap here to tell a member of staff|mailto:sam.berrill@leedspiano.com]]
+
+If all is well, tap the &#39;Next Section&#39; button below.
+[[Next Section|MerrionSil2]]</tw-passagedata><tw-passagedata pid="24" name="MerrionSil2" tags="" position="475,350" size="100,100">When listening to music, we often pay a lot of attention to the notes...but not the spaces in-between the notes. The silences between notes are often called &#39;rests&#39;, in music. 
+
+Pretty apt that we’re in the ‘Rest Gardens’ to think about ‘rests’!
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+The parts of an artwork where there is no ink, or sculpture, or paint, is sometimes called ‘negative space’. 
+
+In Japanese art, this is called ‘ma’, and it is just as important, if not more important, as the rest of an artwork. 
+
+&lt;img src=&quot;img/ma.png&quot; width=&quot;95%&quot;&gt;
+
+[[Next Section|MerrionSil3]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="MerrionSil3" tags="" position="600,350" size="100,100">Think about a song you know. It can be anything, and it doesn’t have to be a piano song. 
+
+Imagine that you broke this song into pieces, and then changed how the silences, or pauses, appeared in it. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+How would it change with no silences at all? Or, if there was more silence than notes? How about a patchwork of both of those? 
+
+How much can you mess with the gaps between notes, while still being able to recognise the song?
+
+When you’ve had enough of that, tap &#39;Next Section&#39;.
+[[Next Section|MerrionSil4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="MerrionSil4" tags="" position="725,350" size="100,100">Go back to these keys that you used to test the piano, pictured below. 
+
+Arrange your hands so that every key highlighted in the picture has one finger on top of it. Your left hand should go over the keys on the left, and your right hand, over the keys on the right.
+
+&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
+
+Got it? Tap ‘Next Section’.
+[[Next Section|MerrionSil5]]</tw-passagedata><tw-passagedata pid="27" name="MerrionSil5" tags="" position="850,350" size="100,100">&lt;img src=&quot;img/Two_Sets_of_CDEFG.png&quot; width=&quot;95%&quot;&gt;
+
+Using the keys under your fingers, find a pattern of three notes that you like. If you take a while to find one, don’t worry. That journey is a part of the process of improvising. No-one’s going to know that it’s just you figuring things out. 
+
+Play the pattern of three a few times, until it’s familiar. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Now, play the pattern three times, but on the third time, don’t play the final note. Let the absence of the note be an intentional part of the piece, and not a mistake. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+&lt;img src=&quot;img/missing.png&quot; width=&quot;95%&quot;&gt;
+
+Think about the missing note.
+* What do you feel ‘should be there’? 
+* Why does it matter, when it isn’t there?
+* If you feel like this is just ‘bad music’, what exactly about it is ‘bad’? 
+There’s no right answer, just try to explain to yourself why it is that you feel the way you do about the missing note.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+If you’re not sure, perhaps try a longer sequence, which has more of a build-up, before the missing note. 
+
+When you’ve had enough. Tap ‘Next Section’.
+[[Next Section|MerrionSil6]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="MerrionSil6" tags="" position="975,350" size="100,100">Last part. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Take a moment to listen to the silence around you. 
+* Is it really silence? 
+* What noises are in the distance? 
+* Are there sounds which don’t //sound// like sounds because they’re constant?
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; Now, using the same keys, and some of the techniques from the previous exercise, experiment with playing notes, and creating sequences, while focusing almost completely on the space created //between// the notes.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Go nice and slowly. Try and imagine the silences existing as a physical force, like a ripple of water, as it expands outwards. How can you fit the notes around noises that are already here? 
+
+Take as long as you need with this.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+When you feel satisfied, bring the piece to a close, listening for the moment the last note stops being vibrations in the air, and silence returns.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+
+Or, come to some of our other events:
+[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[The Lullaby Series (5th-18th September)|https://www.leedstownhall.co.uk/whatson-event/lullaby-series/]]
+[[Come Along And Chat (9th September)|https://www.leedspiano.com/event/come-along-and-tea-and-chat/]]
+[[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="uniLeeds" tags="" position="1100,350" size="100,100">!Welcome to The University Of Leeds, Student&#39;s Union.
+[[Tap here to access a screen-reader version of this tutorial|uniLeeds_ac]]
+
+To start with, please play the following test keys, in any order, to ensure the piano is working. 
+
+&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
+
+If the piano is not working:
+[[Please tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
+
+
+If all is good, tap the &#39;Next Section&#39; button below.
+[[Next Section|Uni2]]</tw-passagedata><tw-passagedata pid="30" name="Uni2" tags="" position="1225,350" size="100,100">You might be totally fine with sitting at a piano. Or, perhaps, you are sitting here with a few worries in the back of your mind. Are you worried that you can’t do this, because you’re not creative enough? That it won’t sound good?
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Right now, our world values products over people, and so, we often feel guilty if we create anything that isn’t immediately perfect. However, creativity requires us to make mistakes. So, today, I invite you to play, and deliberately sound bad. 
+
+And I think you’re going to do great.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+But you have to believe it too, and to do so, you must change the way you define ‘mistakes’. Be kinder to yourself. If you only play one key, celebrate that. Acknowledge that you’re scared of being creative, because that’s the only way to overcome it.
+[[Next Section|Uni3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Uni3" tags="" position="100,475" size="100,100">&lt;nobr&gt;&lt;&lt;cacheaudio &quot;blu&quot; &quot;audio/blu.mp3&quot;&gt;&gt;&lt;/nobr&gt;Let’s start with something simple. Look at the picture of piano keys below. They’re the same ones you played earlier, in the test sequence. 
+
+&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
+
+When you have found the keys...
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Play the following sequence of notes, pausing where there is a &#39;...&#39;. This is a few notes from ‘The Blue Danube’, by Johann Strauss. 
+!!G G B D D ... D D ... B B
+If you’d like to hear it played, use the audio player below, and copy it. 
+&lt;&lt;link &quot;Play audio&quot;&gt;&gt;&lt;&lt;audio blu play&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+Once you’re comfortable with playing this pattern, tap ‘Next Section’.
+[[Next Section|Uni4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Uni4" tags="" position="225,475" size="100,100">Now, it’s time to make this lovely little pattern sound terrible! If you touch the piano keys very lightly, you can be very quiet. If doing that lets you play more freely, go for it.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Try playing the &#39;Blue Danube&#39; pattern with completely the wrong keys, but in a way where it’s still recognisably the same pattern. It might take a bit of time, experimentally plinking and plonking, to get there, but keep at it. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Can you do a version that uses keys that are as far apart as possible? Can you do a version that sounds like a joke, with a set-up, and a punchline? How about using your elbow, or the back of your hand to play?
+
+Once you’ve found as many versions as you have the patience for, tap &#39;Next Section&#39;.
+[[Next Section|Uni5]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Uni5" tags="" position="350,475" size="100,100">Finally, using all the experimentation you’ve just done, try to come up with a sequel, or second part, to the &#39;Blue Danube&#39; pattern. Perhaps, even go back to the original version that you copied…
+!!G G B D D ... D D ... B B
+
+&lt;img src=&quot;img/GBD.png&quot; width=&quot;95%&quot;&gt;
+
+&lt;&lt;link &quot;Play audio&quot;&gt;&gt;&lt;&lt;audio blu play&gt;&gt;&lt;&lt;/link&gt;&gt;
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+…Think about this: if someone else was playing your sequence, what would you expect them to play, //after// it? 
+
+Don’t think too hard about the &#39;why&#39;, just do what feels right. Play the ‘wrong’ version of the pattern, and follow it with a ‘wrong’ sequel.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Can you make a third part that follows the sequel? There’s no need to remember all the notes you’re using. Just keep going, think about the last part you played, and discover the next part, as you go.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Find a way to bring the piece to a close. Take a moment to think about what you created. 
+
+You started from somebody else&#39;s music. You then played it &#39;wrong&#39;, and then kept adding the next thing that felt right. Your new piece could go on forever, if you just kept adding more sequels.
+
+Is there a way to apply this process to a different form of art? Writing? Painting? Carving? Calligraphy? 
+
+Is it right to make art in this way, or is it just plagiarism?
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt; 
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+
+If you enjoyed this, why not try some of our other events?
+ [[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+ [[Musical Theatre Sing-a-long (15th September)|https://www.leedspiano.com/event/musical-theatre-sing-a-long-15-september/]]
+ [[Poptastic Sing-a-long (9th September)|https://www.leedspiano.com/event/pop-anthems-sing-a-long/]]
+ [[All Events at University of Leeds|https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="vicGard" tags="" position="475,475" size="100,100">!Welcome to Cookridge Street! 
+[[Tap here to access a screen-reader version of this tutorial|vicGard_ac]]
+
+Before we begin, please play the following test keys, in any order, to ensure the piano is working. 
+
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;95%&quot;&gt;
+//(They&#39;re orange in the picture, but black, in the real world.)//
+
+If the piano is not working,
+[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]] 
+
+If all is well, tap the &#39;Next Section&#39; button below.
+[[Next Section|VicGard2]]</tw-passagedata><tw-passagedata pid="35" name="VicGard2" tags="" position="600,475" size="100,100">For hundreds of years, learning sheet music has been a key part of learning piano in a traditional European musical education. 
+
+A lot of people have been put off music, or made to feel as though they are not ‘real’ musicians, because they cannot, or will not, read sheet music.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+&lt;img src=&quot;img/scarbo.png&quot; width=&quot;95%&quot;&gt;
+
+The reality is, sheet music is just a //common// way of recording music. 
+
+That’s all. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Sheet music is often taught very early in musical education. It&#39;s a common practice, and everyone is used to things being done that way. 
+
+But, I’m sure you can think of many aspects of life that also fit that criteria, but which you know aren&#39;t &#39;the only&#39; way of doing things. Like, for example, being right-handed. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+There are far more right-handed people in the world, than there are left-handed people. Thanks to the Catholic Church, in the past, almost all left-handed people in the UK were forced to write with their right hand instead, even though doing this caused all sorts of problems for their brains. This still happens in some schools today! 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Left handed people were less common, and they didn&#39;t do things in the same way as everyone else. They were made to feel like this was their own fault, when really, right-handers were just more common. 
+
+How does this have anything to do with sheet music? Well, I wonder how many musicians we&#39;ve lost, because they didn&#39;t, or couldn&#39;t, read sheet music. Is sheet music actually essential for being a musician, or is it just a common idea of what a musician should be? 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+With that said, let’s take a look at how music can be recorded in a completely different way to European sheet music.
+[[Next Section|VicGard3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="VicGard3" tags="" position="725,475" size="100,100">‘Graphic’ scores, or ‘visual’ scores use pictures to get across how the composer wanted their song to be played. Take a look at this little bit of the score for Hannah Kendall&#39;s &#39;The Spark Catchers&#39;. She writes her scores like this before writing them up as sheet music, but, this is still a picture of the music she hears in her head.
+
+&lt;img src=&quot;img/hkendall-1.png&quot; width=&quot;95%&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+It could be anything, right? Well, that’s true, unless you make some decisions about //how// to look at it.
+
+Go back to the black keys that you used to test the piano a little while ago. Have a play with them, and see how they sound. 
+
+Then, look back at the picture. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+Create a set of rules for how these symbols can be played, using the piano. If you choose a rule, and decide you don’t like it, throw it out, and get a new one.
+&lt;&lt;linkreplace &quot;Not sure where to start?&quot; t8n&gt;&gt; 
+If you’re not sure where to start, how about deciding:
+* What direction will you take, across the page, in order to read it? Left to right, like a book, or perhaps top to bottom?
+* How could you use the shapes to decide how long each note will be played for?
+When you’ve had enough of this, take a look at the full version…
+[[Next Section|VicGard4]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="VicGard4" tags="" position="850,475" size="100,100">Here’s another section of Hannah Kendall&#39;s score. 
+
+&lt;img src=&quot;img/hkendall.png&quot; width=&quot;95%&quot;&gt;
+
+Remember the rules that you decided on in the previous section, and think about which parts of the image need some more rules, so that you can play it.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt; 
+* What do the diamonds mean?
+* What does the shading on the right-hand side mean?
+* What are the scratchy blue pen marks for?
+
+Try to play through all of the score, then bring the piece to a close. 
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt; 
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+Take a look at some of the other events on the trail:
+[[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
+[[All Events At Cookridge Street|https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="manGard" tags="" position="975,475" size="100,100">!Welcome to Mandela Gardens. 
+[[Tap here to access a screen-reader version of this tutorial|manGard_ac]]
+
+These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+There are three pianos in the area. Are you here by yourself, or do you have company?
+
+&lt;&lt;linkreplace &quot;I came here by myself.&quot;&gt;&gt; If you came here by yourself, go to the piano on the plinth, which overlooks the other two.
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;linkreplace &quot;Actually, I came here with a friend.&quot;&gt;&gt;If you’re here with a friend, get them to scan the QR code on their device, (or, just shout the instructions to them, across the square).
+
+Then, set yourselves up on the pianos that are facing each other, and follow the instructions together.&lt;&lt;/linkreplace&gt;&gt;
+[[Next Section|MandIntro]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="MandIntro" tags="" position="1100,475" size="100,100">Before we do anything, however, we need to ensure the piano is working. Please play the following test keys, in any order, a few times over. 
+
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;95%&quot;&gt;
+
+If you find the piano is not working,
+[[Tap here to contact a member of staff.|mailto:sam.berrill@leedspiano.com]]
+
+Once you’ve played the test keys a few times, tap ‘Next Section’.
+[[Next Section|Mand2]]</tw-passagedata><tw-passagedata pid="40" name="Mand2" tags="" position="1225,475" size="100,100">Jazz music has a rich and complex history, rooted in the people of African Diaspora communities, who were trafficked, and brought to the West, during the Transatlantic Slave Trade. Jazz fuses African musical traditions with Western musical traditions. 
+
+One aspect that we’ll look at today, is the idea that Jazz, and music in general, can be like speaking, or having a conversation.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+ In the history of European music, musicians have always tended to write music down, and then have people perform it, exactly as it was recorded. 
+ 
+ In many African countries, however, it&#39;s more common for music to spring from the relationship between musicians, their audience, and the context where music is being made. This approach to music, but using European instruments, is how Jazz arose in the West. 
+
+So, how can we make pianos talk to each other?
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+First of all, look back at the test keys. 
+
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;95%&quot;&gt;
+
+Play the three test keys at the same time. Whenever you play more than one note at the same time, it’s called playing a ‘chord’. Try that, and see how it sounds, in comparison to just playing a note by itself.
+
+Once you’re happy with playing that chord, keep your left hand on it, and tap ‘Next Section’.
+[[Next Section|Mand3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Mand3" tags="" position="100,600" size="100,100">When we talk to another person, there can often be unspoken rules or conventions that indicate, for example, when one person is finished talking, and another person can begin. There’s no right or wrong way to converse. It will always vary according to culture, family, how much practice we’ve had, etc.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Keep your left hand on the chord, the three notes.
+Then, put your right hand on the notes highlighted below. Arrange your right hand so that every key highlighted in the picture has one finger on top of it. 
+&lt;&lt;linkreplace &quot;Optional: I need help with this.&quot;&gt;&gt;&#39;&#39;Optional: I need help with this.&#39;&#39;
+Find two black keys on their own, and put your right-hand thumb on the white key just to the left of them. Then, put the rest of your fingers on the keys that follow it.&lt;&lt;/linkreplace&gt;&gt;
+
+&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;95%&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Don’t worry, you won’t be asked to play both hands together. Get used to your hands being in this position. Try playing the keys a little to see how this position feels and sounds.
+
+When you’re ready to move on, tap ‘Next Section’.
+[[Next Section-&gt;Mand5]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Mand5" tags="" position="225,600" size="100,100">Think again about comparing music with a conversation. 
+
+In some conversations, people will indicate to their partner that they’ve finished speaking. They might do this by lowering the pitch at the end of a sentence, or asking the other person a question. 
+
+You can apply similar rules like this to music, and some Jazz musicians actually call this ‘conversation’.
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+Look back at the piano. Make sure your hands are set up like this.
+
+&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;95%&quot;&gt;
+
+Try playing a few of the notes under your right fingers, just going up and down, and then use the three-note chord, in your left hand, to show when you’ve finished that section. Then, do it again.
+
+Once you’re happy with this as a pattern, tap ‘Next’.
+[[Next Section-&gt;Mand6]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Mand6" tags="" position="350,600" size="100,100">If you’ve been following these exercises with another person, you’ll probably have started to see how you can turn this shared set of rules into a duet, without having to read sheet music at all. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+This style of playing has also been known as ‘cutting contests’ in the past. Cutting contests involve Jazz musicians testing each other&#39;s musical skills, and were common in the Harlem Jazz community in New York, between the 1940s and the 1970s. 
+
+They were also a form of musical education. Competitors had to listen carefully, and respond to their opponent, and the audience reaction, in order to be the most entertaining performer. Musicians like James P. Johnson, Fats Waller, and Art Tatum, often battled it out at cutting contests. 
+&lt;&lt;linkreplace &quot;Tap to continue.&quot; t8n&gt;&gt;
+In Black neighbourhoods, people often held &#39;Rent Parties&#39;, where the community came together, to enjoy music, dancing, and cutting contests. These parties were also a method for this marginalised community to provide mutual aid for those in need, as the entry fee went towards the rent, for the party hosts. 
+
+&lt;img src=&quot;img/rent.png&quot; width=&quot;95%&quot;&gt;
+
+Tap the arrow at the top of the page to access the &#39;Credits&#39;, where you can learn more about cutting contests, and the origins of Jazz. 
+
+[[Next Section|Mand6-2]]
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Mand6-2" tags="" position="475,600" size="100,100">If you’re playing on your own, keep playing your conversation, but imagine you’re providing both parts, played by two characters. 
+* Are they different ages?
+* Are they arguing, or, are they confessing their love for each other?
+* Does the conversation start suddenly, or, do they slowly notice each other from across a room?
+If you’re with a friend, try to have a conversation, or a competition, through your pianos, using no words.
+
+&lt;img src=&quot;img/CEG2_and_CDEFG3.png&quot; width=&quot;95%&quot;&gt;
+
+Once you’ve got the hang of that, tap ‘Next Section’
+[[Next Section|Mand7]]</tw-passagedata><tw-passagedata pid="45" name="Mand7" tags="" position="600,600" size="100,100">After a while, start to break the rules of conversation, and show that in your music. What does an interruption sound like? Or, can you mimic the other player, sarcastically? Can you patronise, or lie, using the piano? What other things are you not supposed to do in a conversation?
+
+Find a way to use these techniques to bring the piece to a close. If you’re with a friend, can you end the piece together, without talking about it?
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+Check out some of the other activities on offer…
+[[Learn To Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
+[[Power To The People - Spoken Word Night|https://www.leedspiano.com/event/power-to-the-people/]]
+[[All Events At Mandela Gardens|https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="pHouse" tags="" position="725,600" size="100,100">!Welcome to The Leeds Playhouse Gardens! 
+[[Tap here to access a screen-reader version of this tutorial|pHouse_ac]]
+
+In the next couple of exercises, we’ll be looking at playing a simple piece which can grow for a long time, but which sprouts from just one note.
+
+But, before we begin, please play the following test keys on the piano, to ensure that it is working. 
+
+&lt;img src=&quot;img/CDEFG.png&quot; width=&quot;95%&quot;&gt;
+
+If the piano isn’t working...
+[[Please tap here to contact a member of staff.| mailto:dave.cartwright@leedspiano.com]]
+
+Once you’re certain it’s working, tap ‘Next Section’.
+[[Next Section|PHouse2]]</tw-passagedata><tw-passagedata pid="47" name="PHouse2" tags="" position="850,600" size="100,100">Keep your hand resting comfortably on some of the test keys. The key which is furthest left, just before the two black keys, is called C, and it, along with all the rest of the white notes on the piano, are part of a group called ‘C Major’. 
+
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;People who work with music will often group notes together, and give the groups names, to help them remember which groups of notes all tend to work well together. 
+
+It also helps us talk about music, and have a way to make sure many people can know which notes we’re talking about at a given time. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Grouping notes like this is not the only way to talk about music, but it’s quite common, kind of like how English and Chinese are very widespread, but they’re certainly not the only languages in the world. 
+
+Hindustani music, for example, uses completely different ideas to understand and notate sound. However, this tutorial uses C Major.
+[[Next Section|PHouse3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="PHouse3" tags="" position="975,600" size="100,100">So. Right now, we’re just looking at one group of notes, which is C Major, or, all the white keys. We also call it C Major, because C is the ‘root’ note of the group. 
+
+Essentially, what this means is that if you play a few notes of C Major, and end on a C, it will sound ‘finished’. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Have a go at doing that now. Here are the notes of C Major, with C highlighted for you. Just play three notes, and make the fourth note a C. ‘See’ what you think. Try it a few times.
+
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
+
+When you’re done experimenting, tap ‘Next Section’.
+[[Next Section|PHouse4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="PHouse4" tags="" position="1100,600" size="100,100">Now, it’s time to turn this root into a tree. 
+
+&lt;img src=&quot;img/C_Major_with_obvious_C.png&quot; width=&quot;95%&quot;&gt;
+
+All you need to do, as slowly as you like, is play sequences of notes that get longer and longer, but always return to C, the root. 
+
+It doesn’t have to be the same pattern every time, you can just play any notes, while counting up to the number you need, then play C again.
+&lt;&lt;linkreplace &quot;Try beginning like this...&quot; t8n&gt;&gt;* Start by playing one note, then C.
+* Then, two notes, then C.
+* Then three notes, then C.
+* And so on. 
+&lt;img src=&quot;img/treefractal.png&quot; width=&quot;95%&quot;&gt;
+&lt;&lt;linkreplace &quot;Tap to read more...&quot; t8n&gt;&gt;
+Play all the white keys on the keyboard! What happens when you throw in a black note or two? If it sounds a bit ‘wrong’ or ‘strange’, try playing it again, and again, until it becomes a pattern. 
+
+And don’t worry about losing count of the number of notes that you&#39;re supposed to be up to. It won’t really matter after a while. Start from one, and see where it goes.
+&lt;&lt;linkreplace &quot;When you feel yourself getting tired...&quot; t8n&gt;&gt;
+Choose a low number like 5, and play decreasing numbers of notes, always ending on C, until you find an ending.
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thannks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+Or, why not take a look at some of the other activities the Leeds Piano Trail has to offer?
+[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Come Along and Plant|https://www.leedspiano.com/event/come-along-and-plant/]]
+[[Talks: Nature in Music, Music In Nature|https://www.leedspiano.com/event/lecture-series/]]
+[[Nature Concerts|https://www.leedspiano.com/event/nature-concerts-8-15-september/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]
+[[All Leeds Playhouse Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/]]
+&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="vicQuart" tags="" position="1225,600" size="100,100">!Welcome to the Victoria Quarter. 
+[[Tap here to access a screen-reader version of this tutorial.|vicQuart_ac]]
+
+Did you know that there used to be a music hall here, where Harvey Nichols now stands? 
+
+It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Before we start with the exercises, please make sure the piano is working. To test the piano, please play the three test keys shown, in any order:
+
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;90%&quot;&gt;
+
+If the piano isn’t working, please [[tap here to contact a member of staff|mailto:dave.cartwright@leedspiano.com]]. 
+
+Once you’re sure the piano is working, tap ‘Next Section’.
+[[Next Section|VicQ2]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="VicQ2" tags="" position="100,725" size="100,100">How can we sit at the piano, and make something sound like a tune? 
+
+Well, one of the secrets is to just //repeat things!// 
+
+Humans love looking for patterns, so much so, that we often think we see links or causes between events, when there is no evidence for it. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Think about fake news, conspiracy theorists, and how politicians assign blame to whatever groups their voters seem most likely to turn against…
+
+So, while our love of patterns can be very unhelpful at times, it is a big part of how we make sense of music, and many other forms of art.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+ You don&#39;t need a plan to make great art. If you just decide on some pattern that you’re going to repeat, or keep coming back to, your audience will make the art great, all by themselves. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+The way the audience responds to your patterns, and the way you respond to their responses, and so on… That is one of the joys of improvised music.
+
+Great. Let’s put that into practice, shall we?
+[[Next Section|VicQ3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="VicQ3" tags="" position="225,725" size="100,100">Go back to the test keys, from earlier.
+
+&lt;img src=&quot;img/CEG_Highlighted.png&quot; width=&quot;90%&quot;&gt;
+
+Play the three keys from left to right. Notice that they’re all white keys, and they all have a gap of one white key between them, (for this set of exercises, ignore the black keys.)
+
+When you’re happy with playing these keys, play this three-note pattern somewhere in the middle of the keyboard. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Now, shift your hand one key to the right, so that the starting note of the pattern is now one note higher. Then, play the same pattern as before. Then, move up one more key, and do it again. 
+
+Keep playing the pattern, and moving up, until you reach the end of the keyboard. This doesn’t have to be fast. Just listen to how the pattern of three notes changes, depending on where you are on the keyboard. 
+
+When you’re finished with this, tap ‘Next Section’.
+[[Next Section|VicQ4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="VicQ4" tags="" position="350,725" size="100,100">Try and push this simple pattern to its limits.
+
+* Can you make it sound happy? 
+* How does speed affect the way it sounds? 
+* Are there any emotions, or ideas that this pattern is particularly good at? 
+* What is it not so good at? 
+
+There are no right answers. But, try to explain to yourself why you feel the way you do about certain combinations of notes.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Try and find ways to use this pattern in a surprising way. If you play the same pattern over and over, and then suddenly do something different, that can be exciting to listen to.
+
+When you’ve finished exploring the patterns, and breaking them apart, bring the piece to a close. 
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+If you enjoyed this, check out some of the other activities on the Trail:
+[[Learn to play in a day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Belonging Here - Theatre Show (September 11th)|https://www.leedspiano.com/event/sarah-nicolls-belonging-here-theatre-show/]]
+[[All Victoria Quarter Events|https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="kirkMark" tags="" position="475,725" size="100,100">!Welcome to Kirkgate Market! 
+[[Tap here to access a screen-reader version of this tutorial.|kirkMark_ac]]
+
+This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it never closed for more than a few days. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! 
+
+The spirit of the market has blazed brighter than its adversities for 120 years.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+We’ll be taking //fire// as an inspiration for the next few exercises. This place can handle it. 
+
+Before we begin, however, we need to make sure the piano is working. Please play the following test keys a few times over. You can use two fingers on one hand, or use both hands.
+
+&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;95%&quot;&gt;
+
+If the piano isn’t working...
+[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
+
+Once you’re sure that the piano is working, tap ‘Next Section’.
+[[Next Section|Kgate2]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="Kgate2" tags="" position="600,725" size="100,100">Imagine a //spark//. A bright point of light, which quickly dies.
+
+&lt;img src=&quot;img/spark.png&quot; width=&quot;95%&quot;&gt;
+
+ Starting with the test keys, play a single note, which you think sounds like a //spark//. 
+
+&lt;img src=&quot;img/FG_keys.png&quot; width=&quot;95%&quot;&gt;
+
+Then, use the rest of the keyboard, and play a few of those. Sometimes, a //spark// ignites another //spark//. What does that sound like?
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+From sparks, //flames// can grow. 
+
+&lt;img src=&quot;img/fire.png&quot; width=&quot;95%&quot;&gt;
+
+Now, find any two white keys that have one white key between them. Play them back and forth, over and over, like a flickering //flame//. 
+
+(Musicians often call this kind of playing a ‘trill’.)
+
+How does that sound different from the //sparks//? What does it sound like when a spark becomes a //flame//?
+
+When you’re happy with how your //sparks// and //flames// sound, tap ‘Next Section’.
+[[Next Section|Kgate3]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Kgate3" tags="" position="725,725" size="100,100">Finally, //flames// can become a //blaze//. 
+
+&lt;img src=&quot;img/blaze.png&quot; width=&quot;95%&quot;&gt;
+
+Starting from the middle of the keyboard, find two white keys that have one white key between them, like a flame. Put one finger from your left hand on the left key, and one finger from your right hand, on the right key. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Play the two keys like a flame, then, move both of your hands one key outwards, so there’s now a gap of three notes in between. Play them back and forth, as a trill. Then, move outwards again. How big can you make the //blaze//?
+
+Play with the //sparks//, //flames//, and the //blaze//. When you feel you can make all three sound different from each other, tap ‘Next Section’.
+[[Next Section|Kgate4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Kgate4" tags="" position="850,725" size="100,100">Finally, imagine you’re making a film about a fire, from the first //spark//, to the //ashes// it leaves behind. 
+
+The things you&#39;re pointing the imaginary camera at becomes the music that your audience hears. The //sparks//, the //flames//, and the //blaze//.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;* What do you film first? 
+* How do you show the movement of the fire? 
+* Does anyone try and stop it? How does that change your playing?
+Bring the piece to a close, by finding a way to show the heat and light fading. What do ashes sound like?
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+If you enjoyed this why not try some of the other activities on The Leeds Piano Trail? 
+[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Come Along And Make|https://www.leedspiano.com/event/come-along-and-make/]]
+[[All Kirkgate Market Events|https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="trinShop" tags="" position="975,725" size="100,100">!Welcome to Trinity Shopping Centre! 
+[[Tap here to access a screen-reader version of this tutorial.|trinShop_ac]]
+
+The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend.
+
+Before we begin, we need to check to make sure the piano is working. 
+Please play the following five test keys in any order, preferably several times over:
+
+&lt;img src=&quot;img/C3_F3_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
+
+If the piano isn&#39;t working
+[[Please tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
+
+Once you’re satisfied that all the keys are working, tap ‘Next Section’.
+[[Next Section|Trin2]]</tw-passagedata><tw-passagedata pid="59" name="Trin2" tags="" position="1100,725" size="100,100">Rhythm is often understood as a regular, repeated pattern of sound. But, it doesn’t //have// to sound exactly the same, over and over. Make it up as you go! 
+
+Put the fingers of your left hand on these two keys, and play them at the same time.
+
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Now, find lots of different rhythms and beats, just playing these two keys over and over. Try not to keep it the same for too long. 
+
+Imagine you have to do a whole song, with just these two keys, over and over. How are you going to stop yourself falling asleep? How can you surprise yourself?
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Once you’ve had enough of that, tap ‘Next Section’ to add some more notes! Don’t worry, you won’t have to play anything with both hands at the same time, unless you want to.
+[[Next Section|Trin3]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Trin3" tags="" position="1225,725" size="100,100">Great. Now it’s time to spice things up. Put your right hand on these keys:
+
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
+
+Now, play them, and see how they sound. Start by playing them in order, from left to right. Then, play them again, but play each note twice before moving on. 
+
+Once you’re happy doing that, try switching back and forth, between &#39;going-up-and-down&#39; and the &#39;playing-them-twice&#39; styles.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Keep experimenting with the notes. Just play the next key that you feel makes sense to play. Don’t plan a tune in advance. Limit your focus to these three keys, and the next note. This doesn&#39;t need to be done quickly.
+
+When you’re happy with how these notes work together, you can probably guess what’s next.
+[[Next Section|Trin4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Trin4" tags="" position="100,850" size="100,100">Side note: 
+
+These notes are adapted from Blues music, which is believed to have derived from African musical traditions of call-and-response. 
+
+Blues were often sung by trafficked, enslaved African people, while they were being held at plantations. Like Jazz, Blues music has been incredibly influential on contemporary Western music. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+As these exercises are short, and designed to get you playing quickly, the music you’re playing right now isn’t authentic Blues. The most charitable way to describe what you’re playing, is ‘Blues-inspired notes’.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+But, understanding where music comes from, and how it is changed, and subverted by people, over time, allows us to admire and value the way marginalised people have shaped popular music, and avoid claiming, or colonising traditions that don’t belong to us.
+
+Tap the arrow at the top of the page to access the &#39;Credits&#39; page, where you can read more about how the actual Blues are played. (Or, do this at the end of the tutorial.)
+[[Next Section|Trin5]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Trin5" tags="" position="225,850" size="100,100">Using the keys in your left hand:
+
+&lt;img src=&quot;img/C3_F3.png&quot; width=&quot;90%&quot;&gt;
+
+And, the keys in your right hand:
+
+&lt;img src=&quot;img/C4_Eb4_F4.png&quot; width=&quot;90%&quot;&gt;
+
+You&#39;re going to use everything we’ve done so far to make your own music. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Remember, there’s no need to try and play with both hands at the same time. Play in the way that is easiest, and most fun, for you.
+
+Start by making some rhythms with your left hand, then follow them with some melodies on your right hand, before going back to your left hand to do some more rhythms. Don&#39;t think too much about the next note, just let it happen. 
+
+To make something closer to the Blues...
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Play a chord, then a few keys on your right hand. Then, repeat what you just did. Then, the third time, starting playing the same thing again, but make the ending different.
+
+Then, find a way to bring the piece to a close.
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+If you enjoyed this activity, there’s plenty to get involved with. 
+[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Pop Anthem Sing-A-Long|https://www.leedspiano.com/event/pop-anthems-sing-a-long/]]
+[[The Lullaby Series|https://www.leedspiano.com/event/lullaby-series-baby-yoga-live-music/]]
+[[All Trinity Shopping Center Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="trainStat" tags="" position="350,850" size="100,100">!Welcome to Leeds Train Station. 
+[[Tap here to access a screen-reader version of this tutorial.|trainStat_ac]]
+
+Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. 
+
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;90%&quot;&gt;
+(They&#39;re orange in the picture, and black in real life!)
+
+If the piano is not working...
+[[Tap here to contact a member of staff.|mailto:dave.cartwright@leedspiano.com]]
+
+
+Once you’ve tested the keys, tap ‘Next Section’.
+[[Next Section|Train2]]</tw-passagedata><tw-passagedata pid="64" name="Train2" tags="" position="475,850" size="100,100">The next few exercises are inspired by the work of a composer called Percy Grainger, who absolutely loved trains, and actually wrote a lot of his music while riding on them, or while waiting for his friends at the station.
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+One of the pieces Percy Grainger created was called ‘Arrival Platform Humlet’. A ‘Humlet’ is described by Grainger as: 
+&gt;//‘The sort of thing one hums to oneself as an accompaniment to one’s tramping feet as one happily, excitedly, paces up and down the arrival platform.’//
+[[Next Section|Train2-1]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Train2-1" tags="" position="600,850" size="100,100">Picture this: 
+
+A person is waiting for a train to arrive on the platform. 
+They walk a little way up the platform, 
+then stop, turn, 
+and walk back. 
+Then, they turn again. 
+And so on.
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Now, look back at the black keys, and choose three that are next to each other. 
+
+&lt;img src=&quot;img/All_Black_Keys.png&quot; width=&quot;90%&quot;&gt;
+
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;Play those three keys in any order, to accompany your imaginary person walking up the platform. Try that for a bit. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+Now, just //before// the imaginary person turns, look at the keyboard, and choose three different keys, it doesn’t matter which ones, and move your hand to them. Then, play some music for the walk //down// the platform. 
+
+Repeat this process, as many times as you need, to get used to the feeling of choosing keys, then moving to them.
+
+When you’re happy with moving your hand to different groups of black keys, tap ‘Next Section’.
+[[Next Section|Train3]]
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="Train3" tags="" position="725,850" size="100,100">Now, it’s time to bring the other hand in. Try playing with groups of three black notes, exactly the same as you were before, but play one section with your left, and the next one with your right, then the next with your left, and so on.
+
+Get used to looking for a place to move your other hand to, //just before// you want to finish one section. 
+&lt;&lt;linkreplace &quot;Tap to read more.&quot; t8n&gt;&gt;
+You don’t need to do this quickly. It’s up to you how long the sections last! If you can’t decide on the next set of notes to move to, just stall for time by playing more notes. No-one will notice!
+
+When you’re happy with playing the black keys, and moving both of your hands around, tap ‘Next Section’.
+[[Next Section|Train4]]
+&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="Train4" tags="" position="850,850" size="100,100">Now, see how long you can go for without stopping, looking ahead and stalling for time when you need it! 
+
+Think about times when you’ve waited for a friend who is late, and the progression of emotions that arise from the waiting, and pacing. How can you describe that journey using the skills you’ve picked up in the last few minutes?
+
+When you&#39;re ready...bring the piece to a close.
+&lt;&lt;linkreplace &quot;Tap to finish.&quot; t8n&gt;&gt;
+!Thanks for playing!
+If you’re having a good time, tap the button below to tweet a video of your compositions, using the hashtag: 
+@@.altlinks;&lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;@@
+
+If you enjoyed this, check out the rest of The Leeds Piano Trail!
+[[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
+[[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
+[[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
+[[All Events at Leeds Train Station|https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]&lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="mgChurch_ac" tags="" position="975,850" size="100,100">!Welcome to the Merrion Street Rest Gardens.
 Before we begin, please play any of the highlighted test keys, in any order, to ensure the piano is working. 
 
 All of the keyboard images start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A.
@@ -1421,7 +1591,7 @@ Or, come to some of our other events:
 [[Learn To Play In A Day|https://www.leedstownhall.co.uk/whatson-event/learn-to-play-in-a-day/?venue=4033//]]
 [[A Musical Night Walk|https://www.leedspiano.com/event/a-musical-night-walk/]]
 [[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="55" name="mgGrave_ac" tags="" position="600,725" size="100,100">!Welcome to the Merrion Centre Rest Gardens.
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="69" name="mgGrave_ac" tags="" position="1100,850" size="100,100">!Welcome to the Merrion Centre Rest Gardens.
 Before we begin, please play any of the following test keys, in any order, to ensure the piano is working. 
 
 All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A.
@@ -1493,7 +1663,7 @@ Tap the button below to tweet about your compositions, using the hashtag:
 [[Lullaby Series (5th-18th September)|https://www.leedstownhall.co.uk/whatson-event/lullaby-series/]]
 [[Come Along And Chat (9th September)|https://www.leedspiano.com/event/come-along-and-tea-and-chat/]]
 [[All Events at Merrion Street|https://pianotrail.welcometoleeds.co.uk/venue/merrion-street-gardens/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="56" name="uniLeeds_ac" tags="" position="725,725" size="100,100">!Welcome to The University Of Leeds Student&#39;s Union. 
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="70" name="uniLeeds_ac" tags="" position="1225,850" size="100,100">!Welcome to The University Of Leeds Student&#39;s Union. 
 To start with, please play the following test keys, in any order, to ensure the piano is working. 
 
 All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A.
@@ -1565,7 +1735,7 @@ Tap the button below to tweet about your compositions, using the hashtag:
  [[Brudenell Piano Sessions (12th September)|https://www.leedspiano.com/event/brudenell-piano-sessions/]]
  [[Musical Theatre Sing-a-long (15th September)|https://www.leedspiano.com/event/musical-theatre-sing-a-long-15-september/]]
 [[All Events at University of Leeds|https://pianotrail.welcometoleeds.co.uk/venue/university-of-leeds/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="57" name="vicGard_ac" tags="" position="850,725" size="100,100">!Welcome to Cookridge Street! 
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="71" name="vicGard_ac" tags="" position="100,975" size="100,100">!Welcome to Cookridge Street! 
 Before we begin, please play the following test keys, in any order, to ensure the piano is working.
 
 All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A.
@@ -1643,7 +1813,7 @@ When you’ve had enough of this, why not try…
 [[Learn to Play in a Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
 [[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
 [[All Events At Cookridge Street|https://pianotrail.welcometoleeds.co.uk/venue/cookridge-street/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="58" name="manGard_ac" tags="" position="975,725" size="100,100">!Welcome to Mandela Gardens. 
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="72" name="manGard_ac" tags="" position="225,975" size="100,100">!Welcome to Mandela Gardens. 
 These gardens were dedicated to Nelson Mandela, in solidarity with his campaign against apartheid in South Africa. People came together here, to celebrate, when he became South Africa’s first Black president in 1994.
 
 There are three pianos in the area. 
@@ -1741,7 +1911,7 @@ Tap the button below to tweet about your compositions, using the hashtag:
 [[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
 [[Power To The People - Spoken Word Night|https://www.leedspiano.com/event/power-to-the-people/]]
 [[All Events At Mandela Gardens|https://pianotrail.welcometoleeds.co.uk/venue/mandela-gardens/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="59" name="pHouse_ac" tags="" position="1100,725" size="100,100">!Welcome to The Leeds Playhouse Gardens! 
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="73" name="pHouse_ac" tags="" position="350,975" size="100,100">!Welcome to The Leeds Playhouse Gardens! 
 In the next couple of exercises, we’ll be looking at playing a simple piece which can grow for a long time, but which sprouts from just one note.
 
 But, before we begin, please play the following test keys on the piano, to ensure that it is working. 
@@ -1804,7 +1974,7 @@ Or, why not take a look at some of the other activities the Leeds Piano Trail ha
 [[Talks: Nature in Music, Music In Nature|https://www.leedspiano.com/event/lecture-series/]]
 [[Nature Concerts|https://www.leedspiano.com/event/nature-concerts-8-15-september/]]
 [[All Leeds Playhouse Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-playhouse-tiered-gardens/]]
-[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="60" name="vicQuart_ac" tags="" position="1225,725" size="100,100">!Welcome to the Victoria Quarter. 
+[[Full events programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="74" name="vicQuart_ac" tags="" position="475,975" size="100,100">!Welcome to the Victoria Quarter. 
 Did you know that there used to be a music hall here, where Harvey Nichols now stands? 
 
 It’s funny to think that what is now a luxury department store, used to be a place where you could go to watch stand-up comedy, magic, juggling, and listen to people singing naughty songs in front of a piano…No such luck these days!
@@ -1869,7 +2039,7 @@ Check out some of the other activities on the trail!
 [[Learn to play in a day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
 [[Belonging Here - Theatre Show (September 11th)|https://www.leedspiano.com/event/sarah-nicolls-belonging-here-theatre-show/]]
 [[All Victoria Quarter Events|https://pianotrail.welcometoleeds.co.uk/venue/victoria-leeds/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="61" name="kirkMark_ac" tags="" position="100,850" size="100,100">!Welcome to Kirkgate Market! 
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="75" name="kirkMark_ac" tags="" position="600,975" size="100,100">!Welcome to Kirkgate Market! 
 This place has seen its fair share of destruction, but always seems to rise from the ashes. In World War Two, even though it was frequently hit by bombs, it never closed for more than a few days. In 1975, a fire destroyed two thirds of the market (luckily, it didn’t kill anyone), and it still opened three days later! The spirit of the market has blazed brighter than its adversities for 120 years. 
 
 We’ll be taking //fire// as an inspiration for the next few exercises. This place can handle it. 
@@ -1931,7 +2101,7 @@ If you enjoyed this activity, why not try some of the other activities on The Le
 [[Learn To Play In A Day|https://www.leedspiano.com/event/learn-to-play-in-a-day/]]
 [[Come Along And Make|https://www.leedspiano.com/event/come-along-and-make/]]
 [[All Kirkgate Market Events|https://pianotrail.welcometoleeds.co.uk/venue/kirkgate-market/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="62" name="trinShop_ac" tags="" position="225,850" size="100,100">!Welcome to Trinity Shopping Centre! 
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="76" name="trinShop_ac" tags="" position="725,975" size="100,100">!Welcome to Trinity Shopping Centre! 
 The next couple of exercises will get you playing the piano for the first time. You can do these exercises by yourself, or with a friend. At the end, you can share your creation using #LeedsPianoTrail2021
 
 Before we begin, we need to check to make sure the piano is working. 
@@ -2007,7 +2177,7 @@ There’s plenty to get involved with. See some of our other events:
 [[Pop Anthem Sing-A-Long|https://www.leedspiano.com/event/pop-anthems-sing-a-long/]]
 [[The Lullaby Series|https://www.leedspiano.com/event/lullaby-series-baby-yoga-live-music/]]
 [[All Trinity Shopping Center Events|https://pianotrail.welcometoleeds.co.uk/venue/leeds-trinity/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="63" name="trainStat_ac" tags="" position="350,850" size="100,100">!Welcome to Leeds Train Station. 
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="77" name="trainStat_ac" tags="" position="850,975" size="100,100">!Welcome to Leeds Train Station. 
 Before we make a start, please make sure that the piano is working. Please play any of the black keys in any order you like, preferably a few times over. 
 
 All of the keyboard diagrams start with C. This is the flat, white key just before any two raised black keys. The white keys that follow C progress alphabetically until G, then start again from A. The white keys don&#39;t matter that much for this exercise. Just find the raised black keys, and play those.
@@ -2072,13 +2242,13 @@ Check out the rest of The Leeds Piano Trail!
 [[Rush Hour Recitals|https://www.leedspiano.com/event/rush-hour-recitals-6-19-september/]]
 [[Jazz Sessions|https://www.leedspiano.com/event/jazz-sessions-5-19-september/]]
 [[All Events at Leeds Train Station|https://pianotrail.welcometoleeds.co.uk/venue/leeds-train-station/]]
-[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="64" name="StoryAuthor" tags="" position="475,850" size="100,100">@@font-transform: uppercase; Part of The Leeds Piano Trail@@</tw-passagedata><tw-passagedata pid="65" name="StoryBanner" tags="" position="600,850" size="100,100">@@.noBor;&lt;img src=&quot;img/PianoTrailPink.png&quot; width=&quot;130em&quot;&gt;@@</tw-passagedata><tw-passagedata pid="66" name="StoryMenu" tags="" position="725,850" size="100,100">[[Technical Problems and Feedback|mailto:laurence.owen@leedspiano.com]]
+[[Full Events Programme|https://drive.google.com/file/d/177i9QSPZfAqfm2BXYiqc28XrlJOIPLrW/view]]</tw-passagedata><tw-passagedata pid="78" name="StoryAuthor" tags="" position="975,975" size="100,100">@@font-transform: uppercase; Part of The Leeds Piano Trail@@</tw-passagedata><tw-passagedata pid="79" name="StoryBanner" tags="" position="1100,975" size="100,100">@@.noBor;&lt;img src=&quot;img/PianoTrailPink.png&quot; width=&quot;130em&quot;&gt;@@</tw-passagedata><tw-passagedata pid="80" name="StoryMenu" tags="" position="1225,975" size="100,100">[[Technical Problems and Feedback|mailto:laurence.owen@leedspiano.com]]
 
 &lt;a href=&quot;https://twitter.com/intent/tweet?button_hashtag=LeedsPiano2021&amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-hashtag-button&quot; data-size=&quot;large&quot; data-text=&quot;I composed some wonderful music on The Leeds Piano Trail!&quot; data-url=&quot;https://twitter.com/leedspiano&quot; data-related=&quot;leedspiano&quot; data-lang=&quot;en&quot; data-dnt=&quot;true&quot; data-show-count=&quot;false&quot;&gt;Tweet #LeedsPiano2021&lt;/a&gt;&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-[[Credits (and further reading)|Credits]]</tw-passagedata><tw-passagedata pid="67" name="PassageHeader" tags="" position="850,850" size="100,100">&lt;&lt;if previous()!= &quot;&quot;&gt;&gt;&lt;div style=&quot;margin-bottom: 5%&quot;&gt;&lt;nobr&gt;
+[[Credits (and further reading)|Credits]]</tw-passagedata><tw-passagedata pid="81" name="PassageHeader" tags="" position="100,1100" size="100,100">&lt;&lt;if previous()!= &quot;&quot;&gt;&gt;&lt;div style=&quot;margin-bottom: 5%&quot;&gt;&lt;nobr&gt;
 @@.altlinks;&lt;&lt;back &quot;Back&quot;&gt;&gt;@@
 &lt;/nobr&gt;
-&lt;/div&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="PassageFooter" tags="" position="975,850" size="100,100">&lt;div style=&quot;border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em&quot;&gt;@@color:#808080;//When you find a new piano, tap the arrow at the top to restart the app.//@@
+&lt;/div&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="82" name="PassageFooter" tags="" position="225,1100" size="100,100">&lt;div style=&quot;border-top: solid #808080;clear: both;margin-top: 5em;padding-top:1em&quot;&gt;@@color:#808080;//When you find a new piano, tap the arrow at the top to restart the app.//@@
 &lt;/div&gt;
 &lt;br&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
